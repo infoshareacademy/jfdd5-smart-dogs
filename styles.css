@@ -1,6 +1,12 @@
 #four{
-    font-family: arial sans-serif;
+    font-family: Arial, sans-serif;
 }
 form{
     text-align: center;
     }
+input{
+    margin: 50px;
+    display: inline-block;
+    border-radius:5px;
+
+}
