@@ -1,12 +1,42 @@
+.nav-container {
+    height:50px;
+    background-color: Tomato;
+}
+
+#logo {
+    width:20%;
+    height: 100%;
+    background-color: darkred;
+    float:left;
+}
+
+.clearfix {
+    clear:both;
+}
+.nav-list {
+    float:right;
+    color: whitesmoke;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+    display: inline-block;
+    list-style-type: none;
+    margin:0;
+    padding: 15px;
+}
+.nav-list a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
 #four{
     font-family: Arial, sans-serif;
 }
 form{
     text-align: center;
-    }
+}
 input{
     margin: 50px;
     display: inline-block;
     border-radius:5px;
 
 }
+
