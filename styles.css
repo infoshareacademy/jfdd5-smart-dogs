@@ -1,19 +1,40 @@
 /*-----------NAVBAR STYLES---------------*/
+body {
+    margin: 0;
+    height: 2000px;
+}
+
+ul {
+    margin: 0px;
+}
+
 .nav-container {
     height:80px;
     background-color: Tomato;
+    position: fixed;
+    top:  0;
+    right: 0;
+    left: 0;
 }
 
 #logo {
     width:20%;
     height:100%;
-    background-color: red;
     color: white;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+    text-align: center;
+    font-size: 36px;
     display:inline-block;
 }
 
+#logo a {
+    text-decoration: none;
+    color: white;
+    display:inline-block;
+    padding-top: 20px;
+}
+
 #nav-box {
-    background-color: green;
     height: 100%;
     display:inline-block;
     float: right;
@@ -24,21 +45,28 @@
     color: whitesmoke;
     font-family: "DejaVu Sans", Arial, sans-serif;
     list-style-type: none;
-    background-color: indianred;
     display: inline-block;
-    padding: 10px 30px 0 20px;
+    padding: 30px 20px;
     font-size: 30px;
+    line-height: 20px;
 }
 .nav-list a {
     text-decoration: none;
     color: whitesmoke;
 }
 
-/*end of navbar------------------*/
+.nav-list:hover {
+    background-color: orangered;
+}
 
+/*end of navbar------------------*/
+#one {
+    margin-top: 80px;
+}
 
 
 /*style section two - commenced*/
+
 .function_main {
     width: 80%;
     display: flex;
