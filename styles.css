@@ -53,16 +53,37 @@
     font-size: 12px;
     /*style section two - end*/
 }
-#four{
-    font-family: Arial, sans-serif;
-}
-form{
+/*styles for section four*/
+.four-form{
     text-align: center;
 }
-input{
+.four-form input{
     margin: 50px;
     display: inline-block;
     border-radius:5px;
-
+}
+#four p{
+    text-align: center;
 }
 
+.check-wyrazam-zgode{
+    position: absolute;
+    top: -46px;
+    left: -26px;
+}
+
+.checkbox-agreement{
+    position:relative;
+    bottom: 75px;
+    left: 850px;
+    padding: 0px 0px 0px 45px;
+    max-height: 80px;
+    width:300px;
+    font-size: 12px;
+}
+.checkbox-agreement div{
+
+      }
+form:invalid input[type="submit"] {
+    position
+}
