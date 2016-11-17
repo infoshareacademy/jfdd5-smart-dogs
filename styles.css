@@ -1,3 +1,4 @@
+/*-----------NAVBAR STYLES---------------*/
 .nav-container {
     height:80px;
     background-color: Tomato;
@@ -8,44 +9,32 @@
     height:100%;
     background-color: darkred;
     color: white;
-    display:inline;
+    display:inline-block;
 }
 
 #nav-box {
-    width:70%;
     background-color: green;
+    height: 100%;
+    display:inline-block;
+    float: right;
+    margin-right: 10%;
 }
 
-.clearfix {
-    clear:both;
-}
 .nav-list {
     color: whitesmoke;
     font-family: "DejaVu Sans", Arial, sans-serif;
-    font-size: 30px;
-    display: inline-block;
     list-style-type: none;
     background-color: indianred;
+    display: inline-block;
+    padding: 10px 30px 0 20px;
+    font-size: 30px;
 }
 .nav-list a {
     text-decoration: none;
     color: whitesmoke;
 }
 
-#nav-list-first {
-    float: right;
-    margin-right: 5%;
-}
-
-#nav-list-second {
-    float: right;
-    margin-right: 5%;
-}
-
-#nav-list-third {
-    float: right;
-    margin-right: 10%;
-}
+/*end of navbar------------------*/
 
 #four{
     font-family: Arial, sans-serif;
