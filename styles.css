@@ -1,1 +1,80 @@
+/*-----------NAVBAR STYLES---------------*/
+.nav-container {
+    height:80px;
+    background-color: Tomato;
+}
+
+#logo {
+    width:20%;
+    height:100%;
+    background-color: red;
+    color: white;
+    display:inline-block;
+}
+
+#nav-box {
+    background-color: green;
+    height: 100%;
+    display:inline-block;
+    float: right;
+    margin-right: 10%;
+}
+
+.nav-list {
+    color: whitesmoke;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+    list-style-type: none;
+    background-color: indianred;
+    display: inline-block;
+    padding: 10px 30px 0 20px;
+    font-size: 30px;
+}
+.nav-list a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/*end of navbar------------------*/
+
+
+
+/*style section two - commenced*/
+.function_main {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+    font-size: 12px;
+}
+.function {
+    /*float: left;*/
+    width: 20%;
+    background-color: lightblue;
+    padding: 10px;
+    margin: 0;
+}
+.function_summary {
+    clear: both;
+    background-color: lightblue;
+    padding: 20px 20px;
+    margin: auto;
+    /*border: solid 1px black;*/
+    width: 77%;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+    font-size: 12px;
+    /*style section two - end*/
+}
+#four{
+    font-family: Arial, sans-serif;
+}
+form{
+    text-align: center;
+}
+input{
+    margin: 50px;
+    display: inline-block;
+    border-radius:5px;
+
+}
 
