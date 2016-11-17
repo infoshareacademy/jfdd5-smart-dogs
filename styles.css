@@ -26,6 +26,7 @@
     text-decoration: none;
     color: whitesmoke;
 }
+/*style section two - start*/
 .function_main {
     width: 80%;
     display: flex;
@@ -50,6 +51,7 @@
     width: 77%;
     font-family: "DejaVu Sans", Arial, sans-serif;
     font-size: 12px;
+    /*style section two - end*/
 }
 #four{
     font-family: Arial, sans-serif;
