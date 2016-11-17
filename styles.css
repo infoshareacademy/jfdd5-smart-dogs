@@ -1,39 +1,47 @@
+/*-----------NAVBAR STYLES---------------*/
+body {
+    background-color: whitesmoke;
+}
 .nav-container {
-    height:50px;
+    height:80px;
     background-color: Tomato;
 }
 
 #logo {
     width:20%;
-    height: 100%;
-    background-color: darkred;
-    float:left;
+    height:100%;
+    background-color: red;
+    color: white;
+    display:inline-block;
 }
 
-.clearfix {
-    clear:both;
+#nav-box {
+    background-color: green;
+    height: 100%;
+    display:inline-block;
+    float: right;
+    margin-right: 10%;
 }
+
 .nav-list {
-    float:right;
     color: whitesmoke;
     font-family: "DejaVu Sans", Arial, sans-serif;
-    display: inline-block;
     list-style-type: none;
-    margin:0;
-    padding: 15px;
+    background-color: indianred;
+    display: inline-block;
+    padding: 10px 30px 0 20px;
+    font-size: 30px;
 }
 .nav-list a {
     text-decoration: none;
     color: whitesmoke;
 }
-/*style section two - commenced*/
 .function_main {
     width: 80%;
     display: flex;
     justify-content: space-between;
     margin: auto;
     font-family: "DejaVu Sans", Arial, sans-serif;
-    font-size: 12px;
 }
 .function {
     /*float: left;*/
@@ -45,10 +53,62 @@
 .function_summary {
     clear: both;
     background-color: lightblue;
-    padding: 20px 20px;
+    padding: 20px 0px;
+    margin: auto;
+    /*border: solid 1px black;*/
+    width: 80%;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+}
+
+/*end of navbar------------------*/
+
+.picture1 {
+
+    background-image:url("./graphics/go_out_gdansk.jpg");
+    background-size: cover;
+    height: 750px;
+    position: relative;
+}
+.intro  {
+    position: absolute;
+    top:150px;
+    right: 400px;
+    color: white;
+    font-size: 200px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+
+
+
+/*style section two - commenced*/
+.function_main {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+    font-size: 16px;
+}
+.function {
+    /*float: left;*/
+    width: 22%;
+    background-color: lightblue;
+    padding: 30px 10px 20px 10px;
+    margin: 0;
+    text-align: center;
+}
+.function i{
+    font-size: 72px;
+}
+.function_summary {
+    /*clear: both;*/
+    background-color: lightblue;
+    padding: 35px 20px;
     margin: auto;
     /*border: solid 1px black;*/
     width: 77%;
+    text-align: center;
     font-family: "DejaVu Sans", Arial, sans-serif;
     font-size: 12px;
     /*style section two - end*/
