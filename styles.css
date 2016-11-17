@@ -1,31 +1,43 @@
+/*-----------NAVBAR STYLES---------------*/
 .nav-container {
-    height:50px;
+    height:80px;
     background-color: Tomato;
 }
 
 #logo {
     width:20%;
-    height: 100%;
-    background-color: darkred;
-    float:left;
+    height:100%;
+    background-color: red;
+    color: white;
+    display:inline-block;
 }
 
-.clearfix {
-    clear:both;
+#nav-box {
+    background-color: green;
+    height: 100%;
+    display:inline-block;
+    float: right;
+    margin-right: 10%;
 }
+
 .nav-list {
-    float:right;
     color: whitesmoke;
     font-family: "DejaVu Sans", Arial, sans-serif;
-    display: inline-block;
     list-style-type: none;
-    margin:0;
-    padding: 15px;
+    background-color: indianred;
+    display: inline-block;
+    padding: 10px 30px 0 20px;
+    font-size: 30px;
 }
 .nav-list a {
     text-decoration: none;
     color: whitesmoke;
 }
+
+/*end of navbar------------------*/
+
+
+
 /*style section two - commenced*/
 .function_main {
     width: 80%;
