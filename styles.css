@@ -26,6 +26,29 @@
     text-decoration: none;
     color: whitesmoke;
 }
+.function_main {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+}
+.function {
+    float: left;
+    width: 20%;
+    background-color: lightblue;
+    padding: 10px;
+    margin: 0;
+}
+.function_summary {
+    clear: both;
+    background-color: lightblue;
+    padding: 20px 0px;
+    margin: auto;
+    border: solid 1px black;
+    width: 80%;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+}
 
 #four{
     font-family: Arial, sans-serif;
