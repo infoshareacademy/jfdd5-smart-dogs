@@ -34,7 +34,7 @@
     font-family: "DejaVu Sans", Arial, sans-serif;
 }
 .function {
-    float: left;
+    /*float: left;*/
     width: 20%;
     background-color: lightblue;
     padding: 10px;
@@ -45,7 +45,7 @@
     background-color: lightblue;
     padding: 20px 0px;
     margin: auto;
-    border: solid 1px black;
+    /*border: solid 1px black;*/
     width: 80%;
     font-family: "DejaVu Sans", Arial, sans-serif;
 }
