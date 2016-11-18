@@ -66,18 +66,34 @@ body {
 
     background-image:url("./graphics/go_out_gdansk.jpg");
     background-size: cover;
-    height: 750px;
+    height: 80vh;
     position: relative;
 }
 .intro  {
-    position: absolute;
-    top:150px;
-    right: 400px;
+    position:relative;
     color: white;
-    font-size: 200px;
-    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 100px;
+    text-align: center;
+    padding:100px;
     border-radius: 20px;
 }
+.button {
+    background-color: white;
+    font-size: 40px;
+    border-radius: 5px;
+    float: right;
+    padding-top: inherit;
+    display:block;
+
+}
+
+.button .button {
+    text-decoration: none;
+    color: black;
+}
+
+
+
 
 
 
