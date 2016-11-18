@@ -75,6 +75,9 @@ ul {
         float:none;
         margin-right: 0;
     }
+    ul {
+        padding: 0;
+    }
     .nav-list {
         font-size: 20px;
         background-color: #FF7e59;
@@ -116,8 +119,6 @@ ul {
 }
 
 
-
-
 /*end of navbar------------------*/
 #one {
     margin-top: 80px;
@@ -150,7 +151,6 @@ ul {
     font-family: "DejaVu Sans", Arial, sans-serif;
 }
 
-/*end of navbar------------------*/
 
 .picture1 {
 
