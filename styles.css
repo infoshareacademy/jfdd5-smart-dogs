@@ -145,8 +145,28 @@ ul {
     font-size: 12px;
     /*style section two - end*/
 }
-/*styles section four*/
+/*styles section three*/
+#three {
+    height: 100vh;
+}
+.person-together {
+    text-align: center;
+    padding-top: 150px;
+}
+.person {
+    display: inline-block;
+    border: solid;
+    width: 180px;
+    height: 200px;
+    border-radius: 50px;
+    padding-top: 160px;
+    margin: 10px;
+}
 
+/*styles section four*/
+#four {
+    height: 100vh;
+}
 .four-form {
     text-align: center;
     font-size: 25px;
