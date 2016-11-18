@@ -1,22 +1,41 @@
 /*-----------NAVBAR STYLES---------------*/
 body {
+    margin: 0;
+    height: 2000px;
     background-color: whitesmoke;
 }
+
+ul {
+    margin: 0;
+}
+
 .nav-container {
     height:80px;
     background-color: Tomato;
+    position: fixed;
+    top:  0;
+    right: 0;
+    left: 0;
 }
 
 #logo {
     width:20%;
     height:100%;
-    background-color: red;
     color: white;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+    text-align: center;
+    font-size: 36px;
     display:inline-block;
 }
 
+#logo a {
+    text-decoration: none;
+    color: white;
+    display:inline-block;
+    padding-top: 20px;
+}
+
 #nav-box {
-    background-color: green;
     height: 100%;
     display:inline-block;
     float: right;
@@ -27,15 +46,28 @@ body {
     color: whitesmoke;
     font-family: "DejaVu Sans", Arial, sans-serif;
     list-style-type: none;
-    background-color: indianred;
     display: inline-block;
-    padding: 10px 30px 0 20px;
+    padding: 30px 20px;
     font-size: 30px;
+    line-height: 20px;
 }
 .nav-list a {
     text-decoration: none;
     color: whitesmoke;
 }
+
+.nav-list:hover {
+    background-color: orangered;
+}
+
+/*end of navbar------------------*/
+#one {
+    margin-top: 80px;
+}
+
+
+/*style section two - commenced*/
+
 .function_main {
     width: 80%;
     display: flex;
@@ -53,7 +85,7 @@ body {
 .function_summary {
     clear: both;
     background-color: lightblue;
-    padding: 20px 0px;
+    padding: 20px 0;
     margin: auto;
     /*border: solid 1px black;*/
     width: 80%;
@@ -83,7 +115,7 @@ body {
 
 /*style section two - commenced*/
 .function_main {
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     /*margin: auto;*/
@@ -141,14 +173,64 @@ body {
 /*style section two - end*/
 #four{
     font-family: Arial, sans-serif;
+    font-size: 12px;
+    /*style section two - end*/
 }
-form{
+/*styles section four*/
+
+.four-form {
     text-align: center;
+    font-size: 25px;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+    font-weight: bold;
+    padding-top: 80px;
+    margin-bottom: 25px;
 }
-input{
-    margin: 50px;
-    display: inline-block;
-    border-radius:5px;
-
+input[type="email"] {
+    margin: 0 15px 25px;
+    border-style: none;
+    border-bottom: 2px solid tomato;
+    background-color: whitesmoke;
+    font-size: 20px;
+    font-family: "DejaVu Sans", Arial, sans-serif;
 }
-
+.checkbox-agreement {
+    position:relative;
+    padding: 0 10px 0 35px;
+    max-height: 80px;
+    max-width: 612px;
+    border-style: none;
+    margin: auto;
+}
+.checkbox-agreement input {
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+.checkbox-agreement div {
+    font-size: 11px;
+    font-weight: normal;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+}
+input[type="submit"] {
+    height: 60px;
+    width: 180px;
+    background-color: tomato;
+    border-style: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+    color: white;
+}
+.four-submit {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+.four-info {
+    text-align: center;
+    font-size: 15px;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+    padding: 5px;
+}
+/*styles section four - end*/
