@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-<header>
-    <div class="nav-container">
-        <div id="logo"></div>
-        <div id="nav-box">
-            <ul>
-                <li id="nav-list-first" class="nav-list"><a href="#two">Funkcje</a></li>
-                <li id="nav-list-second" class="nav-list"><a href="#three">Zespół</a></li>
-                <li id="nav-list-third" class="nav-list"><a href="#four">Zapisz Się!</a></li>
-            </ul>
+    <header>
+        <div class="nav-container">
+            <div id="logo"><a href="#one">GO OUT SMART</a></div>
+            <div id="nav-box">
+                <ul>
+                    <li id="nav-list-first" class="nav-list"><a href="#two">Funkcje</a></li>
+                    <li id="nav-list-second" class="nav-list"><a href="#three">Zespół</a></li>
+                    <li id="nav-list-third" class="nav-list"><a href="#four">Zapisz Się!</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</header>
-<section id="one"></section>
+    </header>
+    <section id="one"></section>
 
 <div class="picture1">
     <h1 class="intro">Let's Go Out !</h1>
@@ -60,26 +60,74 @@
         </p>
     </div>
 </div>
+    <div class="picture1">
+        <h1 class="intro">let's go out !</h1>
+    </div>
+    <section id="two"></section>
+    <div class="function_main">
+        <div class="function">
+            <i class="material-icons">cloud</i>
+            <p>Stworzyliśmy aplikację, pozwalającą zlokalizować wydarzenia odbywające się w pobliżu miejsca,
+                w którym się znajdujesz. Wystarczy, że pobierzesz ją na telefon,
+                a za każdym razem kiedy ją włączysz, wyświetli imprezy w promieniu X km od miejsca Twojego pobytu.
+            </p>
+        </div>
+        <div class="function">
+            <i class="material-icons">cloud</i>
+            <p>Kiedy będzie zbliżał się termin imprezy, którą dodasz do terminarza KIWI,
+                wyślemy Ci e-mail z przypomnieniem.Tą samą drogą powiadomimy Cię również jeśli impeza zostanie
+                odwołana bądź zmieni się jej termin.
+            </p>
+        </div>
+        <div class="function">
+            <i class="material-icons">cloud</i>
+            <p>Jeśli interesują Cię wydarzenia z konkretnych dziedzin możesz skorzystać z funkcji subskrypcji!
+                Otrzymasz informacje zawsze, kiedy do naszej bazy zostanie dodane wydarzenie spełniające
+                wskazane przez Ciebie kryteria.
+            </p>
+        </div>
+        <div class="function">
+            <i class="material-icons">cloud</i>
+            <p>Do terminarza możesz dodawać zapowiadane przez nas wydarzenia i przeglądać je w dowolnej chwili.
+                Za każdym razem, kiedy zmieni się termin imprezy bądź zostanie odwołana, informacje w Twoim
+                terminarzu zaktualizują się automatycznie.
+            </p>
+        </div>
+    </div>
 
-<br>
+    <br>
 
-<div class="function_summary">Precyzyjna wyszukiwarka GoOutSmatr przefiltruje bazę imprez pod kątem wybranych
-    przez Ciebie kryteriów wyszukiwania: kategorii imprezy, organizatora, słów zawartych w opisie imprezy, tagów,
-    lokalizacji lub określonej odległości od wybranego punktu.Rozbudowana, a zarazem prosta w obsłudze pozwala
-    stosować kryteria łącznie. Jeśli szukasz wydarzeń zawsze według tego samego klucza,
-    przydatna okaże się funkcja zapisywania ich ustawień. Dzięki temu nie będziesz musiał tracić czasu
-    na ich wielokrotne uzupełnianie.
-</div>
+    <div class="function_summary">Precyzyjna wyszukiwarka GoOutSmatr przefiltruje bazę imprez pod kątem wybranych
+        przez Ciebie kryteriów wyszukiwania: kategorii imprezy, organizatora, słów zawartych w opisie imprezy, tagów,
+        lokalizacji lub określonej odległości od wybranego punktu.Rozbudowana, a zarazem prosta w obsłudze pozwala
+        stosować kryteria łącznie. Jeśli szukasz wydarzeń zawsze według tego samego klucza,
+        przydatna okaże się funkcja zapisywania ich ustawień. Dzięki temu nie będziesz musiał tracić czasu
+        na ich wielokrotne uzupełnianie.
+    </div>
 
 
-<section id="three"></section>
-<p>O nas</p>
-<section id="four">
-    <form action="">
-        Chcę tę aplikację <input type="email" name="fname">
-        <input type="submit" value="Zapisz się">
-    </form>
-</section>
-<footer></footer>
+    <section id="three"></section>
+        <p>O nas</p>
+    <!--beginning section four-->
+    <section id="four">
+        <form class="four-form" action="">
+            Chcę tę aplikację
+            <input type="email" name="email" placeholder="Podaj swoj adres e-mail">
+
+            <div class="checkbox-agreement">
+                <input required type="checkbox">
+                <div>
+                    Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb realizacji projektu szkoleniowego (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity:Dz. U. z 2002r. Nr 101, poz. 926 ze zm.)."<br>
+                    Właścicielem bazy danych jest firma XYZ.
+                </div>
+            </div>
+        </form>
+        <form class="four-submit">
+            <input type="submit" value="Zapisz mnie">
+        </form>
+        <div class="four-info">Wyślemy do Ciebie tylko jeden email z informacją o premierze aplikacji</div>
+    </section>
+    <!--end of section four-->
+    <footer></footer>
 </body>
 </html>
