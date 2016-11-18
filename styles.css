@@ -187,7 +187,7 @@ ul {
 
 
 
-/*style section two - commenced*/
+/*style section two - commenced ---------------------------*/
 .function_main {
     width: 80%;
     display: flex;
@@ -199,9 +199,10 @@ ul {
 .function {
     /*float: left;*/
     width: 22%;
-    background-color: lightblue;
+    background-color: #d8d8d8;
     padding: 30px 10px 20px 10px;
-    margin: 0;
+    /*margin: 0;*/
+    border-radius: 20px;
     text-align: center;
 }
 .function i{
@@ -209,17 +210,18 @@ ul {
 }
 .function_summary {
     /*clear: both;*/
-    background-color: lightblue;
+    background-color: #d8d8d8;
     padding: 35px 20px;
     margin: auto;
     /*border: solid 1px black;*/
     width: 77%;
     text-align: center;
     font-family: "DejaVu Sans", Arial, sans-serif;
-    font-size: 12px;
+    font-size: 16px;
+    border-radius: 20px
     /*style section two - end*/
 }
-/*styles section four*/
+/*styles section four ------------------------------------ */
 
 .four-form {
     text-align: center;
