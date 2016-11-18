@@ -83,17 +83,18 @@ body {
 
 /*style section two - commenced*/
 .function_main {
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
-    margin: auto;
+    /*margin: auto;*/
     font-family: "DejaVu Sans", Arial, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
+
 .function {
     /*float: left;*/
     width: 22%;
-    background-color: lightblue;
+    background-color: #d8d8d8;
     padding: 30px 10px 20px 10px;
     margin: 0;
     text-align: center;
@@ -101,16 +102,36 @@ body {
 .function i{
     font-size: 72px;
 }
+
+@media screen and (max-width: 900px){
+    .function_main {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        /*flex-direction: column;*/
+        /*margin: auto;*/
+        font-family: "DejaVu Sans", Arial, sans-serif;
+    }
+    .function {
+        /*float: left;*/
+        width: 88%;
+        background-color: #d8d8d8;
+        padding: 30px 10px 20px 10px;
+        margin: 0;
+        text-align: center;
+    }
+}
 .function_summary {
     /*clear: both;*/
-    background-color: lightblue;
+    background-color: #d8d8d8;
     padding: 35px 20px;
     margin: auto;
     /*border: solid 1px black;*/
-    width: 77%;
+    width: 86%;
     text-align: center;
     font-family: "DejaVu Sans", Arial, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 .material-icons {
     font-size:48px;
