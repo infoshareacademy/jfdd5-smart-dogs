@@ -198,9 +198,9 @@ ul {
 }
 .function {
     /*float: left;*/
-    width: 22%;
+    width: 20%;
     background-color: #d8d8d8;
-    padding: 30px 10px 20px 10px;
+    padding: 20px 14px 0px 14px;
     /*margin: 0;*/
     border-radius: 20px;
     text-align: center;
