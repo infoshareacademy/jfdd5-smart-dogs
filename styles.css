@@ -6,7 +6,7 @@ body {
 }
 
 ul {
-    margin: 0px;
+    margin: 0;
 }
 
 .nav-container {
@@ -143,7 +143,7 @@ ul {
 .function_summary {
     clear: both;
     background-color: lightblue;
-    padding: 20px 0px;
+    padding: 20px 0;
     margin: auto;
     /*border: solid 1px black;*/
     width: 80%;
@@ -156,18 +156,34 @@ ul {
 
     background-image:url("./graphics/go_out_gdansk.jpg");
     background-size: cover;
-    height: 750px;
+    height: 80vh;
     position: relative;
 }
 .intro  {
-    position: absolute;
-    top:150px;
-    right: 400px;
+    position:relative;
     color: white;
-    font-size: 200px;
-    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 100px;
+    text-align: center;
+    padding:100px;
     border-radius: 20px;
 }
+.button {
+    background-color: white;
+    font-size: 40px;
+    border-radius: 5px;
+    float: right;
+    padding-top: inherit;
+    display:block;
+
+}
+
+.button .button {
+    text-decoration: none;
+    color: black;
+}
+
+
+
 
 
 
@@ -203,37 +219,61 @@ ul {
     font-size: 12px;
     /*style section two - end*/
 }
-/*styles for section four*/
-.four-form{
-    text-align: center;
-}
-.four-form input{
-    margin: 50px;
-    display: inline-block;
-    border-radius:5px;
-}
-#four p{
-    text-align: center;
-}
+/*styles section four*/
 
-.check-wyrazam-zgode{
-    position: absolute;
-    top: -46px;
-    left: -26px;
+.four-form {
+    text-align: center;
+    font-size: 25px;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+    font-weight: bold;
+    padding-top: 80px;
+    margin-bottom: 25px;
 }
-
-.checkbox-agreement{
+input[type="email"] {
+    margin: 0 15px 25px;
+    border-style: none;
+    border-bottom: 2px solid tomato;
+    background-color: whitesmoke;
+    font-size: 20px;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+}
+.checkbox-agreement {
     position:relative;
-    bottom: 75px;
-    left: 850px;
-    padding: 0px 0px 0px 45px;
+    padding: 0 10px 0 35px;
     max-height: 80px;
-    width:300px;
-    font-size: 12px;
+    max-width: 612px;
+    border-style: none;
+    margin: auto;
 }
-.checkbox-agreement div{
-
-      }
-form:invalid input[type="submit"] {
-    position
+.checkbox-agreement input {
+    position: absolute;
+    top: 0;
+    left: 10px;
 }
+.checkbox-agreement div {
+    font-size: 11px;
+    font-weight: normal;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+}
+input[type="submit"] {
+    height: 60px;
+    width: 180px;
+    background-color: tomato;
+    border-style: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+    color: white;
+}
+.four-submit {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+.four-info {
+    text-align: center;
+    font-size: 15px;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+    padding: 5px;
+}
+/*styles section four - end*/
