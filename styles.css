@@ -145,37 +145,57 @@ ul {
     font-size: 12px;
     /*style section two - end*/
 }
-/*styles for section four*/
-.four-form{
-    text-align: center;
-}
-.four-form input{
-    margin: 50px;
-    display: inline-block;
-    border-radius:5px;
-}
-#four p{
-    text-align: center;
-}
+/*styles section four*/
 
-.check-wyrazam-zgode{
-    position: absolute;
-    top: -46px;
-    left: -26px;
+.four-form {
+    text-align: center;
+    font-size: 25px;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
-
-.checkbox-agreement{
+input[type="email"] {
+    margin: 0px 15px 25px;
+    border-style: none;
+    border-bottom: 2px solid tomato;
+    background-color: whitesmoke;
+    font-size: 20px;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+    color: lightgray;
+}
+.checkbox-agreement {
     position:relative;
-    bottom: 75px;
-    left: 850px;
-    padding: 0px 0px 0px 45px;
+    padding: 0px 10px 0px 35px;
     max-height: 80px;
-    width:300px;
-    font-size: 12px;
+    max-width: 612px;
+    border-style: none;
+    margin: auto;
 }
-.checkbox-agreement div{
+.checkbox-agreement input {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+.checkbox-agreement div {
+    font-size: 11px;
+    font-weight: normal;
+    font-family: "DejaVu Sans", Arial, sans-serif;
 
-      }
-form:invalid input[type="submit"] {
-    position
 }
+input[type="submit"] {
+    height: 60px;
+    width: 180px;
+    background-color: tomato;
+    border-style: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+    color: white;
+}
+#four p {
+    text-align: center;
+    font-size: 15px;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+}
+/*styles section four - end*/
