@@ -133,6 +133,7 @@ ul {
     margin: auto;
     font-family: "DejaVu Sans", Arial, sans-serif;
 }
+
 .function {
     /*float: left;*/
     width: 20%;
@@ -140,6 +141,7 @@ ul {
     padding: 10px;
     margin: 0;
 }
+
 .function_summary {
     clear: both;
     background-color: lightblue;
@@ -150,21 +152,30 @@ ul {
     font-family: "DejaVu Sans", Arial, sans-serif;
 }
 
-
 .picture1 {
 
-    background-image:url("./graphics/go_out_gdansk.jpg");
+    background-image: url("./graphics/go_out_gdansk.jpg");
     background-size: cover;
     height: 80vh;
     position: relative;
 }
+
 .intro {
     position: relative;
     color: white;
-    font-size: 100px;
+    text-shadow: 0 0 10px grey;
+    font-size: 120px;
     text-align: center;
-    padding: 100px;
-    border-radius: 20px;
+    padding-top: 200px;
+    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
+}
+.intro-male {
+    position: relative;
+    color:white;
+    font-size: 50px;
+    text-shadow: 0 0 10px grey;
+    text-align: center;
+    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
 }
 #pond {
     display: flex;
@@ -173,39 +184,25 @@ ul {
 }
 
 @media screen and (max-width: 760px) {
-    #iintro{
-        display:none;
-        float:none;
-        margin-right: 0;
+    .intro {
+        font-size: 50px;
+    }
+}
 
 .button {
-    background-color: white;
+    background-color:#FF6D32;
+    color: white;
     font-size: 40px;
-    border-radius: 5px;
-    float: right;
-    padding-top: inherit;
-}
-
-    #pond {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-}
-    @media screen and (max-width: 760px) {
-        #button {
-            display: none;
-            float: none;
-            margin-right: 0;
-        }
-.button .button {
+    border-radius: 15px;
+    padding: 20px 120px;
+    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
     text-decoration: none;
-    color: black;
 }
 
-
-
-
-
+.button-container {
+    text-align: center;
+    padding-top: 40px;
+}
 
 /*style section two - commenced ---------------------------*/
 .function_main {
