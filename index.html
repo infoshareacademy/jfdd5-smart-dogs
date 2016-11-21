@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
@@ -7,57 +7,61 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-    <header>
-        <div class="nav-container">
-            <div id="logo"><a href="#one">GO OUT SMART</a></div>
-            <div id="nav-box">
-                <ul>
-                    <li id="nav-list-first" class="nav-list"><a href="#two">Funkcje</a></li>
-                    <li id="nav-list-second" class="nav-list"><a href="#three">Zespół</a></li>
-                    <li id="nav-list-third" class="nav-list"><a href="#four">Zapisz Się!</a></li>
-                </ul>
-            </div>
+<header>
+    <div class="nav-container">
+        <div id="logo"><a href="#">&#8646;</a></div>
+        <input type="checkbox" class="menu-smallscreen">
+        <div id="nav-box">
+            <ul>
+                <li id="nav-list-first" class="nav-list"><a href="#two">FUNKCJE</a></li>
+                <li id="nav-list-second" class="nav-list"><a href="#three">ZESPÓŁ</a></li>
+                <li id="nav-list-third" class="nav-list"><a href="#four">ZAPISZ SIĘ!</a></li>
+            </ul>
         </div>
-    </header>
-    <section id="one"></section>
-
-    <div class="picture1">
-        <h1 class="intro">let's go out !</h1>
     </div>
+</header>
+<section id="one"></section>
+
+<div class="picture1">
+    <h1 class="intro">Let's Go Out !</h1>
+    <h2 class="button"><a class="button .button" href="#four">Zapisz mnie</a></h2>
 
 
-    <br>
-    <section id="two"></section>
+</div>
+<!-- -------------------------------------------------------- -->
+<br>
+<section id="two">
     <div class="function_main">
         <div class="function">
-            <i class="material-icons">cloud</i>
+            <i class="material-icons">place</i>
             <p>Stworzyliśmy aplikację, pozwalającą zlokalizować wydarzenia odbywające się w pobliżu miejsca,
-                w którym się znajdujesz. Wystarczy, że uruchomisz ją,
-                a za każdym razem wyświetli imprezy w promieniu X km od miejsca Twojego pobytu.
+                w którym się znajdujesz. Wystarczy, że pobierzesz ją i uruchomisz,
+                a za każdym razem uzyskasz informacje na temat imprez w promieniu X km od miejsca Twojego pobytu.
             </p>
         </div>
         <div class="function">
-            <i class="material-icons">cloud</i>
-            <p>Kiedy będzie zbliżał się termin imprezy, którą jesteś zainteresowany,
-                wyślemy Ci e-mail z przypomnieniem.Tą samą drogą powiadomimy Cię również jeśli impeza zostanie
+            <i class="material-icons">email</i>
+            <p>Kiedy będzie zbliżał się termin imprezy, którą dodasz do terminarza,
+                wyślemy Ci e-mail z przypomnieniem. Tą samą drogą powiadomimy Cię również jeśli impeza zostanie
                 odwołana bądź zmieni się jej termin.
             </p>
         </div>
         <div class="function">
-            <i class="material-icons">cloud</i>
-            <p>Jeśli interesują Cię wydarzenia z konkretnych dziedzin możesz skorzystać z funkcji subskrypcji!
-                Otrzymasz informacje zawsze, kiedy do naszej bazy zostanie dodane wydarzenie spełniające
+            <i class="material-icons">event_available</i>
+            <p>Jeśli interesują Cię wydarzenia z konkretnych dziedzin możesz skorzystać z naszej wyszukiwarki.
+                Otrzymasz informacje zawsze, kiedy i gdzie odbędzie się wydarzenie spełniające
                 wskazane przez Ciebie kryteria.
             </p>
         </div>
         <div class="function">
-            <i class="material-icons">cloud</i>
+            <i class="material-icons">sms</i>
             <p>Do terminarza możesz dodawać zapowiadane przez nas wydarzenia i przeglądać je w dowolnej chwili.
-                Za każdym razem, kiedy zmieni się termin imprezy bądź zostanie odwołana, informacje w Twoim
-                terminarzu zaktualizują się automatycznie.
+                Za każdym razem, kiedy zmieni się termin imprezy, bądź zostanie odwołana,
+                zostaniesz przez nas poinformowany.
             </p>
         </div>
     </div>
+
 
     <br>
 
@@ -68,21 +72,32 @@
         przydatna okaże się funkcja zapisywania ich ustawień. Dzięki temu nie będziesz musiał tracić czasu
         na ich wielokrotne uzupełnianie.
     </div>
+</section>
+<!-- ------------------------------------------------------------ -->
+<section id="three"></section>
+<p>O nas</p>
+<!--beginning section four-->
+<section id="four">
+    <form class="four-form" action="">
+        Chcę tę aplikację
+        <input type="email" name="email" placeholder="Podaj swoj adres e-mail">
 
-
-    <section id="three"></section>
-        <p>O nas</p>
-    <section id="four">
-        <form action="">
-            Chcę tę aplikację <input type="email" name="fname">
-            <input type="submit" value="Zapisz się">
-        </form>
-        <form class="four-submit">
-            <input type="submit" value="Zapisz mnie">
-        </form>
-        <div class="four-info">Wyślemy do Ciebie tylko jeden email z informacją o premierze aplikacji</div>
-    </section>
-    <!--end of section four-->
-    <footer></footer>
+        <div class="checkbox-agreement">
+            <input required type="checkbox">
+            <div>
+                Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb realizacji projektu szkoleniowego
+                (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity:Dz. U. z 2002r. Nr
+                101, poz. 926 ze zm.)."<br>
+                Właścicielem bazy danych jest firma XYZ.
+            </div>
+        </div>
+    </form>
+    <form class="four-submit">
+        <input type="submit" value="Zapisz mnie">
+    </form>
+    <div class="four-info">Wyślemy do Ciebie tylko jeden email z informacją o premierze aplikacji</div>
+</section>
+<!--end of section four-->
+<footer></footer>
 </body>
 </html>

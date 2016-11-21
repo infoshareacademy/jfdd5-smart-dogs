@@ -33,6 +33,7 @@ ul {
     color: white;
     display:inline-block;
     padding-top: 20px;
+    font-size: 50px;
 }
 
 #nav-box {
@@ -40,6 +41,10 @@ ul {
     display:inline-block;
     float: right;
     margin-right: 10%;
+}
+
+.menu-smallscreen {
+    display:none;
 }
 
 .nav-list {
@@ -57,7 +62,56 @@ ul {
 }
 
 .nav-list:hover {
-    background-color: orangered;
+    background-color: red;
+}
+/*MEDIA queries navbar*/
+@media screen and (max-width: 760px) {
+    #nav-box {
+        display:none;
+        float:none;
+        margin-right: 0;
+    }
+    ul {
+        padding: 0;
+    }
+    .nav-list {
+        font-size: 20px;
+        background-color: #FF7e59;
+        text-align: center;
+        display:block;
+    }
+
+    .menu-smallscreen {
+        display: inline-block;
+        float: right;
+        margin:15px 15px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu-smallscreen:before {
+        display:inline-block;
+        float: right;
+        content:'';
+        width: 50px;
+        height: 50px;
+        background-image: url('graphics/whitemenu.png');
+        background-size: contain;
+        background-color: #FF7e59;
+    }
+    .menu-smallscreen:checked:before {
+        display:inline-block;
+        float: right;
+        content:'';
+        width: 50px;
+        height: 50px;
+        background-color: red;
+    }
+
+    .menu-smallscreen:checked +#nav-box {
+        display:block;
+        background-color: #FF7e59;
+    }
 }
 
 /*end of navbar------------------*/
@@ -98,22 +152,38 @@ ul {
 
     background-image:url("./graphics/go_out_gdansk.jpg");
     background-size: cover;
-    height: 750px;
+    height: 80vh;
     position: relative;
 }
 .intro  {
-    position: absolute;
-    top:150px;
-    right: 400px;
+    position:relative;
     color: white;
-    font-size: 200px;
-    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 100px;
+    text-align: center;
+    padding:100px;
     border-radius: 20px;
+}
+.button {
+    background-color: white;
+    font-size: 40px;
+    border-radius: 5px;
+    float: right;
+    padding-top: inherit;
+    display:block;
+
+}
+
+.button .button {
+    text-decoration: none;
+    color: black;
 }
 
 
 
-/*style section two - commenced*/
+
+
+
+/*style section two - commenced ---------------------------*/
 .function_main {
     width: 80%;
     display: flex;
@@ -125,15 +195,34 @@ ul {
 
 .function {
     /*float: left;*/
-    width: 22%;
+    width: 20%;
     background-color: #d8d8d8;
-    padding: 30px 10px 20px 10px;
-    margin: 0;
+    padding: 20px 14px 0px 14px;
+    /*margin: 0;*/
+    border-radius: 20px;
     text-align: center;
 }
 .function i{
     font-size: 72px;
 }
+
+@media screen and (max-width:800px){
+    .function_main {
+        display: block;
+        font-size: 14px;
+    }
+    .function{
+        margin: auto;
+        width:80%;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .function_summary{
+        font-size: 14px;
+    }
+
+}
+
 
 @media screen and (max-width: 900px){
     .function_main {
@@ -160,7 +249,7 @@ ul {
     padding: 35px 20px;
     margin: auto;
     /*border: solid 1px black;*/
-    width: 86%;
+    width: 77%;
     text-align: center;
     font-family: "DejaVu Sans", Arial, sans-serif;
     font-size: 14px;
@@ -176,7 +265,7 @@ ul {
     font-size: 12px;
     /*style section two - end*/
 }
-/*styles section four*/
+/*styles section four ------------------------------------ */
 
 .four-form {
     text-align: center;
