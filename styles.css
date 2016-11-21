@@ -7,11 +7,12 @@ body {
 
 ul {
     margin: 0;
+    padding: 0;
 }
 
 .nav-container {
     height:80px;
-    background-color: #FF7e59;
+    background-color: #FF6D32;
     position: fixed;
     top:  0;
     right: 0;
@@ -26,10 +27,8 @@ ul {
     display:inline-block;
     height:70px;
     width: 70px;
-    margin: 5px 20px;
+    margin: 5px 0 0 10%;
     line-height: 30px;
-    border-radius: 50%;
-    background-color: red;
 }
 
 #logo a {
@@ -66,7 +65,7 @@ ul {
 }
 
 .nav-list:hover {
-    background-color: red;
+    background-color: orangered;
 }
 /*MEDIA queries navbar*/
 @media screen and (max-width: 760px) {
@@ -80,7 +79,7 @@ ul {
     }
     .nav-list {
         font-size: 20px;
-        background-color: #FF7e59;
+        background-color: #FF6D32;
         text-align: center;
         display:block;
     }
@@ -101,7 +100,7 @@ ul {
         height: 50px;
         background-image: url('graphics/whitemenu.png');
         background-size: contain;
-        background-color: #FF7e59;
+        background-color: #FF6D32;
     }
     .menu-smallscreen:checked:before {
         display:inline-block;
@@ -109,12 +108,12 @@ ul {
         content:'';
         width: 50px;
         height: 50px;
-        background-color: red;
+        background-color: orangered;
     }
 
     .menu-smallscreen:checked +#nav-box {
         display:block;
-        background-color: #FF7e59;
+        background-color: #FF6D32;
     }
 }
 /*MEDIA queries navbar*/
@@ -183,6 +182,7 @@ ul {
     margin: auto;
     font-family: "DejaVu Sans", Arial, sans-serif;
 }
+
 .function {
     /*float: left;*/
     width: 20%;
@@ -190,6 +190,7 @@ ul {
     padding: 10px;
     margin: 0;
 }
+
 .function_summary {
     clear: both;
     background-color: lightblue;
@@ -204,33 +205,70 @@ ul {
 
 .picture1 {
 
-    background-image:url("./graphics/go_out_gdansk.jpg");
+    background-image: url("./graphics/go_out_gdansk.jpg");
     background-size: cover;
     height: 80vh;
     position: relative;
+    background-position: center -100px;
 }
-.intro  {
-    position:relative;
+
+.intro {
+    position: relative;
     color: white;
-    font-size: 100px;
+    text-shadow: 0 0 15px #3A3E40;
+    font-size: 120px;
     text-align: center;
-    padding:100px;
-    border-radius: 20px;
+    padding-top: 200px;
+    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
 }
+
+.intro-male {
+    position: relative;
+    color:white;
+    font-size: 50px;
+    text-shadow: 0 0 15px #3A3E40;
+    text-align: center;
+    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
+}
+#pond {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .button {
-    background-color: white;
+    background-color:#FF6D32;
+    color: white;
     font-size: 40px;
-    border-radius: 5px;
-    float: right;
-    padding-top: inherit;
-    display:block;
-
-}
-
-.button .button {
+    border-radius: 15px;
+    padding: 20px 120px;
+    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
     text-decoration: none;
-    color: black;
 }
+
+.button-container {
+    text-align: center;
+    padding-top: 40px;
+}
+
+@media screen and (max-width: 1400px) {
+    .intro {
+        font-size: 80px;
+        padding-top: 100px;
+
+    }
+    .intro-male {
+        font-size: 30px;
+    }
+    .button {
+        font-size: 35px;
+        border-radius: 15px;
+        padding: 20px 100px;
+     }
+}
+
+
+
 /*style section two - commenced ---------------------------*/
 .function_main {
     width: 80%;
@@ -238,7 +276,7 @@ ul {
     justify-content: space-between;
     margin: auto;
     font-family: "DejaVu Sans", Arial, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 .function {
     /*float: left;*/
@@ -307,8 +345,47 @@ ul {
 .person a {
     text-decoration: none;
 }
-/*styles section four*/
-
+/*style section two - end*/
+/* Sekcja o NAS - START--_-------------------------------------------- */
+/*.main_box {*/
+    /*width: 80%;*/
+    /*margin: 10%;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+/*}*/
+/*.temp_box{*/
+    /*width: 45%;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+/*}*/
+/*.person {*/
+    /*width: 40%;*/
+    /*height: 200px;*/
+    /*background-color: black;*/
+/*}*/
+/*@media screen and (max-width:900px) {*/
+    /*.main_box {*/
+        /*display: block;*/
+    /*}*/
+    /*.temp_box{*/
+        /*width: 80%;*/
+        /*margin: auto auto 60px;*/
+    /*}*/
+/*}*/
+/*@media screen and (max-width:600px) {*/
+    /*.temp_box {*/
+        /*display: block;*/
+    /*}*/
+    /*.person{*/
+        /*width: 80%;*/
+        /*margin: auto auto 60px;*/
+    /*}*/
+/*}*/
+/* Sekcja o NAS - KONIEC--------------------------------------------- */
+#four{
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
 .four-form {
     text-align: center;
     font-size: 25px;
