@@ -11,21 +11,25 @@ ul {
 
 .nav-container {
     height:80px;
-    background-color: Tomato;
+    background-color: #FF7e59;
     position: fixed;
     top:  0;
     right: 0;
     left: 0;
+    z-index:3;
 }
 
 #logo {
-    width:20%;
-    height:100%;
     color: white;
     font-family: "DejaVu Sans", Arial, sans-serif;
     text-align: center;
-    font-size: 36px;
     display:inline-block;
+    height:70px;
+    width: 70px;
+    margin: 5px 20px;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: red;
 }
 
 #logo a {
@@ -33,6 +37,7 @@ ul {
     color: white;
     display:inline-block;
     padding-top: 20px;
+    font-size: 50px;
 }
 
 #nav-box {
@@ -40,6 +45,10 @@ ul {
     display:inline-block;
     float: right;
     margin-right: 10%;
+}
+
+.menu-smallscreen {
+    display:none;
 }
 
 .nav-list {
@@ -57,8 +66,58 @@ ul {
 }
 
 .nav-list:hover {
-    background-color: orangered;
+    background-color: red;
 }
+/*MEDIA queries navbar*/
+@media screen and (max-width: 760px) {
+    #nav-box {
+        display:none;
+        float:none;
+        margin-right: 0;
+    }
+    ul {
+        padding: 0;
+    }
+    .nav-list {
+        font-size: 20px;
+        background-color: #FF7e59;
+        text-align: center;
+        display:block;
+    }
+
+    .menu-smallscreen {
+        display: inline-block;
+        float: right;
+        margin:15px 15px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu-smallscreen:before {
+        display:inline-block;
+        float: right;
+        content:'';
+        width: 50px;
+        height: 50px;
+        background-image: url('graphics/whitemenu.png');
+        background-size: contain;
+        background-color: #FF7e59;
+    }
+    .menu-smallscreen:checked:before {
+        display:inline-block;
+        float: right;
+        content:'';
+        width: 50px;
+        height: 50px;
+        background-color: red;
+    }
+
+    .menu-smallscreen:checked +#nav-box {
+        display:block;
+        background-color: #FF7e59;
+    }
+}
+
 
 /*end of navbar------------------*/
 #one {
@@ -92,28 +151,43 @@ ul {
     font-family: "DejaVu Sans", Arial, sans-serif;
 }
 
-/*end of navbar------------------*/
 
 .picture1 {
 
     background-image:url("./graphics/go_out_gdansk.jpg");
     background-size: cover;
-    height: 750px;
+    height: 80vh;
     position: relative;
 }
 .intro  {
-    position: absolute;
-    top:150px;
-    right: 400px;
+    position:relative;
     color: white;
-    font-size: 200px;
-    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 100px;
+    text-align: center;
+    padding:100px;
     border-radius: 20px;
+}
+.button {
+    background-color: white;
+    font-size: 40px;
+    border-radius: 5px;
+    float: right;
+    padding-top: inherit;
+    display:block;
+
+}
+
+.button .button {
+    text-decoration: none;
+    color: black;
 }
 
 
 
-/*style section two - commenced*/
+
+
+
+/*style section two - commenced ---------------------------*/
 .function_main {
     width: 80%;
     display: flex;
@@ -124,10 +198,11 @@ ul {
 }
 .function {
     /*float: left;*/
-    width: 22%;
-    background-color: lightblue;
-    padding: 30px 10px 20px 10px;
-    margin: 0;
+    width: 20%;
+    background-color: #d8d8d8;
+    padding: 20px 14px 0px 14px;
+    /*margin: 0;*/
+    border-radius: 20px;
     text-align: center;
 }
 .function i{
@@ -135,14 +210,15 @@ ul {
 }
 .function_summary {
     /*clear: both;*/
-    background-color: lightblue;
+    background-color: #d8d8d8;
     padding: 35px 20px;
     margin: auto;
     /*border: solid 1px black;*/
     width: 77%;
     text-align: center;
     font-family: "DejaVu Sans", Arial, sans-serif;
-    font-size: 12px;
+    font-size: 16px;
+    border-radius: 20px
     /*style section two - end*/
 }
 /*styles section three*/
@@ -167,6 +243,8 @@ ul {
 #four {
     height: 100vh;
 }
+/*styles section four ------------------------------------ */
+
 .four-form {
     text-align: center;
     font-size: 25px;
