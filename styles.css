@@ -159,24 +159,45 @@ ul {
     height: 80vh;
     position: relative;
 }
-.intro  {
-    position:relative;
+.intro {
+    position: relative;
     color: white;
     font-size: 100px;
     text-align: center;
-    padding:100px;
+    padding: 100px;
     border-radius: 20px;
 }
+#pond {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 760px) {
+    #iintro{
+        display:none;
+        float:none;
+        margin-right: 0;
+
 .button {
     background-color: white;
     font-size: 40px;
     border-radius: 5px;
     float: right;
     padding-top: inherit;
-    display:block;
-
 }
 
+    #pond {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+}
+    @media screen and (max-width: 760px) {
+        #button {
+            display: none;
+            float: none;
+            margin-right: 0;
+        }
 .button .button {
     text-decoration: none;
     color: black;
