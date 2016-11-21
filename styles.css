@@ -5,14 +5,14 @@ body {
     background-color: whitesmoke;
 }
 
-ul {
+ul, h1 {
     margin: 0;
     padding: 0;
 }
 
 .nav-container {
     height:80px;
-    background-color: #FF6D32;
+    background-color: white;
     position: fixed;
     top:  0;
     right: 0;
@@ -21,22 +21,14 @@ ul {
 }
 
 #logo {
-    color: white;
-    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
+    background: url('graphics/logo.png') no-repeat;
+    background-size: contain;
     text-align: center;
     display:inline-block;
-    height:70px;
-    width: 70px;
-    margin: 5px 0 0 10%;
+    height: 100%;
+    width: 200px;
+    margin: 12px 0 0 10%;
     line-height: 30px;
-}
-
-#logo a {
-    text-decoration: none;
-    color: white;
-    display:inline-block;
-    padding-top: 20px;
-    font-size: 50px;
 }
 
 #nav-box {
@@ -51,23 +43,33 @@ ul {
 }
 
 .nav-list {
-    color: whitesmoke;
-    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
+
     list-style-type: none;
     display: inline-block;
     padding: 30px 20px;
-    font-size: 30px;
     line-height: 20px;
 }
 .nav-list a {
     text-decoration: none;
-    color: whitesmoke;
+    color: orangered;
+    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
+    font-size: 24px;
 }
 
-.nav-list:hover {
-    background-color: orangered;
+.nav-list a:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
 }
-/*MEDIA queries navbar*/
+.nav-list a:hover:after {
+    width: 100%;
+    background: orangered;
+}
+
+/*MEDIA queries navbar-----------------------------------------*/
 @media screen and (max-width: 760px) {
     #nav-box {
         display:none;
@@ -77,11 +79,22 @@ ul {
     ul {
         padding: 0;
     }
+
     .nav-list {
+        color: #FF6D32;
         font-size: 20px;
-        background-color: #FF6D32;
+        background-color: white;
         text-align: center;
         display:block;
+    }
+
+    .nav-list a {
+        padding: 34px;
+        width: inherit;
+    }
+
+    #nav-list-first{
+    margin-top: -16px;
     }
 
     .menu-smallscreen {
@@ -98,9 +111,9 @@ ul {
         content:'';
         width: 50px;
         height: 50px;
-        background-image: url('graphics/whitemenu.png');
+        background-image: url('graphics/orangemenu.png');
         background-size: contain;
-        background-color: #FF6D32;
+        background-color: white;
     }
     .menu-smallscreen:checked:before {
         display:inline-block;
@@ -108,64 +121,20 @@ ul {
         content:'';
         width: 50px;
         height: 50px;
-        background-color: orangered;
+        /*background-color: orangered;*/
     }
 
     .menu-smallscreen:checked +#nav-box {
         display:block;
-        background-color: #FF6D32;
+        background-color: antiquewhite;
+    }
+    .nav-list a:after {
+        display: none;
+    }
+    .nav-list:hover {
+        background-color: whitesmoke;
     }
 }
-/*MEDIA queries navbar*/
-@media screen and (max-width: 760px) {
-    #nav-box {
-        display:none;
-        float:none;
-        margin-right: 0;
-    }
-    ul {
-        padding: 0;
-    }
-    .nav-list {
-        font-size: 20px;
-        background-color: #FF7e59;
-        text-align: center;
-        display:block;
-    }
-
-    .menu-smallscreen {
-        display: inline-block;
-        float: right;
-        margin:15px 15px;
-        width: 50px;
-        height: 50px;
-    }
-
-    .menu-smallscreen:before {
-        display:inline-block;
-        float: right;
-        content:'';
-        width: 50px;
-        height: 50px;
-        background-image: url('graphics/whitemenu.png');
-        background-size: contain;
-        background-color: #FF7e59;
-    }
-    .menu-smallscreen:checked:before {
-        display:inline-block;
-        float: right;
-        content:'';
-        width: 50px;
-        height: 50px;
-        background-color: red;
-    }
-
-    .menu-smallscreen:checked +#nav-box {
-        display:block;
-        background-color: #FF7e59;
-    }
-}
-
 
 /*end of navbar------------------*/
 #one {
@@ -244,6 +213,10 @@ ul {
     padding: 20px 120px;
     font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
     text-decoration: none;
+}
+.button:hover {
+    background-color:#fd5d1d;
+    text-shadow: 1px 1px 3px #3A3E40;
 }
 
 .button-container {
