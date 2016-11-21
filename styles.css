@@ -236,12 +236,6 @@ ul {
     align-items: center;
 }
 
-@media screen and (max-width: 760px) {
-    .intro {
-        font-size: 50px;
-    }
-}
-
 .button {
     background-color:#FF6D32;
     color: white;
@@ -256,6 +250,24 @@ ul {
     text-align: center;
     padding-top: 40px;
 }
+
+@media screen and (max-width: 1400px) {
+    .intro {
+        font-size: 80px;
+        padding-top: 100px;
+
+    }
+    .intro-male {
+        font-size: 30px;
+    }
+    .button {
+        font-size: 35px;
+        border-radius: 15px;
+        padding: 20px 100px;
+     }
+}
+
+
 
 /*style section two - commenced ---------------------------*/
 .function_main {
