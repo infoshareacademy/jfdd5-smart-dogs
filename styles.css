@@ -7,11 +7,12 @@ body {
 
 ul {
     margin: 0;
+    padding: 0;
 }
 
 .nav-container {
     height:80px;
-    background-color: #FF7e59;
+    background-color: #FF6D32;
     position: fixed;
     top:  0;
     right: 0;
@@ -21,15 +22,13 @@ ul {
 
 #logo {
     color: white;
-    font-family: "DejaVu Sans", Arial, sans-serif;
+    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
     text-align: center;
     display:inline-block;
     height:70px;
     width: 70px;
-    margin: 5px 20px;
+    margin: 5px 0 0 10%;
     line-height: 30px;
-    border-radius: 50%;
-    background-color: red;
 }
 
 #logo a {
@@ -53,7 +52,7 @@ ul {
 
 .nav-list {
     color: whitesmoke;
-    font-family: "DejaVu Sans", Arial, sans-serif;
+    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
     list-style-type: none;
     display: inline-block;
     padding: 30px 20px;
@@ -66,7 +65,56 @@ ul {
 }
 
 .nav-list:hover {
-    background-color: red;
+    background-color: orangered;
+}
+/*MEDIA queries navbar*/
+@media screen and (max-width: 760px) {
+    #nav-box {
+        display:none;
+        float:none;
+        margin-right: 0;
+    }
+    ul {
+        padding: 0;
+    }
+    .nav-list {
+        font-size: 20px;
+        background-color: #FF6D32;
+        text-align: center;
+        display:block;
+    }
+
+    .menu-smallscreen {
+        display: inline-block;
+        float: right;
+        margin:15px 15px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu-smallscreen:before {
+        display:inline-block;
+        float: right;
+        content:'';
+        width: 50px;
+        height: 50px;
+        background-image: url('graphics/whitemenu.png');
+        background-size: contain;
+        background-color: #FF6D32;
+    }
+    .menu-smallscreen:checked:before {
+        display:inline-block;
+        float: right;
+        content:'';
+        width: 50px;
+        height: 50px;
+        background-color: orangered;
+    }
+
+    .menu-smallscreen:checked +#nav-box {
+        display:block;
+        background-color: #FF6D32;
+    }
 }
 /*MEDIA queries navbar*/
 @media screen and (max-width: 760px) {
@@ -118,6 +166,7 @@ ul {
     }
 }
 
+
 /*end of navbar------------------*/
 #one {
     margin-top: 80px;
@@ -151,6 +200,8 @@ ul {
     width: 80%;
     font-family: "DejaVu Sans", Arial, sans-serif;
 }
+
+/*end of navbar------------------*/
 
 .picture1 {
 
@@ -212,16 +263,16 @@ ul {
     justify-content: space-between;
     margin: auto;
     font-family: "DejaVu Sans", Arial, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 .function {
     /*float: left;*/
     width: 20%;
     background-color: #d8d8d8;
-    padding: 20px 14px 0px 14px;
-    /*margin: 0;*/
-    border-radius: 20px;
+    padding: 30px 10px 20px 10px;
+    margin: 0;
     text-align: center;
+    border-radius: 20px
 }
 .function i{
     font-size: 72px;
@@ -241,7 +292,7 @@ ul {
     .function_summary{
         font-size: 14px;
     }
-    
+
 }
 
 .function_summary {
@@ -257,8 +308,52 @@ ul {
     border-radius: 20px
     /*style section two - end*/
 }
-/*styles section four ------------------------------------ */
+.material-icons {
+    font-size:48px;
+    color:black;
 
+}
+/*style section two - end*/
+/* Sekcja o NAS - START--_-------------------------------------------- */
+/*.main_box {*/
+    /*width: 80%;*/
+    /*margin: 10%;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+/*}*/
+/*.temp_box{*/
+    /*width: 45%;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+/*}*/
+/*.person {*/
+    /*width: 40%;*/
+    /*height: 200px;*/
+    /*background-color: black;*/
+/*}*/
+/*@media screen and (max-width:900px) {*/
+    /*.main_box {*/
+        /*display: block;*/
+    /*}*/
+    /*.temp_box{*/
+        /*width: 80%;*/
+        /*margin: auto auto 60px;*/
+    /*}*/
+/*}*/
+/*@media screen and (max-width:600px) {*/
+    /*.temp_box {*/
+        /*display: block;*/
+    /*}*/
+    /*.person{*/
+        /*width: 80%;*/
+        /*margin: auto auto 60px;*/
+    /*}*/
+/*}*/
+/* Sekcja o NAS - KONIEC--------------------------------------------- */
+#four{
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
 .four-form {
     text-align: center;
     font-size: 25px;
