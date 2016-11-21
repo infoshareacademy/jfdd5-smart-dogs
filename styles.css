@@ -163,17 +163,18 @@ ul {
 .intro {
     position: relative;
     color: white;
-    text-shadow: 0 0 10px grey;
+    text-shadow: 0 0 10px #3A3E40;
     font-size: 120px;
     text-align: center;
     padding-top: 200px;
     font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
 }
+
 .intro-male {
     position: relative;
     color:white;
     font-size: 50px;
-    text-shadow: 0 0 10px grey;
+    text-shadow: 0 0 10px #3A3E40;
     text-align: center;
     font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
 }
