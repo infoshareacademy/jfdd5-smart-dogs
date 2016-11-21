@@ -218,7 +218,7 @@ ul {
     text-align: center;
     font-family: "DejaVu Sans", Arial, sans-serif;
     font-size: 16px;
-    border-radius: 20px
+    border-radius: 20px;
     /*style section two - end*/
 }
 /*styles section three*/
@@ -227,28 +227,33 @@ ul {
 }
 .person-together {
     text-align: center;
-    padding-top: 150px;
+    margin-top: 200px;
+
 }
 .person {
     display: inline-block;
-    border: solid;
+    background-color: blanchedalmond;
     width: 180px;
-    height: 200px;
     border-radius: 50px;
     padding-top: 160px;
+    padding-bottom: 30px;
     margin: 10px;
+    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
 }
-
+.person:hover {
+    border: 2px solid tomato;
+}
+.person a {
+    text-decoration: none;
+}
 /*styles section four*/
 #four {
     height: 100vh;
 }
-/*styles section four ------------------------------------ */
-
 .four-form {
     text-align: center;
     font-size: 25px;
-    font-family: "DejaVu Sans", Arial, sans-serif;
+    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
     font-weight: bold;
     padding-top: 80px;
     margin-bottom: 25px;
@@ -259,7 +264,7 @@ input[type="email"] {
     border-bottom: 2px solid tomato;
     background-color: whitesmoke;
     font-size: 20px;
-    font-family: "DejaVu Sans", Arial, sans-serif;
+    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
 }
 .checkbox-agreement {
     position:relative;
@@ -277,7 +282,7 @@ input[type="email"] {
 .checkbox-agreement div {
     font-size: 11px;
     font-weight: normal;
-    font-family: "DejaVu Sans", Arial, sans-serif;
+    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
 }
 input[type="submit"] {
     height: 60px;
@@ -286,7 +291,7 @@ input[type="submit"] {
     border-style: none;
     border-radius: 20px;
     font-size: 20px;
-    font-family: "DejaVu Sans", Arial, sans-serif;
+    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
     color: white;
 }
 .four-submit {
@@ -297,7 +302,7 @@ input[type="submit"] {
 .four-info {
     text-align: center;
     font-size: 15px;
-    font-family: "DejaVu Sans", Arial, sans-serif;
+    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
     padding: 5px;
 }
 /*styles section four - end*/
