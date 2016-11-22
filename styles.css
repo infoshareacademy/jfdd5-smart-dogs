@@ -18,7 +18,7 @@ ul, h1 {
     right: 0;
     left: 0;
     z-index:3;
-    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.3);
 }
 
 a#logo {
@@ -29,7 +29,7 @@ a#logo {
     display: inline-block;
     height: 76px;
     width: 200px;
-    margin: 0px 0 0 10%;
+    margin: 0 0 0 10%;
 }
 
 #nav-box {
@@ -55,7 +55,7 @@ a#logo {
     color: orangered;
     font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
     font-size: 24px;
-    text-shadow: 0 0px 1px rgba(255, 69, 0, 0.2);
+    text-shadow: 0 0 1px rgba(255, 69, 0, 0.2);
 }
 
 .nav-list a:after {
@@ -237,28 +237,30 @@ svg {
 .function_main {
     padding: 36px 0 0 0;
     margin: auto;
-    width: 80%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
-    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
-    font-size: 14px;
+    font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
 }
 .function {
     width: 20%;
     padding: 30px 10px 0 10px;
+    border: 1px solid lightgray;
+    box-shadow: 6px 10px 54px -30px rgba(0,0,0,0.75);
     margin: 0;
     text-align: center;
     border-radius: 20px;
-    line-height: 1.6em;
     /*opacity: 0.6;*/
 
 }
 .function i{
-    font-size: 42px;
-    opacity: 0.3;
+    font-size: 54px;
+    opacity: 0.2;
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:980px){
     .function_main {
         display: block;
         font-size: 14px;
@@ -275,17 +277,27 @@ svg {
 
 }
 
-/*.function_summary {*/
-    /*padding: 16px 20px;*/
-    /*margin: auto;*/
-    /*!*border: solid 1px black;*!*/
-    /*width: 77%;*/
-    /*text-align: center;*/
-    /*font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;*/
-    /*font-size: 14px;*/
-    /*border-radius: 20px;*/
+.function_summary {
+    padding: 16px 20px;
+    margin: 36px auto 0;
+    border: 1px solid lightgray;
+    box-shadow: 6px 10px 54px -30px rgba(0,0,0,0.75);
+    width: 80%;
+    text-align: center;
+    font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    border-radius: 20px;
 }
-/*style section two - end*/
+.function:hover {
+       box-shadow: 24px 24px 140px -50px rgba(0,0,0,1);
+   }
+.function_summary:hover {
+    box-shadow: 24px 24px 140px -50px rgba(0,0,0,1);
+}
+
+/*style section two - end ---------------------*/
+
 /*styles section three*/
 #three {
     height: 100vh;
