@@ -18,17 +18,18 @@ ul, h1 {
     right: 0;
     left: 0;
     z-index:3;
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.3);
 }
 
-#logo {
-    background: url('graphics/logo.png') no-repeat;
+a#logo {
+    background: url(graphics/logo.png) no-repeat;
     background-size: contain;
+    background-position-y: center;
     text-align: center;
-    display:inline-block;
-    height: 100%;
+    display: inline-block;
+    height: 76px;
     width: 200px;
-    margin: 12px 0 0 10%;
-    line-height: 30px;
+    margin: 0px 0 0 10%;
 }
 
 #nav-box {
@@ -46,14 +47,15 @@ ul, h1 {
 
     list-style-type: none;
     display: inline-block;
-    padding: 30px 20px;
-    line-height: 20px;
+    padding: 28px 20px;
 }
 .nav-list a {
     text-decoration: none;
+    padding: 29px 0;
     color: orangered;
     font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
     font-size: 24px;
+    text-shadow: 0 0px 1px rgba(255, 69, 0, 0.2);
 }
 
 .nav-list a:after {
@@ -67,6 +69,12 @@ ul, h1 {
 .nav-list a:hover:after {
     width: 100%;
     background: orangered;
+}
+
+svg {
+    position:absolute;
+    top: 25px;
+    right: 25px;
 }
 
 /*MEDIA queries navbar-----------------------------------------*/
@@ -89,12 +97,28 @@ ul, h1 {
     }
 
     .nav-list a {
-        padding: 34px;
+        padding: 20px 60px;
         width: inherit;
     }
+    .nav-list:hover a{
+        color: white;
+    }
+    .nav-list:hover {
+        background-color: orangered;
+    }
+    .nav-list a:after {
+        content: '';
+        display: block;
+        position:relative;
+        top: 10px;
+        height: 3px;
+        width: 0;
+        background: transparent;
+        transition: width .5s ease, background-color .5s ease;
+    }
 
-    #nav-list-first{
-    margin-top: -16px;
+    svg:hover +#nav-box{
+        display:block;
     }
 
     .menu-smallscreen {
@@ -131,9 +155,7 @@ ul, h1 {
     .nav-list a:after {
         display: none;
     }
-    .nav-list:hover {
-        background-color: whitesmoke;
-    }
+
 }
 
 /*end of navbar------------------*/
@@ -174,7 +196,7 @@ ul, h1 {
 
 .picture1 {
 
-    background-image: url("./graphics/go_out_gdansk.jpg");
+    background: url("./graphics/go_out_gdansk.jpg") no-repeat;
     background-size: cover;
     height: 80vh;
     position: relative;
@@ -210,7 +232,7 @@ ul, h1 {
     color: white;
     font-size: 40px;
     border-radius: 15px;
-    padding: 20px 120px;
+    padding: 20px 100px;
     font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
     text-decoration: none;
 }
@@ -236,11 +258,9 @@ ul, h1 {
     .button {
         font-size: 35px;
         border-radius: 15px;
-        padding: 20px 100px;
+        padding: 20px 80px;
      }
 }
-
-
 
 /*style section two - commenced ---------------------------*/
 .function_main {
