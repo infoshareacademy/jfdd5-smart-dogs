@@ -299,66 +299,60 @@ svg {
 /*style section two - end ---------------------*/
 
 /*styles section three*/
-#three {
-    height: 100vh;
+.main_box {
+    width: 80%;
+    margin: 10%;
+    display: flex;
+    justify-content: space-between;
 }
-.person-together {
-    text-align: center;
-    margin-top: 620px;
-
+.temp_box{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
 }
 .person {
+    width: 40%;
+    border: solid;
     display: inline-block;
-    width: 180px;
+    /*width: 180px;*/
     border-radius: 50px;
     padding-top: 160px;
     padding-bottom: 30px;
     margin: 10px;
     font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
 }
+
 .person:hover {
     border: 2px solid tomato;
 }
-.person a {
-    text-decoration: none;
+.person p {
+    text-align: center;
 }
-/*style section two - end*/
-/* Sekcja o NAS - START--_-------------------------------------------- */
-/*.main_box {*/
-    /*width: 80%;*/
-    /*margin: 10%;*/
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-/*}*/
-/*.temp_box{*/
-    /*width: 45%;*/
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-/*}*/
-/*.person {*/
-    /*width: 40%;*/
-    /*height: 200px;*/
-    /*background-color: black;*/
-/*}*/
-/*@media screen and (max-width:900px) {*/
-    /*.main_box {*/
-        /*display: block;*/
-    /*}*/
-    /*.temp_box{*/
-        /*width: 80%;*/
-        /*margin: auto auto 60px;*/
-    /*}*/
-/*}*/
-/*@media screen and (max-width:600px) {*/
-    /*.temp_box {*/
-        /*display: block;*/
-    /*}*/
-    /*.person{*/
-        /*width: 80%;*/
-        /*margin: auto auto 60px;*/
-    /*}*/
-/*}*/
-/* Sekcja o NAS - KONIEC--------------------------------------------- */
+.three-icons {
+    position: relative;
+    margin-left: 40px;
+}
+
+@media screen and (max-width:900px) {
+    .main_box {
+        display: block;
+    }
+    .temp_box{
+        width: 80%;
+        margin: auto auto 60px;
+    }
+}
+@media screen and (max-width:600px) {
+    .temp_box {
+        display: block;
+    }
+    .person{
+        width: 80%;
+        margin: auto auto 60px;
+    }
+}
+/* end section three  */
+/*beginning section four*/
 #four{
     font-family: Arial, sans-serif;
     font-size: 12px;
