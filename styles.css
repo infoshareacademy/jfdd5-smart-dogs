@@ -315,17 +315,35 @@ svg {
     /*style section two - end*/
 }
 /*styles section three*/
-#three {
-    height: 100vh;
-}
-.person-together {
-    text-align: center;
-    margin-top: 620px;
+/*#three {*/
+    /*height: 100vh;*/
+/*}*/
+/*.person-together {*/
+    /*text-align: center;*/
+    /*margin-top: 620px;*/
 
+/*}*/
+
+
+/*style section two - end*/
+/* Sekcja o NAS - START--_-------------------------------------------- */
+.main_box {
+    width: 80%;
+    margin: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.temp_box{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
 }
 .person {
+    /*width: 40%;*/
+    height: 200px;
+    background-color: black;
     display: inline-block;
-    width: 180px;
+    /*width: 180px;*/
     border-radius: 50px;
     padding-top: 160px;
     padding-bottom: 30px;
@@ -338,42 +356,24 @@ svg {
 .person a {
     text-decoration: none;
 }
-/*style section two - end*/
-/* Sekcja o NAS - START--_-------------------------------------------- */
-/*.main_box {*/
-    /*width: 80%;*/
-    /*margin: 10%;*/
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-/*}*/
-/*.temp_box{*/
-    /*width: 45%;*/
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-/*}*/
-/*.person {*/
-    /*width: 40%;*/
-    /*height: 200px;*/
-    /*background-color: black;*/
-/*}*/
-/*@media screen and (max-width:900px) {*/
-    /*.main_box {*/
-        /*display: block;*/
-    /*}*/
-    /*.temp_box{*/
-        /*width: 80%;*/
-        /*margin: auto auto 60px;*/
-    /*}*/
-/*}*/
-/*@media screen and (max-width:600px) {*/
-    /*.temp_box {*/
-        /*display: block;*/
-    /*}*/
-    /*.person{*/
-        /*width: 80%;*/
-        /*margin: auto auto 60px;*/
-    /*}*/
-/*}*/
+@media screen and (max-width:900px) {
+    .main_box {
+        display: block;
+    }
+    .temp_box{
+        width: 80%;
+        margin: auto auto 60px;
+    }
+}
+@media screen and (max-width:600px) {
+    .temp_box {
+        display: block;
+    }
+    .person{
+        width: 80%;
+        margin: auto auto 60px;
+    }
+}
 /* Sekcja o NAS - KONIEC--------------------------------------------- */
 #four{
     font-family: Arial, sans-serif;
