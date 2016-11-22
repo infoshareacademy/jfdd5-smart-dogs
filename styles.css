@@ -2,7 +2,7 @@
 body {
     margin: 0;
     height: 2000px;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 ul, h1 {
@@ -163,35 +163,6 @@ svg {
     margin-top: 80px;
 }
 
-
-/*style section two - commenced*/
-
-.function_main {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    font-family: "DejaVu Sans", Arial, sans-serif;
-}
-
-.function {
-    /*float: left;*/
-    width: 20%;
-    background-color: lightblue;
-    padding: 10px;
-    margin: 0;
-}
-
-.function_summary {
-    clear: both;
-    background-color: lightblue;
-    padding: 20px 0;
-    margin: auto;
-    /*border: solid 1px black;*/
-    width: 80%;
-    font-family: "DejaVu Sans", Arial, sans-serif;
-}
-
 /*end of navbar------------------*/
 
 .picture1 {
@@ -264,24 +235,27 @@ svg {
 
 /*style section two - commenced ---------------------------*/
 .function_main {
+    padding: 36px 0 0 0;
+    margin: auto;
     width: 80%;
     display: flex;
     justify-content: space-between;
-    margin: auto;
-    font-family: "DejaVu Sans", Arial, sans-serif;
+    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
     font-size: 14px;
 }
 .function {
-    /*float: left;*/
     width: 20%;
-    background-color: #d8d8d8;
-    padding: 30px 10px 20px 10px;
+    padding: 30px 10px 0 10px;
     margin: 0;
     text-align: center;
-    border-radius: 20px
+    border-radius: 20px;
+    line-height: 1.6em;
+    /*opacity: 0.6;*/
+
 }
 .function i{
-    font-size: 72px;
+    font-size: 42px;
+    opacity: 0.3;
 }
 
 @media screen and (max-width:800px){
@@ -301,19 +275,17 @@ svg {
 
 }
 
-.function_summary {
-    /*clear: both;*/
-    background-color: #d8d8d8;
-    padding: 35px 20px;
-    margin: auto;
-    /*border: solid 1px black;*/
-    width: 77%;
-    text-align: center;
-    font-family: "DejaVu Sans", Arial, sans-serif;
-    font-size: 16px;
-    border-radius: 20px;
-    /*style section two - end*/
+/*.function_summary {*/
+    /*padding: 16px 20px;*/
+    /*margin: auto;*/
+    /*!*border: solid 1px black;*!*/
+    /*width: 77%;*/
+    /*text-align: center;*/
+    /*font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;*/
+    /*font-size: 14px;*/
+    /*border-radius: 20px;*/
 }
+/*style section two - end*/
 /*styles section three*/
 #three {
     height: 100vh;
