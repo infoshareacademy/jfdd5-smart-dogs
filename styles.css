@@ -312,8 +312,9 @@ svg {
     font-family: "DejaVu Sans", Arial, sans-serif;
     font-size: 16px;
     border-radius: 20px;
-    /*style section two - end*/
 }
+    /*style section two - end*/
+
 /*styles section three*/
 /*#three {*/
     /*height: 100vh;*/
@@ -339,9 +340,8 @@ svg {
     justify-content: space-between;
 }
 .person {
-    /*width: 40%;*/
-    height: 200px;
-    background-color: black;
+    width: 40%;
+    border: solid;
     display: inline-block;
     /*width: 180px;*/
     border-radius: 50px;
@@ -350,12 +350,18 @@ svg {
     margin: 10px;
     font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
 }
+
 .person:hover {
     border: 2px solid tomato;
 }
-.person a {
-    text-decoration: none;
+.person p {
+    text-align: center;
 }
+.three-icons {
+    position: relative;
+    margin-left: 40px;
+}
+
 @media screen and (max-width:900px) {
     .main_box {
         display: block;
@@ -374,7 +380,8 @@ svg {
         margin: auto auto 60px;
     }
 }
-/* Sekcja o NAS - KONIEC--------------------------------------------- */
+/* end section three  */
+/*beginning section four*/
 #four{
     font-family: Arial, sans-serif;
     font-size: 12px;
