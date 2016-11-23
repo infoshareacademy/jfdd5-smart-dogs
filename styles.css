@@ -369,20 +369,27 @@ svg {
 #four{
     font-family: Arial, sans-serif;
     font-size: 12px;
+    margin-bottom: 25%;
+}
+#four h1 {
+    text-align: center;
+    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
+    font-size: 45px;
+    margin-top: 10%;
 }
 .four-form {
     text-align: center;
     font-size: 25px;
     font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
-    font-weight: bold;
+    /*font-weight: bold;*/
     padding-top: 80px;
-    margin-bottom: 25px;
+    /*margin-top: 30%;*/
 }
 input[type="email"] {
     margin: 0 15px 25px;
     border-style: none;
     border-bottom: 2px solid tomato;
-    background-color: whitesmoke;
+    background-color: white;
     font-size: 20px;
     font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
 }
@@ -396,8 +403,8 @@ input[type="email"] {
 }
 .checkbox-agreement input {
     position: absolute;
-    top: 0;
-    left: 10px;
+    top: -6px;
+    left: 83px;
 }
 .checkbox-agreement div {
     font-size: 11px;
