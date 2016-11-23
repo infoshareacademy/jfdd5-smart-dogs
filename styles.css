@@ -279,7 +279,6 @@ svg {
     .function_summary{
         font-size: 14px;
     }
-
 }
 .function_summary{
     width: 100%;
@@ -310,13 +309,15 @@ svg {
 }
 @media screen and (max-width:980px){
     .function_summary{
-
+        width: 100%;
     }
     .function_summary .function_summary_img img{
         float: none;
         margin: 0 auto;
-        width: 100%;
         display: block;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
     }
     .function_summary .function-summary-txt{
         float: none;
