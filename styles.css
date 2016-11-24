@@ -258,9 +258,6 @@ svg {
     box-shadow: 6px 10px 54px -30px rgba(0,0,0,0.75);
     margin: 0;
     text-align: center;
-    /*border-radius: 20px;*/
-    /*opacity: 0.6;*/
-
 }
 .function i{
     font-size: 66px;
@@ -358,8 +355,8 @@ svg {
 
 #three h1 {
     text-align: center;
-    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
     font-size: 45px;
+    font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
     margin-top: 10%;
 }
 
@@ -391,14 +388,19 @@ svg {
     margin: 0 auto;
 }
 
-.person p.person-name {
+.person h3.person-name {
     text-align: center;
-    font-size: 20px;
+    font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
+    font-size: 1.17em;
+    font-weight: bold;
+    line-height: 1.6em;
 }
 
 .person p.person-bio {
     text-align: center;
-    font-size: 15px;
+    font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
 }
 
 .three-icons {
@@ -425,56 +427,58 @@ svg {
 /********************************************************************/
 
 #four{
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    margin-bottom: 25%;
+    font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
+    padding-bottom: 6%;
+    padding-top: 10%;
+    /*width: 100%;*/
+    max-width: 1280px;
+    /*margin: 0 auto;*/
 }
+
 #four h1 {
     text-align: center;
-    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
     font-size: 45px;
-    margin-top: 10%;
 }
 .four-form {
     text-align: center;
     font-size: 25px;
-    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
     padding-top: 25px;
-}
-input[type="email"] {
-    margin: 2% 2%;
-    border-style: none;
-    border-bottom: 2px solid tomato;
-    background-color: white;
-    font-size: 50px;
-    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
-    text-align: center;
 }
 .checkbox-agreement {
     position:relative;
-    padding: 0 10px 0 35px;
-    max-height: 80px;
-    max-width: 612px;
+    max-width: 535px;
     border-style: none;
     margin: auto;
 }
 .checkbox-agreement input {
     position: absolute;
-    top: 0;
-    left: 65px;
-    height: 20px;
-    width: 20px;
+    top: 2px;
+    left: 41px;
+    height: 17px;
+    width: 17px;
 }
 .checkbox-agreement div {
-    font-size: 22px;
-    font-weight: normal;
-    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
+    font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em; /*font-size: 20px;*/
+    font-style: italic;
+    margin-left: 60px;
 }
-input[type="submit"] {
-    height: 60px;
-    width: 180px;
-    background-color: tomato;
+input[type="email"] {
+    margin: 40px 2%;
     border-style: none;
+    border-bottom: 2px solid #fd5d1d;
+    background-color: rgba(255,255,255,0);
+    font-size: 45px;
+    font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
+    text-align: center;
+}
+
+input[type="submit"] {
+    height: 75px;
+    width: 220px;
+    background-color: #fd5d1d;
+    border: none;
     border-radius: 20px;
     font-size: 20px;
     font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
@@ -484,12 +488,6 @@ input[type="submit"] {
     text-align: center;
     padding-top: 0px;
     padding-bottom: 20px;
-}
-.four-info {
-    text-align: center;
-    font-size: 24px;
-    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
-    padding: 5px;
 }
 /*styles section four - end*/
 
