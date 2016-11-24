@@ -1,7 +1,6 @@
-/*-----------NAVBAR STYLES---------------*/
+/*--------------------------------NAVBAR STYLES-------------------------------*/
 body {
     margin: 0;
-    height: 2000px;
     background-color: white;
 }
 
@@ -77,7 +76,9 @@ svg {
     right: 25px;
 }
 
-/*MEDIA queries navbar-----------------------------------------*/
+/*--------------------MEDIA queries navbar-----------------------------------*/
+
+
 @media screen and (max-width: 760px) {
     #nav-box {
         display:none;
@@ -159,11 +160,14 @@ svg {
 }
 
 /*end of navbar------------------*/
+
+/********************************************************************/
+/*-------------------Section 1 styles----------------------------****/
+/********************************************************************/
+
 #one {
     margin-top: 80px;
 }
-
-/*end of navbar------------------*/
 
 .picture1 {
 
@@ -171,7 +175,7 @@ svg {
     /*width: 1920px;*/
     background-size: cover;
     /*height: 1275px;*/
-    height: 80vh;
+    width:100%;
     position: relative;
     background-position: center -100px;
     background-repeat: no-repeat;
@@ -235,9 +239,9 @@ svg {
         padding: 20px 80px;
      }
 }
-/*********************************************************/
-/*          Style section two                            */
-/*********************************************************/
+/********************************************************************/
+/*-------------------Section 2 styles----------------------------****/
+/********************************************************************/
 
 .function_main {
     padding: 90px 0 0 0;
@@ -261,7 +265,7 @@ svg {
 
 }
 .function i{
-    font-size: 54px;
+    font-size: 66px;
     opacity: 0.2;
 }
 
@@ -350,7 +354,10 @@ svg {
     border-radius: 20px;
 }
 
-/*styles section three*/
+/********************************************************************/
+/*-------------------Section 3 styles----------------------------****/
+/********************************************************************/
+
 #three h1 {
     text-align: center;
     font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
@@ -414,7 +421,11 @@ svg {
     }
 }
 /* end section three  */
-/*beginning section four*/
+
+/********************************************************************/
+/*-------------------Section 4 styles----------------------------****/
+/********************************************************************/
+
 #four{
     font-family: Arial, sans-serif;
     font-size: 12px;
@@ -475,3 +486,18 @@ input[type="submit"] {
     padding: 5px;
 }
 /*styles section four - end*/
+
+footer {
+    height: 80px;
+    background-color: #fd5d1d;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
+}
+
+/*8888888888888888888888888888888888888888888888888888888888*/
+/*--------------wodotryski----------------------------------*/
+/*8888888888888888888888888888888888888888888888888888888888*/
+
