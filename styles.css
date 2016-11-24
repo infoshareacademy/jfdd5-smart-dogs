@@ -260,7 +260,7 @@ svg {
     box-shadow: 6px 10px 54px -30px rgba(0,0,0,0.75);
     margin: 0;
     text-align: center;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
     /*opacity: 0.6;*/
 
 }
@@ -283,29 +283,76 @@ svg {
     .function_summary{
         font-size: 14px;
     }
-
 }
+.function_summary{
+    width: 100%;
+    height: 322px;
+    background-color: #f6f6f6;
+}
+.function_summary .function_summary_img img{
+    float: left;
+    width: 50%;
+    /*height: auto;*/
+    max-width: 740px;
+}
+.function_summary .function-summary-txt{
+    width: 45%;
+    float: right;
+    margin: 40px 40px 0 0;
+    text-indent: 22px;
+    text-align: left;
+    font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    /*border-radius: 20px;*/
+}
+.function_summary:after {
+    clear: both;
+    content: '';
+    display: block;
+}
+@media screen and (max-width:980px){
+    .function_summary{
+        width: 100%;
+    }
+    .function_summary .function_summary_img img{
+        float: none;
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+    }
+    .function_summary .function-summary-txt{
+        float: none;
+        display: block;
+        padding: 12px 36px;
+        margin: 18px auto;
+        width: 70%;
+        font-size: 14px;
+        border: 1px solid lightgray;
+        box-shadow: 6px 10px 54px -30px rgba(0,0,0,0.75);
+    }
+}
+/*********************************************************/
+/*          Style section two  -END                      */
+/*********************************************************/
 
-.function_summary {
-    padding: 16px 20px 0px;
-    margin: 36px auto 0;
-    border: 1px solid lightgray;
-    box-shadow: 6px 10px 54px -30px rgba(0,0,0,0.75);
+/*styles section three*/
+.main_box {
+    padding-top:80px;
     width: 80%;
+    margin: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.person-together {
     text-align: center;
     font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.6em;
     border-radius: 20px;
 }
-.function:hover {
-       box-shadow: 24px 24px 140px -50px rgba(0,0,0,1);
-   }
-.function_summary:hover {
-    box-shadow: 24px 24px 140px -50px rgba(0,0,0,1);
-}
-
-/*style section two - end ---------------------*/
 
 /********************************************************************/
 /*-------------------Section 3 styles----------------------------****/
@@ -389,7 +436,7 @@ svg {
     font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
     font-weight: bold;
     padding-top: 80px;
-    margin-bottom: 25px;
+    /*margin-bottom: 25px;*/
 }
 input[type="email"] {
     margin: 0 15px 25px;
