@@ -1,7 +1,6 @@
-/*-----------NAVBAR STYLES---------------*/
+/*--------------------------------NAVBAR STYLES-------------------------------*/
 body {
     margin: 0;
-    height: 2000px;
     background-color: white;
 }
 
@@ -77,7 +76,9 @@ svg {
     right: 25px;
 }
 
-/*MEDIA queries navbar-----------------------------------------*/
+/*--------------------MEDIA queries navbar-----------------------------------*/
+
+
 @media screen and (max-width: 760px) {
     #nav-box {
         display:none;
@@ -159,11 +160,14 @@ svg {
 }
 
 /*end of navbar------------------*/
+
+/********************************************************************/
+/*-------------------Section 1 styles----------------------------****/
+/********************************************************************/
+
 #one {
     margin-top: 80px;
 }
-
-/*end of navbar------------------*/
 
 .picture1 {
 
@@ -171,7 +175,7 @@ svg {
     /*width: 1920px;*/
     background-size: cover;
     /*height: 1275px;*/
-    height: 80vh;
+    width:100%;
     position: relative;
     background-position: center -100px;
     background-repeat: no-repeat;
@@ -235,8 +239,10 @@ svg {
         padding: 20px 80px;
      }
 }
+/********************************************************************/
+/*-------------------Section 2 styles----------------------------****/
+/********************************************************************/
 
-/*style section two - commenced ---------------------------*/
 .function_main {
     padding: 90px 0 0 0;
     margin: auto;
@@ -301,7 +307,10 @@ svg {
 
 /*style section two - end ---------------------*/
 
-/*styles section three*/
+/********************************************************************/
+/*-------------------Section 3 styles----------------------------****/
+/********************************************************************/
+
 #three h1 {
     text-align: center;
     font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
@@ -365,7 +374,11 @@ svg {
     }
 }
 /* end section three  */
-/*beginning section four*/
+
+/********************************************************************/
+/*-------------------Section 4 styles----------------------------****/
+/********************************************************************/
+
 #four{
     font-family: Arial, sans-serif;
     font-size: 12px;
