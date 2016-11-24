@@ -427,22 +427,28 @@ svg {
 #four{
     font-family: Arial, sans-serif;
     font-size: 12px;
+    margin-bottom: 25%;
+}
+#four h1 {
+    text-align: center;
+    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
+    font-size: 45px;
+    margin-top: 10%;
 }
 .four-form {
     text-align: center;
     font-size: 25px;
     font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
-    font-weight: bold;
-    padding-top: 80px;
-    /*margin-bottom: 25px;*/
+    padding-top: 25px;
 }
 input[type="email"] {
-    margin: 0 15px 25px;
+    margin: 2% 2%;
     border-style: none;
     border-bottom: 2px solid tomato;
-    background-color: whitesmoke;
-    font-size: 20px;
+    background-color: white;
+    font-size: 50px;
     font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
+    text-align: center;
 }
 .checkbox-agreement {
     position:relative;
@@ -455,10 +461,12 @@ input[type="email"] {
 .checkbox-agreement input {
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 65px;
+    height: 20px;
+    width: 20px;
 }
 .checkbox-agreement div {
-    font-size: 11px;
+    font-size: 22px;
     font-weight: normal;
     font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
 }
@@ -474,12 +482,12 @@ input[type="submit"] {
 }
 .four-submit {
     text-align: center;
-    padding-top: 25px;
+    padding-top: 0px;
     padding-bottom: 20px;
 }
 .four-info {
     text-align: center;
-    font-size: 15px;
+    font-size: 24px;
     font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
     padding: 5px;
 }
