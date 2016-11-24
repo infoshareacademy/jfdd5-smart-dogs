@@ -240,7 +240,7 @@ svg {
 /*********************************************************/
 
 .function_main {
-    padding: 36px 0 0 0;
+    padding: 90px 0 0 0;
     margin: auto;
     width: 85%;
     display: flex;
@@ -335,8 +335,12 @@ svg {
 /*********************************************************/
 
 /*styles section three*/
-#three {
-    height: 100vh;
+.main_box {
+    padding-top:80px;
+    width: 80%;
+    margin: 10%;
+    display: flex;
+    justify-content: space-between;
 }
 .person-together {
     text-align: center;
