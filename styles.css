@@ -351,34 +351,33 @@ svg {
 }
 
 /*styles section three*/
+#three h1 {
+    text-align: center;
+    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
+    font-size: 45px;
+    margin-top: 10%;
+}
+
 .main_box {
     padding-top:80px;
     width: 80%;
-    margin: 10%;
+    margin: 0 10%;
     display: flex;
     justify-content: space-between;
 }
+
 .temp_box{
     width: 45%;
     display: flex;
     justify-content: space-between;
 }
+
 .person {
     width: 40%;
-    border: solid;
     display: inline-block;
-    /*width: 180px;*/
-    border-radius: 50px;
-    /*padding-top: 160px;*/
     padding-bottom: 30px;
-    /*margin: 10px;*/
     font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
 }
-
-.person:hover {
-    border: 2px solid tomato;
-}
-
 .person > img {
     display: block;
     height:150px;
@@ -391,30 +390,25 @@ svg {
     text-align: center;
     font-size: 20px;
 }
+
 .person p.person-bio {
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
 }
+
 .three-icons {
-    /*display: block;*/
     width: 104px;
     margin: 0 auto;
 }
 
-@media screen and (max-width:900px) {
-    .main_box {
-        display: block;
-    }
+@media screen and (min-width:801px) and (max-width: 1200px) {
     .temp_box{
         width: 80%;
         margin: auto auto 60px;
     }
 }
-@media screen and (max-width:600px) {
-    .temp_box {
-        display: block;
-    }
-    .person{
+@media screen and (max-width:800px) {
+     .person{
         width: 80%;
         margin: auto auto 60px;
     }
