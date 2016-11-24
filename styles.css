@@ -168,13 +168,11 @@ svg {
 .picture1 {
 
     background: url("./graphics/go_out_gdansk.jpg") no-repeat;
-    /*width: 1920px;*/
-    background-size: cover;
-    /*height: 1275px;*/
-    height: 80vh;
+    background-size: 100%;
+    height: 80%;
     position: relative;
-    background-position: center -100px;
-    background-repeat: no-repeat;
+    background-position: center
+
 }
 
 .intro {
