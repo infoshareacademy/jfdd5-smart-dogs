@@ -313,22 +313,6 @@ svg {
 /*          Style section two  -END                      */
 /*********************************************************/
 
-/*styles section three*/
-.main_box {
-    padding-top:80px;
-    width: 80%;
-    margin: 10%;
-    display: flex;
-    justify-content: space-between;
-}
-.person-together {
-    text-align: center;
-    font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6em;
-    border-radius: 20px;
-}
-
 /********************************************************************/
 /*-------------------Section 3 styles----------------------------****/
 /********************************************************************/
@@ -348,18 +332,6 @@ svg {
     justify-content: space-between;
 }
 
-.temp_box{
-    width: 45%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.person {
-    width: 40%;
-    display: inline-block;
-    padding-bottom: 30px;
-    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
-}
 .person > img {
     display: block;
     height:150px;
@@ -386,19 +358,6 @@ svg {
 .three-icons {
     width: 104px;
     margin: 0 auto;
-}
-
-@media screen and (min-width:801px) and (max-width: 1200px) {
-    .temp_box{
-        width: 80%;
-        margin: auto auto 60px;
-    }
-}
-@media screen and (max-width:800px) {
-     .person{
-        width: 80%;
-        margin: auto auto 60px;
-    }
 }
 /* end section three  */
 
