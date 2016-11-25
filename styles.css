@@ -315,14 +315,16 @@ svg {
 /*********************************************************/
 
 /********************************************************************/
-/*-------------------Section 3 styles----------------------------****/
+/*              Section 3 styles                                  ****/
 /********************************************************************/
 
 #three h1 {
     text-align: center;
     font-size: 45px;
     font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
-    margin-top: 10%;
+    margin-top: 15%;
+    padding-bottom: 7%;
+    font-weight: bold;
 }
 
 .main_box {
@@ -360,49 +362,32 @@ svg {
     width: 104px;
     margin: 0 auto;
 }
-/* end section three  */
-
 /********************************************************************/
 /*-------------------Section 4 styles----------------------------****/
 /********************************************************************/
 
 #four{
     font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
-    padding-bottom: 6%;
-    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-top: 12%;
     max-width: 1280px;
-
 }
 
 #four h1 {
     text-align: center;
     font-size: 45px;
+    font-weight: bold;
 }
 .four-form {
     text-align: center;
     font-size: 25px;
     padding-top: 25px;
 }
-.checkbox-agreement {
-    position:relative;
-    max-width: 535px;
-    border-style: none;
-    margin: auto;
-}
-.checkbox-agreement input {
-    position: absolute;
-    top: 2px;
-    left: 41px;
-    height: 17px;
-    width: 17px;
-}
-.checkbox-agreement div {
-    font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
+.checkbox label {
     font-size: 16px;
     line-height: 1.6em;
-    font-style: italic;
-    margin-left: 60px;
 }
+
 input[type="email"] {
     margin: 40px 2%;
     border-style: none;
@@ -411,7 +396,7 @@ input[type="email"] {
     font-size: 45px;
     font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
     text-align: center;
-}
+    }
 
 input[type="submit"] {
     height: 75px;
