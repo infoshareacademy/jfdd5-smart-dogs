@@ -122,6 +122,8 @@ p {
 }
 .button:hover {
     background-color:#fd5d1d;
+    color:white;
+    text-decoration: none;
     text-shadow: 1px 1px 3px #3A3E40;
 }
 
