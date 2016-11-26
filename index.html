@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-    <title>wmiasto</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>wmiasto</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
 </head>
 <body>
 <header>
-    <div class="nav-container">
+    <div class="container">
         <a href="#" id="logo">
             <!--<a href="#">&#8646;</a>-->
         </a>
@@ -35,40 +35,47 @@
         </div>
     </div>
 </header>
-<section id="one"></section>
+<section id="one" class="picture1">
 
-<div class="picture1">
-    <h1 class="intro">Idziemy w miasto !</h1>
+
+<div class="container push-bg-down">
+    <h1 class="intro">Idziemy w miasto!</h1>
     <p class="intro-male"> Wszystkie lokalne wydarzenia w jednym miejscu</p>
     <div class="button-container">
         <a class="button" href="#four">Zapisz mnie</a>
     </div>
+    <br>
+    <br>
+
+
+
 
 </div>
+</section>
 <!-- -------------------------------------------------------- -->
 <!--                Section 2 - Funkcje - Start               -->
 <!-- - ------------------------------------------------------ -->
 <br>
-<section id="two">
-    <div class="function_main">
-        <div class="function">
-            <i class="material-icons">place</i>
-            <h3>Wyszukiwarka</h3>
-            <p>Stworzyliśmy aplikację, pozwalającą zlokalizować wydarzenia odbywające się w pobliżu miejsca,
-                w którym się znajdujesz. Po uruchomieniu jej
-                uzyskasz informacje na temat imprez w promieniu X
-                km od miejsca Twojego pobytu.
-            </p>
-        </div>
-        <div class="function">
+<section id="two" class="container">
+    <div class="function_main row">
+        <div class="function col-xs-12 col-sm-6 col-md-3">
+                <i class="material-icons">place</i>
+                <h3>Wyszukiwarka</h3>
+                <p>Stworzyliśmy aplikację, pozwalającą zlokalizować wydarzenia
+                    odbywające się w pobliżu miejsca, w którym się znajdujesz.
+                    Po uruchomieniu jej uzyskasz informacje na temat imprez X
+                    km od miejsca Twojego pobytu.
+                </p>
+                </div>
+        <div class="function col-xs-12 col-sm-6 col-md-3">
             <i class="material-icons">email</i>
             <h3>Powiadomienia</h3>
-            <p>Kiedy będzie zbliżał się termin imprezy, którą dodasz do terminarza,
-                wyślemy Ci e-mail z przypomnieniem. Tą samą drogą powiadomimy Cię również jeśli impeza zostanie
-                odwołana bądź zmieni się jej termin.
+            <p>Kiedy poznasz już termin imprezy, dodaj ją do terminarza. Przed jej rozpoczęciem
+                wyślemy Ci e-mail z przypomnieniem. Tą samą drogą powiadomimy Cię gdy impezy zostanie
+                odwołana lub zmieni się jej termin.
             </p>
         </div>
-        <div class="function">
+        <div class="function col-xs-12 col-sm-6 col-md-3">
             <i class="material-icons">sms</i>
             <h3>Subskrypcje</h3>
             <p>Jeśli interesują Cię wydarzenia z konkretnych dziedzin możesz skorzystać z naszej wyszukiwarki.
@@ -76,7 +83,7 @@
                 wskazane przez Ciebie kryteria.
             </p>
         </div>
-        <div class="function">
+        <div class="function col-xs-12 col-sm-6 col-md-3">
             <i class="material-icons">event_available</i>
             <h3>Terminarz</h3>
             <p>Do terminarza możesz dodawać zapowiadane przez nas wydarzenia i przeglądać je w dowolnej chwili.
@@ -85,10 +92,9 @@
             </p>
         </div>
     </div>
-    <br>
-    <br>
+
     <div class="function_summary">
-        <div class="function_summary_img">
+        <div class="function_summary_img ">
             <img src="graphics/crowdmini.jpg" alt="Koncert" width="740px" height="322px">
         </div>
         <div class="function-summary-txt">
@@ -106,96 +112,85 @@
             </p>
         </div>
     </div>
+
 </section>
+
 <!-- -------------------------------------------------------- -->
 <!--                Section 2 - Funkcje - End                 -->
 <!-- - ------------------------------------------------------ -->
 
-<!-- Sekcja on NAS-------------------------------------------------->
-<!--<div class="main_box">-->
-    <!--<div class="temp_box">-->
-        <!--<div class="person"></div>-->
-        <!--<div class="person"></div>-->
-    <!--</div>-->
-    <!--<div class="temp_box">-->
-        <!--<div class="person"></div>-->
-        <!--<div class="person"></div>-->
-    <!--</div>-->
-<!--</div>-->
-<!-- ------------------------------------------------------------ -->
-<section id="three">
-    <h1>Nasza drużyna</h1>
-    <div class="main_box">
-        <div class="temp_box">
-            <div class="person">
+<!-- -------------------------------------------------------- -->
+<!--                Section 3 - About us                      -->
+<!-- - ------------------------------------------------------ -->
+<section id="three" class="container">
+    <h1 class="col-xs-12">Nasza drużyna</h1>
+            <div class="person col-md-3 col-sm-6" >
                 <img src="graphics/magda.jpg">
-                <p class="person-name">Magda Nurzyńska</p>
+                <h3 class="person-name">Magda Nurzyńska</h3>
                 <div class="three-icons">
                     <a href="https://pl-pl.facebook.com/" target="_blank"><img src="icons/facebook.svg" alt="facebook iccon"></a>
                     <a href="https://www.linkedin.com/" target="_blank"><img src="icons/linkedin.svg" alt="lincedin iccon"></a>
                     <a href="https://github.com/" target="_blank"><img src="icons/github.svg" alt="github iccon"></a>
                 </div>
-                <p class="person-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                <p class="person-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="person">
+            <div class="person col-md-3 col-sm-6">
                 <img src="graphics/pawel.jpg">
-                <p class="person-name">Paweł Zięzio</p>
+                <h3 class="person-name">Paweł Zięzio</h3>
                 <div class="three-icons">
                     <a href="https://pl-pl.facebook.com/" target="_blank"><img src="icons/facebook.svg" alt="facebook iccon"></a>
                     <a href="https://www.linkedin.com/" target="_blank"><img src="icons/linkedin.svg" alt="lincedin iccon"></a>
                     <a href="https://github.com/" target="_blank"><img src="icons/github.svg" alt="github iccon"></a>
                 </div>
-                <p class="person-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                <p class="person-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-        </div>
-        <div class="temp_box">
-            <div class="person">
+            <div class="person col-md-3 col-sm-6">
                 <img src="graphics/karolina.jpg">
-                <p class="person-name">Karolina Hetmańska</p>
+                <h3 class="person-name">Karolina Hetmańska</h3>
                 <div class="three-icons">
                     <a href="https://pl-pl.facebook.com/" target="_blank"><img src="icons/facebook.svg" alt="facebook iccon"></a>
                     <a href="https://www.linkedin.com/" target="_blank"><img src="icons/linkedin.svg" alt="lincedin iccon"></a>
                     <a href="https://github.com/" target="_blank"><img src="icons/github.svg" alt="github iccon"></a>
                 </div>
-                <p class="person-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                <p class="person-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="person">
+            <div class="person col-md-3 col-sm-6">
                 <img src="graphics/kuba.jpg">
-                <p class="person-name">Jakub Tuscher</p>
+                <h3 class="person-name">Jakub Tuscher</h3>
                 <div class="three-icons">
                     <a href="https://pl-pl.facebook.com/" target="_blank"><img src="icons/facebook.svg" alt="facebook iccon"></a>
                     <a href="https://www.linkedin.com/" target="_blank"><img src="icons/linkedin.svg" alt="lincedin iccon"></a>
                     <a href="https://github.com/" target="_blank"><img src="icons/github.svg" alt="github iccon"></a>
                 </div>
-                <p class="person-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                <p class="person-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-        </div>
+</section>
+<!-- -------------------------------------------------------- -->
+<!--                Section 4 - Form                          -->
+<!-- - ------------------------------------------------------ -->
+<section id="four" class="container">
+    <div class="col-xs-12 text-center">
+        <h1> Chcę tę aplikację</h1>
+        <form class="four-form" action="">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Wyrażam zgodę na przetwarzanie moich danych przez firmę XYZ.
+                    <p>
+                        &nbsp; &nbsp;
+                        Wyślemy do Ciebie tylko jeden email z informacją o premierze aplikacj.
+                    </p>
+                </label>
+            </div>
+            <input type="email" name="email" placeholder="Podaj swoj adres e-mail">
+            <div class="four-submit">
+                <input type="submit" value="Zapisz mnie">
+            </div>
+        </form>
     </div>
 </section>
-<!--beginning section four-->
-<section id="four">
-    <h1> Chcę tę aplikację</h1>
-    <form class="four-form" action="">
-        <div class="checkbox-agreement">
-            <input required type="checkbox">
-            <div>
-                Wyrażam zgodę na przetwarzanie moich danych.
-            </div>
-        </div>
-        <input type="email" name="email" placeholder="Podaj swoj adres e-mail">
-
-
-        <div class="four-submit">
-            <input type="submit" value="Zapisz mnie">
-        </div>
-    </form>
-    <div class="four-info">Wyślemy do Ciebie tylko jeden email z informacją o premierze aplikacji</div>
-</section>
-<!--end of section four-->
+<!-- -------------------------------------------------------- -->
+<!--                Footer                                    -->
+<!-- - ------------------------------------------------------ -->
 <footer>
     <p>&copy; 2016 Wmiasto by Nieglupiepsy Team</p>
 </footer>
