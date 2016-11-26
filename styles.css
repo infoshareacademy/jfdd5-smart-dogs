@@ -1,180 +1,83 @@
-/*--------------------------------NAVBAR STYLES-------------------------------*/
+/*--------------------------------GENERAL STYLES-------------------------------*/
 body {
     margin: 0;
     background-color: white;
+    padding-top: 50px;
 }
-
-ul, h1 {
+ul, h1, h2, h3 {
     margin: 0;
     padding: 0;
 }
+p {
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
+/********************************************************************/
+/*-------------------Navbar styles----------------------------****/
+/********************************************************************/
+.navbar, .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+}
+.navbar {
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2)
+}
 
-.nav-container {
-    height:80px;
+.navbar-nav {
+    text-align:center;
+    margin: 0 -15px;
+}
+.nav>li>a {
+    padding: 15px 25px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: white;
+}
+.navbar-default .navbar-toggle:hover {
+    border-color: #fd5d1d;
     background-color: white;
-    position: fixed;
-    top:  0;
-    right: 0;
-    left: 0;
-    z-index:3;
-    box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.3);
+    color:white;
+}
+.navbar-default .navbar-toggle:active {
+    background-color: white;
+}
+.navbar-default .navbar-toggle:focus {
+    background-color: white;
 }
 
-a#logo {
-    background: url(graphics/logo.png) no-repeat;
-    background-size: contain;
-    background-position-y: center;
-    text-align: center;
-    display: inline-block;
-    height: 76px;
-    width: 200px;
-    margin: 0 0 0 10%;
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: orangered;
 }
 
-#nav-box {
-    height: 100%;
-    display:inline-block;
-    float: right;
-    margin-right: 10%;
+.navbar-default {
+    background-image: none;
+    background-color: white;
+}
+.navbar-header img {
+    height: 40px;
+    margin-top: 4px;
 }
 
-.menu-smallscreen {
-    display:none;
-}
-
-.nav-list {
-
-    list-style-type: none;
-    display: inline-block;
-    padding: 28px 20px;
-}
-.nav-list a {
-    text-decoration: none;
-    padding: 29px 0;
+.navbar .navbar-nav>li>a {
     color: orangered;
-    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
-    font-size: 24px;
-    text-shadow: 0 0 1px rgba(255, 69, 0, 0.2);
+    font-size: 1.1em;
+    text-shadow: none;
 }
 
-.nav-list a:after {
-    content: '';
-    display: block;
-    height: 2px;
-    width: 0;
-    background: transparent;
-    transition: width .5s ease, background-color .5s ease;
-}
-.nav-list a:hover:after {
-    width: 100%;
-    background: orangered;
-}
-
-svg {
-    position:absolute;
-    top: 25px;
-    right: 25px;
-}
-
-/*--------------------MEDIA queries navbar-----------------------------------*/
-
-
-@media screen and (max-width: 760px) {
-    #nav-box {
-        display:none;
-        float:none;
-        margin-right: 0;
-    }
-    ul {
-        padding: 0;
-    }
-
-    .nav-list {
-        color: #FF6D32;
-        font-size: 20px;
-        background-color: white;
-        text-align: center;
-        display:block;
-    }
-
-    .nav-list a {
-        padding: 20px 60px;
-        width: inherit;
-    }
-    .nav-list:hover a{
-        color: white;
-    }
-    .nav-list:hover {
-        background-color: orangered;
-    }
-    .nav-list a:after {
-        content: '';
-        display: block;
-        position:relative;
-        top: 10px;
-        height: 3px;
-        width: 0;
-        background: transparent;
-        transition: width .5s ease, background-color .5s ease;
-    }
-
-    svg:hover +#nav-box{
-        display:block;
-    }
-
-    .menu-smallscreen {
-        display: inline-block;
-        float: right;
-        margin:15px 15px;
-        width: 50px;
-        height: 50px;
-    }
-
-    .menu-smallscreen:before {
-        display:inline-block;
-        float: right;
-        content:'';
-        width: 50px;
-        height: 50px;
-        background-image: url('graphics/orangemenu.png');
-        background-size: contain;
-        background-color: white;
-    }
-    .menu-smallscreen:checked:before {
-        display:inline-block;
-        float: right;
-        content:'';
-        width: 50px;
-        height: 50px;
-        /*background-color: orangered;*/
-    }
-
-    .menu-smallscreen:checked +#nav-box {
-        display:block;
-        background-color: antiquewhite;
-    }
-    .nav-list a:after {
-        display: none;
-    }
+.navbar .navbar-nav>li>a:focus, .navbar .navbar-nav>li>a:hover{
+    background-color: #FD9766;
+    color:white;
 
 }
 
-/*end of navbar------------------*/
 
 /********************************************************************/
 /*-------------------Section 1 styles----------------------------****/
 /********************************************************************/
 
-/*!*#one {*!*/
-    /*!*margin-top: 80px;*!*/
-/*}*/
-
 .picture1 {
-
-    background: url("./graphics/go_out_gdansk.jpg") no-repeat;
+    background: url("./graphics/go_out_gdansk.jpg") no-repeat center top;
     background-size:cover;
-
-
 }
 .push-bg-down {
     padding-bottom: 10%;
@@ -197,7 +100,6 @@ svg {
     text-align: center;
     font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
 }
-
 
 .button {
     background-color:#FF6D32;
@@ -223,93 +125,71 @@ svg {
     padding-top: 40px;
 }
 
-@media screen and ( max-width: 768px) {
+@media screen and ( max-width: 600px) {
     .intro {
-        font-size: 7vh;
-        padding-top: 16%;
+        font-size: 3em;
+        padding-top: 12%;
     }
 
     .intro-male {
-        font-size: 3vh;
-        padding-top: 8%;
+        font-size: 1.5em;
      }
     .button {
-        font-size: 3vh;
+        font-size: 1.3em;
     }
 }
 
 /********************************************************************/
 /*-------------------Section 2 styles----------------------------****/
 /********************************************************************/
-.container{
-    column-gap: 10px;
+#two {
+    padding-top: 30px;
 }
-[class*="col-"] {
-    margin-bottom: 15px;
-}
-.function_main {
+
+.function_main, .function-summary-txt {
     font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.6em;
 }
 .function {
-    height: auto;
-    padding: 30px 10px 0 10px;
     box-shadow: 6px 10px 54px -30px rgba(0,0,0,0.75);
     text-align: center;
+    margin: 4% 0;
+    padding: 0 4%;
 }
 .function i{
-    font-size: 66px;
+    font-size: 60px;
     opacity: 0.2;
 }
-.function_summary{
-    width: 100%;
-    height: 322px;
+.function h3 {
+    padding: 10px 0;
+}
+.function p {
+    margin-bottom: 16px;
+}
+.function-summary{
     background-color: #f6f6f6;
+    padding: 0;
 }
-.function_summary .function_summary_img img{
-    float: left;
-    width: 50%;
-    /*height: auto;*/
-    max-width: 740px;
+.function-summary-img {
+    padding: 0;
 }
-.function_summary .function-summary-txt{
-    width: 45%;
-    float: right;
-    margin: 40px 30px 0 10px;
-    text-indent: 22px;
-    text-align: left;
-    font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6em;
-    /*border-radius: 20px;*/
+.function-summary-img > img {
+    width: 100%;
 }
-.function_summary:after {
-    clear: both;
-    content: '';
-    display: block;
+.function-summary-txt {
+    margin: 5% 0;
+    text-align: justify;
 }
-@media screen and (max-width:980px){
-    .function_summary{
-        width: 100%;
-    }
-    .function_summary .function_summary_img img{
-        float: none;
-        margin: 0 auto;
-        display: block;
-        width: 100%;
-        background-color: white;
-    }
-    .function_summary .function-summary-txt{
-        float: none;
-        display: block;
-        padding: 12px 36px;
-        margin: 18px auto;
-        width: 100%;
-        font-size: 14px;
-        box-shadow: 6px 10px 54px -30px rgba(0,0,0,0.75);
+.function-summary h3{
+    padding-bottom: 2%;
+}
+@media screen and (max-width:768px){
+    .function-summary h3{
+        text-align: center;
     }
 }
+
 /*********************************************************/
 /*          Style section two  -END                      */
 /*********************************************************/
@@ -322,55 +202,50 @@ svg {
     text-align: center;
     font-size: 45px;
     font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
-    margin-top: 15%;
-    padding-bottom: 7%;
     font-weight: bold;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-.main_box {
-    padding-top:80px;
-    width: 80%;
-    margin: 0 10%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.person > img {
-    display: block;
-    height:150px;
-    width:150px;
-    border-radius: 50%;
-    margin: 0 auto;
+.img-thumbnail {
+    padding: 8px;
 }
 
 .person h3.person-name {
     text-align: center;
     font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
-    font-size: 1.17em;
+    font-size: 1.8em;
     font-weight: bold;
     line-height: 1.6em;
+    margin-top: 14px;
 }
 
 .person p.person-bio {
-    text-align: center;
     font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.6em;
 }
 
 .three-icons {
-    width: 104px;
-    margin: 0 auto;
+    margin: 10px;
 }
+
+@media screen and ( max-width: 768px) {
+    .person {
+        margin-bottom: 5%;
+    }
+}
+
 /********************************************************************/
 /*-------------------Section 4 styles----------------------------****/
 /********************************************************************/
 
 #four{
     font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
+    margin-top: 40px;
     padding-bottom: 10%;
-    padding-top: 12%;
-    max-width: 1280px;
+    padding-top: 50px;
+    background: url('graphics/zapisz_geometry.png');
 }
 
 #four h1 {
@@ -410,8 +285,22 @@ input[type="submit"] {
 }
 .four-submit {
     text-align: center;
-    padding-top: 0px;
     padding-bottom: 20px;
+}
+@media screen and (max-width: 768px){
+    input[type="email"] {
+        font-size: 24px;
+        margin: 14px 2%;
+    }
+    input[type="submit"] {
+        height: 40px;
+        width: 120px;
+        font-size: 16px;
+    }
+    .checkbox label {
+        font-size: 12px;
+        line-height: 1.4em;
+    }
 }
 /********************************************************************/
 /*-------------------Footer----------------------------****/
@@ -423,8 +312,8 @@ footer {
     background-color: #fd5d1d;
     color: white;
     text-align: center;
-    font-size: 20px;
-    padding-top: 20px;
+    font-size: 18px;
+    padding-top: 30px;
     font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
 }
 

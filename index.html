@@ -10,189 +10,189 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.js"
+            integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+            crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
 </head>
 <body>
-<header>
-    <div class="container">
-        <a href="#" id="logo">
-            <!--<a href="#">&#8646;</a>-->
-        </a>
-        <!--<svg-->
-                <!--xmlns="http://www.w3.org/2000/svg"-->
-                <!--xlink="http://www.w3.org/1999/xlink"-->
-                <!--width="32px" height="21px">-->
-            <!--<path fill-rule="evenodd"  fill="rgb(255, 69, 0)"-->
-                  <!--d="M30.500,12.000 L1.500,12.000 C0.672,12.000 0.000,11.328 0.000,10.500 C0.000,9.672 0.672,9.000 1.500,9.000 L30.500,9.000 C31.328,9.000 32.000,9.672 32.000,10.500 C32.000,11.328 31.328,12.000 30.500,12.000 ZM30.500,3.000 L1.500,3.000 C0.672,3.000 0.000,2.328 0.000,1.500 C0.000,0.672 0.672,0.000 1.500,0.000 L30.500,0.000 C31.328,0.000 32.000,0.672 32.000,1.500 C32.000,2.328 31.328,3.000 30.500,3.000 ZM1.500,18.000 L30.500,18.000 C31.328,18.000 32.000,18.672 32.000,19.500 C32.000,20.328 31.328,21.000 30.500,21.000 L1.500,21.000 C0.672,21.000 0.000,20.328 0.000,19.500 C0.000,18.672 0.672,18.000 1.500,18.000 Z"/>-->
-        <!--</svg>-->
-        <input type="checkbox" class="menu-smallscreen">
+<!-- ----------------------------------------------------------- -->
+<!--                Navbar                                       -->
+<!-- ----------------------------------------------------------- -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-left" href="#"><img src="graphics/logo.png"/></a>
+            </div>
 
-        <div id="nav-box">
-            <ul>
-                <li class="nav-list"><a href="#two">Funkcje</a></li>
-                <li class="nav-list"><a href="#three">Zespół</a></li>
-                <li class="nav-list"><a href="#four">Zapisz się!</a></li>
-            </ul>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#two">FUNKCJE</a></li>
+                    <li><a href="#three">ZESPÓŁ</a></li>
+                    <li><a href="#four">ZAPISZ SIĘ</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+
+    </nav>
+<!-- ----------------------------------------------------------- -->
+<!--                Section 1 - Zajawka                          -->
+<!-- ----------------------------------------------------------- -->
+    <section id="one" class="picture1">
+        <div class="container push-bg-down">
+            <h1 class="intro">Idziemy w miasto!</h1>
+            <p class="intro-male"> Wszystkie lokalne wydarzenia w jednym miejscu</p>
+            <div class="button-container">
+                <a class="button" href="#four">Zapisz mnie</a>
+            </div>
         </div>
-    </div>
-</header>
-<section id="one" class="picture1">
-
-
-<div class="container push-bg-down">
-    <h1 class="intro">Idziemy w miasto!</h1>
-    <p class="intro-male"> Wszystkie lokalne wydarzenia w jednym miejscu</p>
-    <div class="button-container">
-        <a class="button" href="#four">Zapisz mnie</a>
-    </div>
-    <br>
-    <br>
-
-
-
-
-</div>
-</section>
-<!-- -------------------------------------------------------- -->
-<!--                Section 2 - Funkcje - Start               -->
-<!-- - ------------------------------------------------------ -->
-<br>
-<section id="two" class="container">
-    <div class="function_main row">
-        <div class="function col-xs-12 col-sm-6 col-md-3">
-                <i class="material-icons">place</i>
-                <h3>Wyszukiwarka</h3>
-                <p>Stworzyliśmy aplikację, pozwalającą zlokalizować wydarzenia
-                    odbywające się w pobliżu miejsca, w którym się znajdujesz.
-                    Po uruchomieniu jej uzyskasz informacje na temat imprez X
-                    km od miejsca Twojego pobytu.
+    </section>
+<!-- ----------------------------------------------------------- -->
+<!--                Section 2 - Funkcje                          -->
+<!-- ----------------------------------------------------------- -->
+    <section id="two" class="container">
+        <div class="function_main row">
+            <div class="function col-xs-12 col-sm-6 col-md-3">
+                    <i class="material-icons">place</i>
+                    <h3>Wyszukiwarka</h3>
+                    <p>Stworzyliśmy aplikację, pozwalającą zlokalizować wydarzenia
+                        odbywające się w pobliżu miejsca, w którym się znajdujesz.
+                        Po uruchomieniu jej uzyskasz informacje na temat imprez X
+                        km od miejsca Twojego pobytu.
+                    </p>
+                    </div>
+            <div class="function col-xs-12 col-sm-6 col-md-3">
+                <i class="material-icons">email</i>
+                <h3>Powiadomienia</h3>
+                <p>Kiedy poznasz już termin imprezy, dodaj ją do terminarza. Przed jej rozpoczęciem
+                    wyślemy Ci e-mail z przypomnieniem. Tą samą drogą powiadomimy Cię gdy impezy zostanie
+                    odwołana lub zmieni się jej termin.
                 </p>
-                </div>
-        <div class="function col-xs-12 col-sm-6 col-md-3">
-            <i class="material-icons">email</i>
-            <h3>Powiadomienia</h3>
-            <p>Kiedy poznasz już termin imprezy, dodaj ją do terminarza. Przed jej rozpoczęciem
-                wyślemy Ci e-mail z przypomnieniem. Tą samą drogą powiadomimy Cię gdy impezy zostanie
-                odwołana lub zmieni się jej termin.
-            </p>
+            </div>
+            <div class="function col-xs-12 col-sm-6 col-md-3">
+                <i class="material-icons">sms</i>
+                <h3>Subskrypcje</h3>
+                <p>Jeśli interesują Cię wydarzenia z konkretnych dziedzin możesz skorzystać z naszej wyszukiwarki.
+                    Otrzymasz informacje zawsze, kiedy i gdzie odbędzie się wydarzenie spełniające
+                    wskazane przez Ciebie kryteria.
+                </p>
+            </div>
+            <div class="function col-xs-12 col-sm-6 col-md-3">
+                <i class="material-icons">event_available</i>
+                <h3>Terminarz</h3>
+                <p>Do terminarza możesz dodawać zapowiadane przez nas wydarzenia i przeglądać je w dowolnej chwili.
+                    Za każdym razem, kiedy zmieni się termin imprezy, bądź zostanie odwołana,
+                    zostaniesz przez nas poinformowany.
+                </p>
+            </div>
         </div>
-        <div class="function col-xs-12 col-sm-6 col-md-3">
-            <i class="material-icons">sms</i>
-            <h3>Subskrypcje</h3>
-            <p>Jeśli interesują Cię wydarzenia z konkretnych dziedzin możesz skorzystać z naszej wyszukiwarki.
-                Otrzymasz informacje zawsze, kiedy i gdzie odbędzie się wydarzenie spełniające
-                wskazane przez Ciebie kryteria.
-            </p>
-        </div>
-        <div class="function col-xs-12 col-sm-6 col-md-3">
-            <i class="material-icons">event_available</i>
-            <h3>Terminarz</h3>
-            <p>Do terminarza możesz dodawać zapowiadane przez nas wydarzenia i przeglądać je w dowolnej chwili.
-                Za każdym razem, kiedy zmieni się termin imprezy, bądź zostanie odwołana,
-                zostaniesz przez nas poinformowany.
-            </p>
-        </div>
-    </div>
 
-    <div class="function_summary">
-        <div class="function_summary_img ">
-            <img src="graphics/crowdmini.jpg" alt="Koncert" width="740px" height="322px">
+        <div class="function-summary row">
+            <div class="function-summary-img col-sm-6">
+                <img src="graphics/crowdmini.jpg" alt="Koncert" width="740px" height="322px">
+            </div>
+            <div class="function-summary-txt col-sm-6">
+                <h3>Wyszukiwarka</h3>
+                <p>
+                    Precyzyjna wyszukiwarka WMIASTO przefiltruje bazę imprez
+                    pod kątem wybranych przez Ciebie kryteriów wyszukiwania:
+                    kategorii imprezy, organizatora,
+                    słów zawartych w opisie imprezy, tagów,
+                    lokalizacji lub określonej odległości od wybranego punktu.
+                    Jeśli szukasz wydarzeń zawsze według tego samego klucza,
+                    przydatna okaże się funkcja zapisywania ich ustawień.
+                    Dzięki temu nie będziesz musiał tracić czasu
+                    na ich wielokrotne uzupełnianie.
+                </p>
+            </div>
         </div>
-        <div class="function-summary-txt">
-            <h3>Wyszukiwarka</h3>
-            <p>
-                Precyzyjna wyszukiwarka WMIASTO przefiltruje bazę imprez
-                pod kątem wybranych przez Ciebie kryteriów wyszukiwania:
-                kategorii imprezy, organizatora,
-                słów zawartych w opisie imprezy, tagów,
-                lokalizacji lub określonej odległości od wybranego punktu.
-                Jeśli szukasz wydarzeń zawsze według tego samego klucza,
-                przydatna okaże się funkcja zapisywania ich ustawień.
-                Dzięki temu nie będziesz musiał tracić czasu
-                na ich wielokrotne uzupełnianie.
-            </p>
-        </div>
-    </div>
 
-</section>
-
-<!-- -------------------------------------------------------- -->
-<!--                Section 2 - Funkcje - End                 -->
-<!-- - ------------------------------------------------------ -->
-
+    </section>
 <!-- -------------------------------------------------------- -->
 <!--                Section 3 - About us                      -->
-<!-- - ------------------------------------------------------ -->
-<section id="three" class="container">
-    <h1 class="col-xs-12">Nasza drużyna</h1>
-            <div class="person col-md-3 col-sm-6" >
-                <img src="graphics/magda.jpg">
-                <h3 class="person-name">Magda Nurzyńska</h3>
-                <div class="three-icons">
-                    <a href="https://pl-pl.facebook.com/" target="_blank"><img src="icons/facebook.svg" alt="facebook iccon"></a>
-                    <a href="https://www.linkedin.com/" target="_blank"><img src="icons/linkedin.svg" alt="lincedin iccon"></a>
-                    <a href="https://github.com/" target="_blank"><img src="icons/github.svg" alt="github iccon"></a>
+<!-- -------------------------------------------------------- -->
+    <section id="three" class="container">
+        <h1 class="col-xs-12">Nasza drużyna</h1>
+                <div class="person col-md-3 col-sm-6 col-xs-12 text-center" >
+                    <img class="img-responsive img-thumbnail img-circle" src="graphics/magda.jpg">
+                    <h3 class="person-name">Magda Nurzyńska</h3>
+                    <div class="three-icons text-center">
+                        <a href="https://pl-pl.facebook.com/" target="_blank"><img src="icons/facebook.svg" alt="facebook iccon"></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><img src="icons/linkedin.svg" alt="lincedin iccon"></a>
+                        <a href="https://github.com/" target="_blank"><img src="icons/github.svg" alt="github iccon"></a>
+                    </div>
+                    <p class="person-bio col-xs-10 col-xs-offset-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
-                <p class="person-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="person col-md-3 col-sm-6">
-                <img src="graphics/pawel.jpg">
-                <h3 class="person-name">Paweł Zięzio</h3>
-                <div class="three-icons">
-                    <a href="https://pl-pl.facebook.com/" target="_blank"><img src="icons/facebook.svg" alt="facebook iccon"></a>
-                    <a href="https://www.linkedin.com/" target="_blank"><img src="icons/linkedin.svg" alt="lincedin iccon"></a>
-                    <a href="https://github.com/" target="_blank"><img src="icons/github.svg" alt="github iccon"></a>
+                <div class="person col-md-3 col-sm-6 col-xs-12 text-center">
+                    <img class="img-responsive img-thumbnail img-circle text-center" src="graphics/pawel.jpg">
+                    <h3 class="person-name">Paweł Zięzio</h3>
+                    <div class="three-icons text-center">
+                        <a href="https://pl-pl.facebook.com/" target="_blank"><img src="icons/facebook.svg" alt="facebook iccon"></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><img src="icons/linkedin.svg" alt="lincedin iccon"></a>
+                        <a href="https://github.com/" target="_blank"><img src="icons/github.svg" alt="github iccon"></a>
+                    </div>
+                    <p class="person-bio col-xs-10 col-xs-offset-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
-                <p class="person-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="person col-md-3 col-sm-6">
-                <img src="graphics/karolina.jpg">
-                <h3 class="person-name">Karolina Hetmańska</h3>
-                <div class="three-icons">
-                    <a href="https://pl-pl.facebook.com/" target="_blank"><img src="icons/facebook.svg" alt="facebook iccon"></a>
-                    <a href="https://www.linkedin.com/" target="_blank"><img src="icons/linkedin.svg" alt="lincedin iccon"></a>
-                    <a href="https://github.com/" target="_blank"><img src="icons/github.svg" alt="github iccon"></a>
+                <div class="person col-md-3 col-sm-6 col-xs-12 text-center">
+                    <img class="img-responsive img-thumbnail img-circle" src="graphics/karolina.jpg">
+                    <h3 class="person-name">Karolina Hetmańska</h3>
+                    <div class="three-icons text-center">
+                        <a href="https://pl-pl.facebook.com/" target="_blank"><img src="icons/facebook.svg" alt="facebook iccon"></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><img src="icons/linkedin.svg" alt="lincedin iccon"></a>
+                        <a href="https://github.com/" target="_blank"><img src="icons/github.svg" alt="github iccon"></a>
+                    </div>
+                    <p class="person-bio col-xs-10 col-xs-offset-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
-                <p class="person-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="person col-md-3 col-sm-6">
-                <img src="graphics/kuba.jpg">
-                <h3 class="person-name">Jakub Tuscher</h3>
-                <div class="three-icons">
-                    <a href="https://pl-pl.facebook.com/" target="_blank"><img src="icons/facebook.svg" alt="facebook iccon"></a>
-                    <a href="https://www.linkedin.com/" target="_blank"><img src="icons/linkedin.svg" alt="lincedin iccon"></a>
-                    <a href="https://github.com/" target="_blank"><img src="icons/github.svg" alt="github iccon"></a>
+                <div class="person col-md-3 col-sm-6 col-xs-12 text-center">
+                    <img class="img-responsive img-thumbnail img-circle" src="graphics/kuba.jpg">
+                    <h3 class="person-name">Jakub Tuscher</h3>
+                    <div class="three-icons text-center">
+                        <a href="https://pl-pl.facebook.com/" target="_blank"><img src="icons/facebook.svg" alt="facebook iccon"></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><img src="icons/linkedin.svg" alt="lincedin iccon"></a>
+                        <a href="https://github.com/" target="_blank"><img src="icons/github.svg" alt="github iccon"></a>
+                    </div>
+                    <p class="person-bio col-xs-10 col-xs-offset-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
-                <p class="person-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-</section>
+    </section>
 <!-- -------------------------------------------------------- -->
 <!--                Section 4 - Form                          -->
-<!-- - ------------------------------------------------------ -->
-<section id="four" class="container">
-    <div class="col-xs-12 text-center">
-        <h1> Chcę tę aplikację</h1>
-        <form class="four-form" action="">
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox"> Wyrażam zgodę na przetwarzanie moich danych przez firmę XYZ.
-                    <p>
-                        &nbsp; &nbsp;
-                        Wyślemy do Ciebie tylko jeden email z informacją o premierze aplikacj.
-                    </p>
-                </label>
+<!-- -------------------------------------------------------- -->
+    <section id="four">
+        <div class="container">
+            <div class="col-xs-12 text-center">
+                <h1> Chcę tę aplikację</h1>
+                <form class="four-form" action="">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Wyrażam zgodę na przetwarzanie moich danych przez firmę XYZ.
+                            <p>
+                                &nbsp; &nbsp;
+                                Wyślemy do Ciebie tylko jeden email z informacją o premierze aplikacj.
+                            </p>
+                        </label>
+                    </div>
+                    <input type="email" name="email" placeholder="Podaj swoj adres e-mail">
+                    <div class="four-submit">
+                        <input type="submit" value="Zapisz mnie">
+                    </div>
+                </form>
             </div>
-            <input type="email" name="email" placeholder="Podaj swoj adres e-mail">
-            <div class="four-submit">
-                <input type="submit" value="Zapisz mnie">
-            </div>
-        </form>
-    </div>
-</section>
+        </div>
+    </section>
 <!-- -------------------------------------------------------- -->
 <!--                Footer                                    -->
-<!-- - ------------------------------------------------------ -->
-<footer>
-    <p>&copy; 2016 Wmiasto by Nieglupiepsy Team</p>
-</footer>
+<!-- -------------------------------------------------------- -->
+    <footer>
+        <p>&copy; 2016 WMIASTO by Nieglupiepsy Team</p>
+    </footer>
 </body>
 </html>
