@@ -67,9 +67,14 @@ p {
 .navbar .navbar-nav>li>a:focus, .navbar .navbar-nav>li>a:hover{
     background-color: #FD9766;
     color:white;
-
 }
 
+@media screen and (max-width:300px) {
+    .navbar-header img {
+        height: 20px;
+        margin-top: 15px;
+    }
+}
 
 /********************************************************************/
 /*-------------------Section 1 styles----------------------------****/
