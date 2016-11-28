@@ -32,7 +32,7 @@ p {
 }
 
 .nav > li > a {
-  padding: 15px 25px;
+  padding: 25px 25px;
 }
 
 .navbar-default .navbar-toggle {
@@ -64,19 +64,18 @@ p {
 
 .navbar-header img {
     height: 40px;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .navbar .navbar-nav>li>a {
     color: orangered;
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-shadow: none;
-    font-family: "Open Sans", "DejaVu Sans", Arial, sans-serif;
-    font-weight: 600;
+    font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
 }
 
 .navbar .navbar-nav > li > a:focus, .navbar .navbar-nav > li > a:hover {
-  background-color: #FD9766;
+  background-color: #fd5d1d;
   color: white;
 }
 
@@ -179,6 +178,12 @@ p {
   text-align: center;
   margin: 4% 0;
   padding: 0 4%;
+  min-height: 400px;
+}
+@media screen and (max-width: 992px){
+    .function{
+        min-height: 1px; /*<<--return to bootstrap default*/
+    }
 }
 
 .function i {
@@ -209,7 +214,7 @@ p {
 }
 
 .function .i-three{
-    transition: 1.2s;
+    transition: 1.5s;
 }
 .function .i-three:hover{
     transform: rotateZ(720deg);
@@ -251,7 +256,7 @@ p {
 }
 
 .function-summary-txt {
-  margin: 5% 0;
+  margin: 50px 0 0;
   text-align: justify;
 }
 .function-summary h3{
@@ -259,10 +264,34 @@ p {
     font-weight: bold;
 }
 
+
+@media screen and (max-width: 1200px) {
+    .function-summary-txt {
+        margin: 10px 0 0;
+    }
+    .function-summary h3 {
+        margin-top: 10px;
+     }
+    .function-summary-txt {
+        font-size: 1.1em;
+    }
+}
+@media screen and (max-width: 992px) {
+    .function-summary-txt p{
+        font-size: 0.9em;
+    }
+}
+
 @media screen and (max-width: 768px) {
-  .function-summary h3 {
-    text-align: center;
-  }
+    .function-summary h3 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .function-summary-txt {
+        margin: 0 0 40px;
+        font-size: 1.2em;
+    }
 }
 
 /*********************************************************/
@@ -278,7 +307,7 @@ p {
   font-size: 45px;
   font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
   font-weight: bold;
-  padding-top: 5%;
+  padding-top: 8%;
   padding-bottom: 5%;
 }
 
@@ -286,8 +315,8 @@ p {
     padding: 8px;
     transition: 1s ease-in-out;
 }
-.person div{
-    position:relative;
+.person {
+    margin-bottom: 30px;
 }
 
 .person h3.person-name {
@@ -322,8 +351,8 @@ p {
 #four {
   font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
   margin-top: 40px;
-  padding-bottom: 10%;
-  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-top: 120px;
   background: url('graphics/zapisz_geometry.png');
 }
 
@@ -331,6 +360,7 @@ p {
   text-align: center;
   font-size: 45px;
   font-weight: bold;
+  margin-bottom: 40px;
 }
 
 .four-form {
