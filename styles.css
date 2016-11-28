@@ -235,7 +235,7 @@ p {
 
 .function h3 {
     padding: 10px 0;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 .function p {
@@ -261,7 +261,7 @@ p {
 }
 .function-summary h3{
     padding-bottom: 2%;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 
@@ -323,7 +323,7 @@ p {
   text-align: center;
   font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
   font-size: 1.8em;
-  font-weight: bold;
+  /*font-weight: bold;*/
   line-height: 1.6em;
   margin-top: 14px;
 }
