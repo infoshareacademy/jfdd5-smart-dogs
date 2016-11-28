@@ -55,13 +55,15 @@ p {
 }
 .navbar-header img {
     height: 40px;
-    margin-top: 4px;
+    margin-top: 5px;
 }
 
 .navbar .navbar-nav>li>a {
     color: orangered;
-    font-size: 1.1em;
+    font-size: 1.2em;
     text-shadow: none;
+    font-family: "Open Sans", "DejaVu Sans", Arial, sans-serif;
+    font-weight: 600;
 }
 
 .navbar .navbar-nav>li>a:focus, .navbar .navbar-nav>li>a:hover{
@@ -101,7 +103,7 @@ p {
     position: relative;
     color:white;
     font-size: 3vw;
-    text-shadow: 0 0 15px #3A3E40;
+    text-shadow: 1px 1px 10px #3A3E40;
     text-align: center;
     font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
 }
@@ -168,8 +170,52 @@ p {
     font-size: 60px;
     opacity: 0.2;
 }
+/*/++++++++++++++++*ANIMATIONS*++++++++++++++++++++/*/
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.5);}
+    100% {transform: scale(1);}
+}
+.function .i-first:hover{
+    animation-name: pulse;
+    animation-duration: 0.8s;
+    animation-iteration-count: 3;
+}
+
+@keyframes move {
+    0% {transform: translate(0,0); opacity: 0.2;}
+    30% {transform: translate(0,20px); opacity: 0.2;}
+    100% {transform: translate(0,-80px); opacity: 0;}
+}
+.function .i-second:hover{
+    animation-name: move;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+
+.function .i-three{
+    transition: 1.2s;
+}
+.function .i-three:hover{
+    transform: rotateZ(720deg);
+    transform-origin: left bottom;
+}
+@keyframes turn {
+    0% {transform: rotateX(0deg); }
+    50% {transform: rotateX(360deg); }
+    100% {transform: rotateX(0deg); }
+}
+.function .i-four:hover{
+    animation-name: turn;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+/*/++++++++++++END--------OF++++*ANIMATIONS*++++++++++++++++++++/*/
+
 .function h3 {
     padding: 10px 0;
+    font-weight: bold;
 }
 .function p {
     margin-bottom: 16px;
@@ -190,6 +236,7 @@ p {
 }
 .function-summary h3{
     padding-bottom: 2%;
+    font-weight: bold;
 }
 @media screen and (max-width:768px){
     .function-summary h3{
@@ -216,6 +263,10 @@ p {
 
 .img-thumbnail {
     padding: 8px;
+    transition: 1s ease-in-out;
+}
+.person div{
+    position:relative;
 }
 
 .person h3.person-name {
