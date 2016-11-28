@@ -1,58 +1,67 @@
 /*--------------------------------GENERAL STYLES-------------------------------*/
 body {
-    margin: 0;
-    background-color: white;
-    padding-top: 50px;
+  margin: 0;
+  background-color: white;
+  padding-top: 50px;
 }
+
 ul, h1, h2, h3 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
 p {
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
 }
+
 /********************************************************************/
 /*-------------------Navbar styles----------------------------****/
 /********************************************************************/
 .navbar, .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border: none;
+  border: none;
 }
+
 .navbar {
-    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2)
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2)
 }
 
 .navbar-nav {
-    text-align:center;
-    margin: 0 -15px;
+  text-align: center;
+  margin: 0 -15px;
 }
-.nav>li>a {
-    padding: 15px 25px;
+
+.nav > li > a {
+  padding: 15px 25px;
 }
 
 .navbar-default .navbar-toggle {
-    border-color: white;
+  border-color: white;
 }
+
 .navbar-default .navbar-toggle:hover {
-    border-color: #fd5d1d;
-    background-color: white;
-    color:white;
+  border-color: #fd5d1d;
+  background-color: white;
+  color: white;
 }
+
 .navbar-default .navbar-toggle:active {
-    background-color: white;
+  background-color: white;
 }
+
 .navbar-default .navbar-toggle:focus {
-    background-color: white;
+  background-color: white;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: orangered;
+  background-color: orangered;
 }
 
 .navbar-default {
-    background-image: none;
-    background-color: white;
+  background-image: none;
+  background-color: white;
 }
+
 .navbar-header img {
     height: 40px;
     margin-top: 5px;
@@ -66,16 +75,16 @@ p {
     font-weight: 600;
 }
 
-.navbar .navbar-nav>li>a:focus, .navbar .navbar-nav>li>a:hover{
-    background-color: #FD9766;
-    color:white;
+.navbar .navbar-nav > li > a:focus, .navbar .navbar-nav > li > a:hover {
+  background-color: #FD9766;
+  color: white;
 }
 
-@media screen and (max-width:300px) {
-    .navbar-header img {
-        height: 20px;
-        margin-top: 15px;
-    }
+@media screen and (max-width: 300px) {
+  .navbar-header img {
+    height: 20px;
+    margin-top: 15px;
+  }
 }
 
 /********************************************************************/
@@ -83,20 +92,21 @@ p {
 /********************************************************************/
 
 .picture1 {
-    background: url("./graphics/go_out_gdansk.jpg") no-repeat center top;
-    background-size:cover;
+  background: url("./graphics/go_out_gdansk.jpg") no-repeat center top;
+  background-size: cover;
 }
+
 .push-bg-down {
-    padding-bottom: 10%;
+  padding-bottom: 10%;
 }
 
 .intro {
-    color: white;
-    text-shadow: 0 0 15px #3A3E40;
-    font-size: 7vw;
-    text-align: center;
-    padding-top: 10%;
-    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
+  color: white;
+  text-shadow: 0 0 15px #3A3E40;
+  font-size: 7vw;
+  text-align: center;
+  padding-top: 10%;
+  font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
 }
 
 .intro-male {
@@ -109,66 +119,71 @@ p {
 }
 
 .button {
-    background-color:#FF6D32;
-    color: white;
-    font-size: 3vw;
-    border-radius: 15px;
-    padding: 2% 10%;
-    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
-    text-decoration: none;
+  background-color: #FF6D32;
+  color: white;
+  font-size: 3vw;
+  border-radius: 15px;
+  padding: 2% 10%;
+  font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
+  text-decoration: none;
 }
+
 .button:after {
-    content:"";
-    padding-bottom: 100px;
-    height: 10px;
+  content: "";
+  padding-bottom: 100px;
+  height: 10px;
 }
+
 .button:hover {
-    background-color:#fd5d1d;
-    color:white;
-    text-decoration: none;
-    text-shadow: 1px 1px 3px #3A3E40;
+  background-color: #fd5d1d;
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 3px #3A3E40;
 }
 
 .button-container {
-    text-align: center;
-    padding-top: 40px;
+  text-align: center;
+  padding-top: 40px;
 }
 
 @media screen and ( max-width: 600px) {
-    .intro {
-        font-size: 3em;
-        padding-top: 12%;
-    }
+  .intro {
+    font-size: 3em;
+    padding-top: 12%;
+  }
 
-    .intro-male {
-        font-size: 1.5em;
-     }
-    .button {
-        font-size: 1.3em;
-    }
+  .intro-male {
+    font-size: 1.5em;
+  }
+
+  .button {
+    font-size: 1.3em;
+  }
 }
 
 /********************************************************************/
 /*-------------------Section 2 styles----------------------------****/
 /********************************************************************/
 #two {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 .function_main, .function-summary-txt {
-    font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6em;
+  font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
 }
+
 .function {
-    box-shadow: 6px 10px 54px -30px rgba(0,0,0,0.75);
-    text-align: center;
-    margin: 4% 0;
-    padding: 0 4%;
+  box-shadow: 6px 10px 54px -30px rgba(0, 0, 0, 0.75);
+  text-align: center;
+  margin: 4% 0;
+  padding: 0 4%;
 }
-.function i{
-    font-size: 60px;
-    opacity: 0.2;
+
+.function i {
+  font-size: 60px;
+  opacity: 0.2;
 }
 /*/++++++++++++++++*ANIMATIONS*++++++++++++++++++++/*/
 @keyframes pulse {
@@ -217,31 +232,37 @@ p {
     padding: 10px 0;
     font-weight: bold;
 }
+
 .function p {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
-.function-summary{
-    background-color: #f6f6f6;
-    padding: 0;
+
+.function-summary {
+  background-color: #f6f6f6;
+  padding: 0;
 }
+
 .function-summary-img {
-    padding: 0;
+  padding: 0;
 }
+
 .function-summary-img > img {
-    width: 100%;
+  width: 100%;
 }
+
 .function-summary-txt {
-    margin: 5% 0;
-    text-align: justify;
+  margin: 5% 0;
+  text-align: justify;
 }
 .function-summary h3{
     padding-bottom: 2%;
     font-weight: bold;
 }
-@media screen and (max-width:768px){
-    .function-summary h3{
-        text-align: center;
-    }
+
+@media screen and (max-width: 768px) {
+  .function-summary h3 {
+    text-align: center;
+  }
 }
 
 /*********************************************************/
@@ -253,12 +274,12 @@ p {
 /********************************************************************/
 
 #three h1 {
-    text-align: center;
-    font-size: 45px;
-    font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
-    font-weight: bold;
-    padding-top: 5%;
-    padding-bottom: 5%;
+  text-align: center;
+  font-size: 45px;
+  font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
+  font-weight: bold;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .img-thumbnail {
@@ -270,109 +291,115 @@ p {
 }
 
 .person h3.person-name {
-    text-align: center;
-    font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
-    font-size: 1.8em;
-    font-weight: bold;
-    line-height: 1.6em;
-    margin-top: 14px;
+  text-align: center;
+  font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
+  font-size: 1.8em;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-top: 14px;
 }
 
 .person p.person-bio {
-    font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6em;
+  font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
 }
 
 .three-icons {
-    margin: 10px;
+  margin: 10px;
 }
 
 @media screen and ( max-width: 768px) {
-    .person {
-        margin-bottom: 5%;
-    }
+  .person {
+    margin-bottom: 5%;
+  }
 }
 
 /********************************************************************/
 /*-------------------Section 4 styles----------------------------****/
 /********************************************************************/
 
-#four{
-    font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
-    margin-top: 40px;
-    padding-bottom: 10%;
-    padding-top: 50px;
-    background: url('graphics/zapisz_geometry.png');
+#four {
+  font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
+  margin-top: 40px;
+  padding-bottom: 10%;
+  padding-top: 50px;
+  background: url('graphics/zapisz_geometry.png');
 }
 
 #four h1 {
-    text-align: center;
-    font-size: 45px;
-    font-weight: bold;
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
 }
+
 .four-form {
-    text-align: center;
-    font-size: 25px;
-    padding-top: 25px;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 25px;
 }
+
 .checkbox label {
-    font-size: 16px;
-    line-height: 1.6em;
+  font-size: 16px;
+  line-height: 1.6em;
 }
 
 input[type="email"] {
-    margin: 40px 2%;
-    border-style: none;
-    border-bottom: 2px solid #fd5d1d;
-    background-color: rgba(255,255,255,0);
-    font-size: 45px;
-    font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
-    text-align: center;
-    }
+  margin: 40px 2%;
+  border-style: none;
+  border-bottom: 2px solid #fd5d1d;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 45px;
+  font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
+  text-align: center;
+}
 
 input[type="submit"] {
-    height: 75px;
-    width: 220px;
-    background-color: #fd5d1d;
-    border: none;
-    border-radius: 20px;
-    font-size: 20px;
-    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
-    color: white;
+  height: 75px;
+  width: 220px;
+  background-color: #fd5d1d;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
+  color: white;
 }
+
 .four-submit {
-    text-align: center;
-    padding-bottom: 20px;
+  text-align: center;
+  padding-bottom: 20px;
 }
-@media screen and (max-width: 768px){
-    input[type="email"] {
-        font-size: 24px;
-        margin: 14px 2%;
-    }
-    input[type="submit"] {
-        height: 40px;
-        width: 120px;
-        font-size: 16px;
-    }
-    .checkbox label {
-        font-size: 12px;
-        line-height: 1.4em;
-    }
+
+@media screen and (max-width: 768px) {
+  input[type="email"] {
+    font-size: 24px;
+    margin: 14px 2%;
+  }
+
+  input[type="submit"] {
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+  }
+
+  .checkbox label {
+    font-size: 12px;
+    line-height: 1.4em;
+  }
 }
+
 /********************************************************************/
 /*--------------------Footer----------------------------****/
 /********************************************************************/
 
-
 footer {
-    height: 80px;
-    background-color: #fd5d1d;
-    color: white;
-    text-align: center;
-    font-size: 18px;
-    padding-top: 30px;
-    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
+  height: 80px;
+  background-color: #fd5d1d;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 30px;
+  font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
 }
 
 /*8888888888888888888888888888888888888888888888888888888888*/
