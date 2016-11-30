@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/game.css">
     <title>wmiasto</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,600|Ubuntu" rel="stylesheet">
@@ -17,7 +18,6 @@
             src="https://code.jquery.com/jquery-3.1.1.js"
             integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
             crossorigin="anonymous"></script>
-    <script src="bootstrap/js/bootstrap.js"></script>
 </head>
 <body>
 <!--  -------------------------Navbar------------------------- -->
@@ -323,7 +323,7 @@
 <!---------------------------Section 4 - Form ------------------------->
 <section id="four">
   <div class="container">
-    <div class="col-xs-12 text-center">
+    <div id="form-field" class="col-xs-12 text-center">
       <h1> Chcę tę aplikację</h1>
 
       <form class="four-form" action="">
@@ -341,9 +341,13 @@
         <input type="email" name="email" placeholder="Podaj swoj adres e-mail">
 
         <div class="four-submit">
-          <input type="submit" value="Zapisz mnie">
+          <input id="game-display" type="submit" value="Zapisz mnie">
         </div>
       </form>
+    </div>
+    <!--tu bedzie div-->
+    <div id="game">
+
     </div>
   </div>
 </section>
@@ -351,5 +355,7 @@
 <footer>
   <p>&copy; 2016 WMIASTO by Nieglupiepsy Team</p>
 </footer>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="js/game.js"></script>
 </body>
 </html>

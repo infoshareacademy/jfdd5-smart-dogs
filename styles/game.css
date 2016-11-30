@@ -1,0 +1,19 @@
+table {
+    margin: 0 auto;
+}
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #000;
+}
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+#game {
+    display: none;
+}
