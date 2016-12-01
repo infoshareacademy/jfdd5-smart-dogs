@@ -190,6 +190,11 @@ p {
   font-size: 60px;
   opacity: 0.2;
 }
+
+.bootcon {
+   background : none;
+    border: none;
+}
 /*/++++++++++++++++*ANIMATIONS*++++++++++++++++++++/*/
 @keyframes pulse {
     0% {transform: scale(1);}
