@@ -3,12 +3,12 @@
  */
 $(document).on('scroll resize', function() {
   var scrollFromTop = $(document).scrollTop();
-  var distanceFromTop = $('#two').offset().top;
+  var distanceFromTopTwo = $('#two').offset().top;
 
   console.log(scrollFromTop);
-  console.log(distanceFromTop);
-  if (scrollFromTop>distanceFromTop) {
-    $('#menubar').addClass('menu-highlight');
+  console.log(distanceFromTopTwo);
+  if (scrollFromTop>distanceFromTopTwo) {
+    $('#navbar-function').addClass('menu-highlight');
   }
 
 });
