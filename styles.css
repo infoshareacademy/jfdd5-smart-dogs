@@ -343,6 +343,11 @@ p {
     margin-bottom: 5%;
   }
 }
+@media (min-width: 768px) {
+    .col-sm-6 {
+        margin-bottom: 5%;
+    }
+}
 
 /********************************************************************/
 /*-------------------Section 4 styles----------------------------****/
@@ -423,7 +428,7 @@ input[type="submit"] {
 /********************************************************************/
 
 footer {
-  height: 80px;
+  height: 200px;
   background-color: #fd5d1d;
   color: white;
   text-align: center;
