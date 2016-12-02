@@ -14,6 +14,10 @@ table {
 .show {
     display: block;
 }
-#game {
+#game, #startbutton {
     display: none;
+}
+
+.player {
+    background-color: red;
 }
