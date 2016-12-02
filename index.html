@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="styles/game.css">
-  <title>wmiasto</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,600|Ubuntu" rel="stylesheet">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
-  <link rel="icon"
-        type="image/png"
-        href="graphics/logo_small.png">
-  <script
-          src="https://code.jquery.com/jquery-3.1.1.js"
-          integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-          crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/game.css">
+    <link rel="stylesheet" href="styles/menu.css">
+
+    <title>wmiasto</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,600|Ubuntu" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link rel="icon"
+          type="image/png"
+          href="graphics/logo_small.png">
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.js"
+            integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+            crossorigin="anonymous"></script>
 </head>
 <body>
 <!--  -------------------------Navbar------------------------- -->
@@ -44,27 +46,27 @@
             </a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse"
-             id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#two">
-                        FUNKCJE</a>
-                </li>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse"
+         id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li id="navbar-function">
+          <a href="#two">
+            FUNKCJE</a>
+        </li>
 
-                <li>
-                    <a href="#three">
-                        ZESPÓŁ</a>
-                </li>
+        <li id="navbar-team">
+          <a href="#three">
+            ZESPÓŁ</a>
+        </li>
 
-                <li>
-                    <a href="#four">
-                        KONTAKT</a>
-                </li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+        <li id="navbar-contact">
+          <a href="#four">
+            KONTAKT</a>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
 </nav>
 <!------------------- Section 1 - Zajawka ------------------>
 <section id="one" class="picture1">
@@ -382,10 +384,12 @@
     </div>
 </section>
 <!-- ------------------Footer---------------------- -->
-<footer>
-    <p>&copy; 2016 WMIASTO by Nieglupiepsy Team</p>
+<footer id="footer">
+  <p>&copy; 2016 WMIASTO by Nieglupiepsy Team</p>
 </footer>
 <script src="bootstrap/js/bootstrap.js"></script>
 <script src="js/game.js"></script>
+<script src="js/menu.js"></script>
+
 </body>
 </html>
