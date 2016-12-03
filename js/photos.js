@@ -12,10 +12,12 @@ $(document).on('scroll resize', function () {
     ) {
       $('#three').addClass('i-ve-been-there');
       $('.front').addClass('flip-front-scroll');
+      $('.front').addClass('transition-scroll');
       $('.back').addClass('flip-back-scroll');
-      setTimeout(function () {
-        $('.front').removeClass('flip-front-scroll');
-        $('.back').removeClass('flip-back-scroll');
+      $('.back').addClass('transition-scroll');
+        setTimeout(function () {
+        $('.front').removeClass('transition-scroll');
+        $('.back').removeClass('transition-scroll');
       }, 2000);
     }
 
