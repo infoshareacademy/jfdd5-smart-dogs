@@ -3,21 +3,21 @@
  */
 $(document).on('scroll resize', function () {
     var scrollFromTop = $(document).scrollTop();
-
-    var distanceFromTopTeam = $('#three').offset().top - 240;
+    var additionalOffset = 240; //makes the animation start before the whole section becomes visible
+    var distanceFromTopTeam = $('#three').offset().top - additionalOffset; //defines the animation start moment
 
     if (
       scrollFromTop >= distanceFromTopTeam &&
-        !$('#three').hasClass('i-ve-been-there')
+      !$('#three').hasClass('i-ve-been-there')
     ) {
       $('#three').addClass('i-ve-been-there');
       $('.front').addClass('flip-front-scroll');
       $('.front').addClass('transition-scroll');
       $('.back').addClass('flip-back-scroll');
       $('.back').addClass('transition-scroll');
-        setTimeout(function () {
-        $('.front').removeClass('transition-scroll');
-        $('.back').removeClass('transition-scroll');
+      setTimeout(function () {
+      $('.front').removeClass('transition-scroll');
+      $('.back').removeClass('transition-scroll');
       }, 2000);
     }
 
