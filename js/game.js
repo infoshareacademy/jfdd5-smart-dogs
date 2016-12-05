@@ -24,10 +24,11 @@ function times(x, action) {
 function randomCell() {
   var x = Math.round(Math.random() * (z - 1));
   var y = Math.round(Math.random() * (z - 1));
-  console.log(x + '-' + y);
-  return x + '-' + y;
+  // console.log(x + '-' + y);
+  // return x + '-' + y;
+  return $('[x="' + x + '"][y="' + y +'"]')
 }
-var selector = '.' + randomCell();
+
 
 function showBoard() {
 // build game field
@@ -40,8 +41,9 @@ function showBoard() {
     times(z, function (x) {
       var $td = $('<td>');
       $td.addClass('cell');
-      $td.('cell');
-      $td.addClass(x + '-' + y);
+      $td.attr('x', x);
+      $td.attr('y', y);
+      // $td.addClass(x + '-' + y);
       $tr.append($td);
     });
   });
@@ -55,8 +57,27 @@ $('#game-display').click(function (event) {
   $('#form-field').toggleClass('hide');
   $('#startbutton').toggleClass('show');
   showBoard();
+
+  $('table').on('click', 'td', function () {
+    var click = {
+      x: $(this).attr('x'),
+      y: $(this).attr('y')
+    };
+
+    var $playerCell = $('.player')
+
+    var player = {
+      x: $playerCell.attr('x'),
+      y: $playerCell.attr('y')
+    };
+
+    $playerCell.removeClass('player');
+    $(this).addClass('player');
+  })
 });
 $('#startbutton').click(function () {
-  $(selector).addClass('player');
+  var playerCell = randomCell();
+  // console.log(playerCell);
+  playerCell.addClass('player');
 });
 
