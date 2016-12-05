@@ -40,6 +40,7 @@ function showBoard() {
     times(z, function (x) {
       var $td = $('<td>');
       $td.addClass('cell');
+      $td.('cell');
       $td.addClass(x + '-' + y);
       $tr.append($td);
     });
