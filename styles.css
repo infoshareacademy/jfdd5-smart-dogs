@@ -186,6 +186,26 @@ p {
     }
 }
 
+.carousel-control {
+  left: -12px;
+  height: 40px;
+  width: 40px;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  margin-top: 90px;
+}
+
+@media screen {
+  .carousel-control.rig {
+    left: auto;
+    right: 0;
+  }
+
+  .carousel-control.lef {
+    right: -12px;
+  }
+}
 .function i {
   font-size: 60px;
   opacity: 0.2;
@@ -195,6 +215,15 @@ p {
    background : none;
     border: none;
 }
+@media screen {
+  .carousel-indicators {
+    bottom: 55px;
+  }
+  .carousel-indicators li{
+    padding: 10px;
+  }
+}
+
 .carousel-indicators li {
     background-color: #999;
     background-color: rgba(70,70,70,.25);
