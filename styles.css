@@ -462,13 +462,39 @@ input[type="submit"] {
 /********************************************************************/
 
 footer {
-  height: 200px;
-  background-color: #fd5d1d;
+  background-color: #333333;
+    /*#f6f6f6;*/
   color: white;
   text-align: center;
   font-size: 18px;
   padding-top: 30px;
   font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
+}
+
+#footer h3 {
+  text-align: left;
+margin: 5% auto 10%;
+}
+
+#footer ul, p {
+  list-style-type: none;
+  text-align: left;
+  font-size: 15px;
+}
+#footer li {
+  line-height: 1.6em;
+
+}
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+#footer a:hover {
+  border-bottom: 1px solid #fd5d1d;
+}
+#footer img {
+  height: 27px;
+  vertical-align: bottom;
 }
 
 /*8888888888888888888888888888888888888888888888888888888888*/
