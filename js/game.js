@@ -60,24 +60,34 @@ $('#game-display').click(function (event) {
 
   $('table').on('click', 'td', function () {
     var click = {
-      x: $(this).attr('x'),
-      y: $(this).attr('y')
+      x: parseInt($(this).attr('x')),
+      y: parseInt($(this).attr('y'))
+
     };
 
-    var $playerCell = $('.player')
+    var $playerCell = $('td.player');
 
+    console.log($playerCell);
     var player = {
-      x: $playerCell.attr('x'),
-      y: $playerCell.attr('y')
+      x: parseInt($playerCell.attr('x')),
+      y: parseInt($playerCell.attr('y'))
     };
 
-    $playerCell.removeClass('player');
-    $(this).addClass('player');
-  })
+    console.log(click, player);
+
+    if (
+      Math.abs(click.x - player.x) <= 1 &&
+      Math.abs(click.y - player.y) <= 1
+    ) {
+      $playerCell.removeClass('player');
+      $(this).addClass('player');
+    }
+
+    })
 });
 $('#startbutton').click(function () {
   var playerCell = randomCell();
-  // console.log(playerCell);
+  $('.cell').removeClass('player');
   playerCell.addClass('player');
 });
 
