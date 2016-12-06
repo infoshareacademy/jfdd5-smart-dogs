@@ -36,6 +36,6 @@ $(document).on('scroll resize', function () {
   }
 );
 //insert last modification date in footer:
-var msg = '<p><span>Ostatnia modyfikacja: <span/>' + document.lastModified + '</p>';
+var msg = '<p><span>Ostatnia modyfikacja: <span/><br>' + document.lastModified + '</p>';
 var el = document.getElementById('dateActualization');
 el.innerHTML = msg;
