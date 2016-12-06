@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/game.css">
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/photos.css">
-
+    <link rel="stylesheet" href="styles/slider.css">
     <title>wmiasto</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,600|Ubuntu" rel="stylesheet">
@@ -42,10 +42,10 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-left" href="#">
-                <img src="graphics/logo.png"/>
-            </a>
-        </div>
+      <a class="navbar-left" href="#">
+        <img src="graphics/logo.png"/>
+      </a>
+    </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse"
@@ -88,102 +88,168 @@
     </div>
 </section>
 <!-- ---------------- Section 2 - Funkcje ---------------------- -->
+<!--Function Slider -->
 <section id="two" class="container">
-    <div class="function_main row">
-        <div class="function col-xs-12 col-sm-6 col-md-3">
-            <i class="i-first material-icons">
-                place
-            </i>
+  <div class="row">
+    <div class="span12">
+      <div class="bootcon">
+        <div id="myCarousel" class="carousel fdi-Carousel slide">
+          <!-- Carousel items -->
+          <div class="carousel fdi-Carousel slide" id="eventCarousel" data-interval="0">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+              <li data-target="#myCarousel" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner onebyone-carosel function_main">
+              <div class="item active">
+                <div class="col-md-4 function">
+                  <i class="i-first material-icons">
+                    place
+                  </i>
 
-            <h3>
-                Wyszukiwarka
-            </h3>
+                  <h3>
+                    Wyszukiwarka
+                  </h3>
 
-            <p>
-                Stworzyliśmy aplikację, pozwalającą zlokalizować wydarzenia
-                odbywające się w pobliżu miejsca, w którym się znajdujesz.
-                Po uruchomieniu jej uzyskasz informacje na temat imprez X
-                km od miejsca Twojego pobytu.
-            </p>
-        </div>
+                  <p>
+                    Stworzyliśmy aplikację, pozwalającą zlokalizować wydarzenia
+                    odbywające się w pobliżu miejsca, w którym się znajdujesz.
+                    Po uruchomieniu jej uzyskasz informacje na temat imprez X
+                    km od miejsca Twojego pobytu.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-md-4 function">
+                  <i class="i-second material-icons">
+                    email
+                  </i>
 
-        <div class="function col-xs-12 col-sm-6 col-md-3">
-            <i class="i-second material-icons">
-                email
-            </i>
+                  <h3>
+                    Powiadomienia
+                  </h3>
 
-            <h3>
-                Powiadomienia
-            </h3>
+                  <p>
+                    Kiedy poznasz już termin imprezy, dodaj ją do terminarza.
+                    Przed jej rozpoczęciem wyślemy Ci e-mail z przypomnieniem.
+                    Tą samą drogą powiadomimy Cię gdy impezy zostanie
+                    odwołana lub zmieni się jej termin.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-md-4 function">
+                  <i class="i-three material-icons">
+                    sms
+                  </i>
 
-            <p>
-                Kiedy poznasz już termin imprezy, dodaj ją do terminarza.
-                Przed jej rozpoczęciem wyślemy Ci e-mail z przypomnieniem.
-                Tą samą drogą powiadomimy Cię gdy impezy zostanie
-                odwołana lub zmieni się jej termin.
-            </p>
-        </div>
+                  <h3>
+                    Subskrypcje
+                  </h3>
 
-        <div class="function col-xs-12 col-sm-6 col-md-3">
-            <i class="i-three material-icons">
-                sms
-            </i>
+                  <p>
+                    Jeśli interesują Cię wydarzenia z konkretnych dziedzin
+                    możesz skorzystać z naszej wyszukiwarki.
+                    Otrzymasz informacje zawsze, kiedy i gdzie odbędzie
+                    się wydarzenie spełniające wskazane przez Ciebie kryteria.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-md-4 function">
+                  <i class="i-four material-icons">
+                    event_available
+                  </i>
 
-            <h3>
-                Subskrypcje
-            </h3>
+                  <h3>
+                    Terminarz
+                  </h3>
 
-            <p>
-                Jeśli interesują Cię wydarzenia z konkretnych dziedzin
-                możesz skorzystać z naszej wyszukiwarki.
-                Otrzymasz informacje zawsze, kiedy i gdzie odbędzie
-                się wydarzenie spełniające wskazane przez Ciebie kryteria.
-            </p>
-        </div>
+                  <p>
+                    Do terminarza możesz dodawać zapowiadane przez nas wydarzenia
+                    i przeglądać je w dowolnej chwili. Za każdym razem, kiedy zmieni
+                    się termin imprezy, bądź zostanie odwołana, zostaniesz przez
+                    nas poinformowany.
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-md-4 function">
+                  <i class="i-second material-icons">
+                    dns
+                  </i>
 
-        <div class="function col-xs-12 col-sm-6 col-md-3">
-            <i class="i-four hvr-buzz-out material-icons">
-                event_available
-            </i>
+                  <h3>
+                    Precyzyjne wyszukiwanie
+                  </h3>
 
-            <h3>
-                Terminarz
-            </h3>
+                  <p>
+                    Możesz przeglądać wszystkie wydażenia lub ograniczyć sie do
+                    spersonalizowanych kryteriów wyszukiwania lub daty, która tobie odpowida.
+                    Możesz również wybrać wydarzenia  darmowe, biletowe lub o okreżlonej randze.
 
-            <p>
-                Do terminarza możesz dodawać zapowiadane przez nas wydarzenia
-                i przeglądać je w dowolnej chwili. Za każdym razem, kiedy zmieni
-                się termin imprezy, bądź zostanie odwołana, zostaniesz przez
-                nas poinformowany.
-            </p>
-        </div>
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-md-4 function">
+                  <i class="i-three material-icons">
+                    style
+                  </i>
+
+                  <h3>
+                    Sortowanie wydarzeń
+                  </h3>
+
+                  <p>
+                    Twoje wynki wysukiwanie zobaczysz posortowane według
+                    odległości od miejsca, w którym się znajdujesz.
+                    Dodatkowo możesz stosować własne filtry, zawężające wyszukiwane wydażenie
+                    do określonej kategori bądz teminu.
+                </div>
+              </div>
+            </div>
+
+            <a data-slide="prev" href="#myCarousel" class="carousel-control rig">›</a>
+            <a data-slide="next" href="#myCarousel" class="carousel-control lef">‹</a>
+
+          </div>
+          <!--/carousel-inner-->
+        </div><!--/myCarousel-->
+      </div>
+    </div>
+  </div>
+
+<!--Function Slider End-->
+
+  <div class="function-summary row">
+    <div class="function-summary-img col-sm-6">
+      <img src="graphics/crowdmini.jpg"
+           alt="Koncert"
+           width="740px" height="332px">
     </div>
 
-    <div class="function-summary row">
-        <div class="function-summary-img col-sm-6">
-            <img src="graphics/crowdmini.jpg"
-                 alt="Koncert"
-                 width="740px" height="322px">
-        </div>
+    <div class="function-summary-txt col-sm-6">
+      <h3>
+        Wyszukiwarka
+      </h3>
 
-        <div class="function-summary-txt col-sm-6">
-            <h3>
-                Wyszukiwarka
-            </h3>
-
-            <p>
-                Precyzyjna wyszukiwarka WMIASTO przefiltruje bazę imprez
-                pod kątem wybranych przez Ciebie kryteriów wyszukiwania:
-                kategorii imprezy, organizatora,
-                słów zawartych w opisie imprezy, tagów,
-                lokalizacji lub określonej odległości od wybranego punktu.
-                Jeśli szukasz wydarzeń zawsze według tego samego klucza,
-                przydatna okaże się funkcja zapisywania ich ustawień.
-                Dzięki temu nie będziesz musiał tracić czasu
-                na ich wielokrotne uzupełnianie.
-            </p>
-        </div>
+      <p>
+        Precyzyjna wyszukiwarka WMIASTO przefiltruje bazę imprez
+        pod kątem wybranych przez Ciebie kryteriów wyszukiwania:
+        kategorii imprezy, organizatora,
+        słów zawartych w opisie imprezy, tagów,
+        lokalizacji lub określonej odległości od wybranego punktu.
+        Jeśli szukasz wydarzeń zawsze według tego samego klucza,
+        przydatna okaże się funkcja zapisywania ustawień ryteriów wyszukiwania.
+        Dzięki temu nie będziesz musiał tracić czasu
+        na ich wielokrotne uzupełnianie.
+      </p>
     </div>
+  </div>
 </section>
 <!-- ----------------- Section 3 - About us -------------------->
 <section id="three"
@@ -192,52 +258,13 @@
         Nasza drużyna
     </h1>
 
-    <div class="person col-md-3 col-sm-6 col-xs-12 text-center">
-        <div class="person-img-container">
-            <div class="front">
-                <img class="img-responsive img-thumbnail img-circle"
-                     src="graphics/magda.jpg">
-            </div>
-            <div class="back col-xs-offset-3 col-sm-offset-0">
-                <div class="three-icons text-center">
-                    <a href="https://pl-pl.facebook.com/"
-                       target="_blank">
-                        <img src="graphics/icons/facebook.png"
-                             alt="facebook iccon">
-                    </a>
-
-                    <a href="https://github.com/"
-                       target="_blank">
-                        <img src="graphics/icons/github.png"
-                             alt="github iccon">
-                    </a>
-
-                    <a href="https://www.linkedin.com/"
-                       target="_blank">
-                        <img src="graphics/icons/linkedin.png"
-                             alt="lincedin iccon">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="person-about-container">
-            <h3 class="person-name">
-                Magda Nurzyńska
-            </h3>
-
-        </div>
-        <p class="person-bio col-xs-10 col-xs-offset-1">
-            Entuzjastka aktywnego trybu życia, na bieżąco śledząca wydarzenia na trójmieskich scenach muzycznych, jak i
-            teatralnych. Dzięki niej nie ominie Ciebie nic co warte jest uwagi w Trójmieście.
-        </p>
-    </div>
-    <div class="person col-md-3 col-sm-6 col-xs-12 text-center">
+    <div class="person col-md-4 col-sm-6 col-xs-12 text-center">
         <div class="person-img-container">
             <div class="front">
                 <img class="img-responsive img-thumbnail img-circle"
                      src="graphics/pawel.jpg">
             </div>
-            <div class="back col-xs-offset-3 col-sm-offset-0">
+            <div class="back">
                 <div class="three-icons text-center">
                     <a href="https://pl-pl.facebook.com/"
                        target="_blank">
@@ -245,13 +272,13 @@
                              alt="facebook iccon">
                     </a>
 
-                    <a href="https://github.com/"
+                    <a href="https://github.com/pawelziezio"
                        target="_blank">
                         <img src="graphics/icons/github.png"
                              alt="github iccon">
                     </a>
 
-                    <a href="https://www.linkedin.com/"
+                    <a href="https://pl.linkedin.com/in/pawel-ziezio-485a87a4"
                        target="_blank">
                         <img src="graphics/icons/linkedin.png"
                              alt="lincedin iccon">
@@ -270,30 +297,30 @@
             spędzać czas w towarzystwie swoich czworonogów. Miłośmik wszelakiej aktywności miejskiej.
         </p>
     </div>
-    <div class="person col-md-3 col-sm-6 col-xs-12 text-center">
+    <div class="person col-md-4 col-sm-6 col-xs-12 text-center">
         <div class="person-img-container">
             <div class="front">
                 <img class="img-responsive img-thumbnail img-circle"
                      src="graphics/karolina.jpg">
             </div>
-            <div class="back col-xs-offset-3 col-sm-offset-0">
+            <div class="back">
                 <div class="three-icons text-center">
                     <a href="https://pl-pl.facebook.com/"
                        target="_blank">
                         <img src="graphics/icons/facebook.png"
-                             alt="facebook iccon">
+                             alt="facebook icon">
                     </a>
 
-                    <a href="https://github.com/"
+                    <a href="https://github.com/KarolinaHetmanska"
                        target="_blank">
                         <img src="graphics/icons/github.png"
-                             alt="github iccon">
+                             alt="github icon">
                     </a>
 
-                    <a href="https://www.linkedin.com/"
+                    <a href="https://pl.linkedin.com/in/karolina-hetmanska-432418134"
                        target="_blank">
                         <img src="graphics/icons/linkedin.png"
-                             alt="lincedin iccon">
+                             alt="lincedin icon">
                     </a>
                 </div>
             </div>
@@ -308,13 +335,13 @@
             Studentka anglistyki. W wolnym czasie uwielbia spacery po Gdańsku, dzięki którym odkrywa niesamowitą historię swojego miasta. A gdy nie spaceruje - lubi ugotować cos dobrego lub po prostu usiąść przy dobrej herbacie.
         </p>
     </div>
-    <div class="person col-md-3 col-sm-6 col-xs-12 text-center">
+    <div class="person col-md-4 col-xs-12 text-center">
         <div class="person-img-container">
             <div class="front">
                 <img class="img-responsive img-thumbnail img-circle"
                      src="graphics/kuba.jpg">
             </div>
-            <div class="back col-xs-offset-3 col-sm-offset-0">
+            <div class="back">
                 <div class="three-icons text-center">
                     <a href="https://pl-pl.facebook.com/"
                        target="_blank">
@@ -322,13 +349,13 @@
                              alt="facebook iccon">
                     </a>
 
-                    <a href="https://github.com/"
+                    <a href="https://github.com/KubaTuscher"
                        target="_blank">
                         <img src="graphics/icons/github.png"
                              alt="github iccon">
                     </a>
 
-                    <a href="https://www.linkedin.com/"
+                    <a href="https://www.linkedin.com/in/jakub-tuscher-3451882"
                        target="_blank">
                         <img src="graphics/icons/linkedin.png"
                              alt="lincedin iccon">
@@ -382,12 +409,60 @@
 </section>
 <!-- ------------------Footer---------------------- -->
 <footer id="footer">
-  <p>&copy; 2016 WMIASTO by Nieglupiepsy Team</p>
+  <div class="container">
+    <div class="row">
+    <div class="col-sm-offset-3 col-sm-3 lists">
+      <h4>Kategorie</h4>
+      <ul>
+        <li><a href="#two">Wyszukiwarka</a></li>
+        <li><a href="#two">Ppowiadomienia</a></li>
+        <li><a href="#two">Subskrypcje</a></li>
+        <li><a href="#two">Terminarz</a></li>
+        <li><a href="#two">Inne</a></li>
+        <li><a href="#two">Inne</a></li>
+      </ul>
+    </div>
+        <div class="col-sm-3">
+            <h4>Wmiasto</h4>
+            <ul>
+                <li>
+                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzIgMzIiIHZ
+        lcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDMyIDMyIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG
+        5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBpZD0iU3R5bGVfMiI+PGc+PHBhdGggZD0iTTE2LDBDNy4xNjMsMCwwLDcuMTYzLDAsMTZ
+        jMCw4LjgzNiw3LjE2MywxNiwxNiwxNnMxNi03LjE2NCwxNi0xNkMzMiw3LjE2MywyNC44MzcsMCwxNiwweiIgZmlsbD0iIzMzMzMzMyIvPjwvZz48Zz48cG9seWdv
+        biBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjYuNTE4LDIxLjgxNSAxMS43MDcsMTUuMjkxIDYuNTE4LDEyLjExOSAgICIvPjxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiI
+        HBvaW50cz0iMTkuNSwxNS43NDYgMTUuOTg5LDE3LjkwOCAxMi40NzIsMTUuNzU4IDcuMTEsMjIuNSAyNC44NjcsMjIuNSAgICIvPjxwb2x5Z29uIGZpbGw9IiNGRk
+        ZGRkYiIHBvaW50cz0iMTUuOTg4LDE2Ljg2NCAyNS40ODIsMTEuMDE3IDI1LjQ4Miw5LjUgNi41MTgsOS41IDYuNTE4LDExLjA3NiAgICIvPjxwb2x5Z29uIGZpbG
+        w9IiNGRkZGRkYiIHBvaW50cz0iMjAuMjYzLDE1LjI3NiAyNS40ODIsMjEuODQzIDI1LjQ4MiwxMi4wNjIgICAiLz48L2c+PC9nPjwvc3ZnPg=="
+                         alt="email-icon">
+                    <a href="#"> Kontakt</a>
+                </li>
+                <li>
+                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzIgMzIiIHZl
+        cnNpb249IjEuMSIgdmlld0JveD0iMCAwIDMyIDMyIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5z
+        OnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBpZD0iRmxhdF9jb3B5Ij48Zz48cGF0aCBkPSJNMTYsMEM3LjE2MywwLDAsNy4xNjMsMCwxN
+        mMwLDguODM2LDcuMTYzLDE2LDE2LDE2czE2LTcuMTY0LDE2LTE2QzMyLDcuMTYzLDI0LjgzNywwLDE2LDB6IiBmaWxsPSIjMzMzMzMzIi8+PC9nPjxwYXRoIGQ9Ik
+        0xMy42OSwyNC45MDNoMy42Nzl2LTguOTA0aDIuNDU0bDAuMzI1LTMuMDY4aC0yLjc3OWwwLjAwNC0xLjUzNmMwLTAuOCwwLjA3Ni0xLjIyOSwxLjIyNC0xLjIyOWg
+        xLjUzNCAgIFY3LjA5N2gtMi40NTVjLTIuOTQ5LDAtMy45ODYsMS40ODktMy45ODYsMy45OTJ2MS44NDJoLTEuODM4djMuMDY5aDEuODM4VjI0LjkwM3oiIGZpbGw
+        9IiNGRkZGRkYiLz48L2c+PC9zdmc+"
+                         alt="fb-icon">
+                    <a href="#"> facebook</a>
+                </li>
+                <li><a href="#three">Nasza drużyna</a></li>
+                <li id="dateActualization"></li>
+            </ul>
+
+
+    </div>
+      <!--<p>&copy; 2016 WMIASTO by Nieglupiepsy Team</p>-->
+    </div>
+    </div>
 </footer>
 <script src="bootstrap/js/bootstrap.js"></script>
 <script src="js/game.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/photos.js"></script>
+<script src="js/function-slider.js"></script>
 
 </body>
 </html>

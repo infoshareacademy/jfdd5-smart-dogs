@@ -93,3 +93,6 @@ $('#startbutton').click(function () {
   playerCell.addClass('player');
 });
 
+
+
+

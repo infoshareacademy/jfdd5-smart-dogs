@@ -79,11 +79,16 @@ p {
   color: white;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 768px) {
   .navbar-header img {
-    height: 20px;
-    margin-top: 15px;
+    margin-top: 5px;
   }
+}
+@media screen and (max-width: 300px) {
+    .navbar-header img {
+        height: 30px;
+        margin-top: 10px;
+    }
 }
 
 /********************************************************************/
@@ -93,6 +98,8 @@ p {
 .picture1 {
   background: url("./graphics/go_out_gdansk.jpg") no-repeat center top;
   background-size: cover;
+  /*background-attachment: fixed;*/
+
 }
 
 .push-bg-down {
@@ -186,9 +193,51 @@ p {
     }
 }
 
+.carousel-control {
+  left: -12px;
+  height: 40px;
+  width: 40px;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  margin-top: 90px;
+}
+
+@media screen {
+  .carousel-control.rig {
+    left: auto;
+    right: 0;
+  }
+
+  .carousel-control.lef {
+    right: -12px;
+  }
+}
 .function i {
   font-size: 60px;
   opacity: 0.2;
+}
+
+.bootcon {
+   background : none;
+    border: none;
+}
+@media screen {
+  .carousel-indicators {
+    bottom: 55px;
+  }
+  .carousel-indicators li{
+    padding: 10px;
+  }
+}
+
+.carousel-indicators li {
+    background-color: #999;
+    background-color: rgba(70,70,70,.25);
+}
+
+.carousel-indicators .active {
+    background-color: #444;
 }
 /*/++++++++++++++++*ANIMATIONS*++++++++++++++++++++/*/
 @keyframes pulse {
@@ -246,7 +295,7 @@ p {
 }
 
 .function-summary-txt {
-  margin: 50px 0 0;
+  margin: 70px 0 0;
   text-align: justify;
 }
 .function-summary h3{
@@ -336,6 +385,10 @@ p {
 .person-img-container {
     position: relative;
     border-radius: 50%;
+    max-width:260px;
+    max-height:260px;
+    text-align: center;
+    margin:0 auto;
 }
 .back {
     background: url('graphics/zapisz_congruent_gr.png');
@@ -348,8 +401,10 @@ p {
     transform: rotateY(180deg);
     transition: transform 0.6s ease-in-out;
     backface-visibility: hidden;
+    /*text-align: center;*/
 }
 .front {
+    text-align: center;
     transition: transform 0.6s ease-in-out;
     backface-visibility: hidden;
 }
@@ -366,9 +421,9 @@ p {
   .person {
     margin-bottom: 5%;
   }
-    .back {
-        width:50%;
-    }
+    /*.back {*/
+        /*width:50%;*/
+    /*}*/
 }
 
 
@@ -451,13 +506,52 @@ input[type="submit"] {
 /********************************************************************/
 
 footer {
-  height: 200px;
-  background-color: #fd5d1d;
+  background-color: #333333;
+    /*#f6f6f6;*/
   color: white;
   text-align: center;
   font-size: 18px;
   padding-top: 30px;
   font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
+}
+
+#footer h4 {
+  text-align: left;
+margin: 5% auto 2%;
+}
+
+#footer ul, p {
+  list-style-type: none;
+  text-align: left;
+
+}
+#footer li {
+  line-height: 1.6em;
+  font-size: 14px;
+
+}
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+#footer a:hover {
+  border-bottom: 1px solid #fd5d1d;
+}
+#footer img {
+  height: 27px;
+  vertical-align: bottom;
+}
+@media screen and (max-width: 768px) {
+  #footer h4 {
+    text-align: center;
+  }
+  #footer ul {
+    display: block;
+    text-align: center;
+  }
+  #footer p{
+    text-align: center;
+  }
 }
 
 /*8888888888888888888888888888888888888888888888888888888888*/
