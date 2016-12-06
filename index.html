@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles/game.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/photos.css">
     <link rel="stylesheet" href="styles/slider.css">
     <title>wmiasto</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -23,22 +25,22 @@
 <body>
 <!--  -------------------------Navbar------------------------- -->
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button"
-              class="navbar-toggle collapsed"
-              data-toggle="collapse"
-              data-target="#bs-example-navbar-collapse-1"
-              aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
 
-        <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
 
-        <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
 
-        <span class="icon-bar"></span>
-      </button>
+                <span class="icon-bar"></span>
+            </button>
 
       <a class="navbar-left" href="#">
         <img src="graphics/logo.png"/>
@@ -49,17 +51,17 @@
     <div class="collapse navbar-collapse"
          id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li>
+        <li id="navbar-function">
           <a href="#two">
             FUNKCJE</a>
         </li>
 
-        <li>
+        <li id="navbar-team">
           <a href="#three">
             ZESPÓŁ</a>
         </li>
 
-        <li>
+        <li id="navbar-contact">
           <a href="#four">
             KONTAKT</a>
         </li>
@@ -69,21 +71,21 @@
 </nav>
 <!------------------- Section 1 - Zajawka ------------------>
 <section id="one" class="picture1">
-  <div class="container push-bg-down">
-    <h1 class="intro">
-      Idziemy w miasto!
-    </h1>
+    <div class="container push-bg-down">
+        <h1 class="intro">
+            Idziemy w miasto!
+        </h1>
 
-    <p class="intro-male">
-      Wszystkie lokalne wydarzenia w jednym miejscu
-    </p>
+        <p class="intro-male">
+            Wszystkie lokalne wydarzenia w jednym miejscu
+        </p>
 
-    <div class="button-container">
-      <a class="button" href="#four">
-        Zapisz mnie
-      </a>
+        <div class="button-container">
+            <a class="button" href="#four">
+                Zapisz mnie
+            </a>
+        </div>
     </div>
-  </div>
 </section>
 <!-- ---------------- Section 2 - Funkcje ---------------------- -->
 <!--Function Slider -->
@@ -250,184 +252,174 @@
   </div>
 </section>
 <!-- ----------------- Section 3 - About us -------------------->
-<section id="three" class="container">
-  <h1 class="col-xs-12">
-    Nasza drużyna
-  </h1>
+<section id="three"
+         class="container">
+    <h1 class="col-xs-12">
+        Nasza drużyna
+    </h1>
 
-  <div class="person col-md-3 col-sm-6 col-xs-12 text-center">
-    <img class="img-responsive img-thumbnail img-circle"
-         src="graphics/magda.jpg">
+    <div class="person col-md-4 col-sm-6 col-xs-12 text-center">
+        <div class="person-img-container">
+            <div class="front">
+                <img class="img-responsive img-thumbnail img-circle"
+                     src="graphics/pawel.jpg">
+            </div>
+            <div class="back">
+                <div class="three-icons text-center">
+                    <a href="https://pl-pl.facebook.com/"
+                       target="_blank">
+                        <img src="graphics/icons/facebook.png"
+                             alt="facebook iccon">
+                    </a>
 
-    <h3 class="person-name">
-      Magda Nurzyńska
-    </h3>
+                    <a href="https://github.com/pawelziezio"
+                       target="_blank">
+                        <img src="graphics/icons/github.png"
+                             alt="github iccon">
+                    </a>
 
-    <div class="three-icons text-center">
-      <a href="https://pl-pl.facebook.com/"
-         target="_blank">
-        <img src="graphics/icons/facebook.png"
-             alt="facebook iccon">
-      </a>
+                    <a href="https://pl.linkedin.com/in/pawel-ziezio-485a87a4"
+                       target="_blank">
+                        <img src="graphics/icons/linkedin.png"
+                             alt="lincedin iccon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="person-about-container">
+            <h3 class="person-name">
+                Paweł Zięzio
+            </h3>
 
-      <a href="https://www.linkedin.com/"
-         target="_blank">
-        <img src="graphics/icons/linkedin.png"
-             alt="lincedin iccon">
-      </a>
-
-      <a href="https://github.com/"
-         target="_blank">
-        <img src="graphics/icons/github.png"
-             alt="github iccon">
-      </a>
+        </div>
+        <p class="person-bio col-xs-10 col-xs-offset-1">
+            Absolwent Oceanografi i Nawigacji. Klimatolog amator. Fanatyk wszystkich sportów 'wodnych'. Lubi aktywnie
+            spędzać czas w towarzystwie swoich czworonogów. Miłośmik wszelakiej aktywności miejskiej.
+        </p>
     </div>
+    <div class="person col-md-4 col-sm-6 col-xs-12 text-center">
+        <div class="person-img-container">
+            <div class="front">
+                <img class="img-responsive img-thumbnail img-circle"
+                     src="graphics/karolina.jpg">
+            </div>
+            <div class="back">
+                <div class="three-icons text-center">
+                    <a href="https://pl-pl.facebook.com/"
+                       target="_blank">
+                        <img src="graphics/icons/facebook.png"
+                             alt="facebook icon">
+                    </a>
 
-    <p class="person-bio col-xs-10 col-xs-offset-1">
-      Entuzjastka aktywnego trybu życia, na bieżąco śledząca wydarzenia na trójmieskich scenach muzycznych, jak i teatralnych. Dzięki niej nie ominie Ciebie nic co warte jest uwagi w Trójmieście.
-    </p>
-  </div>
+                    <a href="https://github.com/KarolinaHetmanska"
+                       target="_blank">
+                        <img src="graphics/icons/github.png"
+                             alt="github icon">
+                    </a>
 
-  <div class="person col-md-3 col-sm-6 col-xs-12 text-center">
-    <img class="img-responsive img-thumbnail img-circle text-center"
-         src="graphics/pawel.jpg">
+                    <a href="https://pl.linkedin.com/in/karolina-hetmanska-432418134"
+                       target="_blank">
+                        <img src="graphics/icons/linkedin.png"
+                             alt="lincedin icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="person-about-container">
+            <h3 class="person-name">
+                Karolina Hetmańska
+            </h3>
 
-    <h3 class="person-name">
-      Paweł Zięzio
-    </h3>
-
-    <div class="three-icons text-center">
-      <a href="https://pl-pl.facebook.com/"
-         target="_blank">
-        <img src="graphics/icons/facebook.png"
-             alt="facebook iccon">
-      </a>
-
-      <a href="https://www.linkedin.com/"
-         target="_blank">
-        <img src="graphics/icons/linkedin.png"
-             alt="lincedin iccon">
-      </a>
-      <a href="https://github.com/"
-         target="_blank">
-        <img src="graphics/icons/github.png"
-             alt="github iccon">
-      </a>
+        </div>
+        <p class="person-bio col-xs-10 col-xs-offset-1">
+            Studentka anglistyki. W wolnym czasie uwielbia spacery po Gdańsku, dzięki którym odkrywa niesamowitą historię swojego miasta. A gdy nie spaceruje - lubi ugotować cos dobrego lub po prostu usiąść przy dobrej herbacie.
+        </p>
     </div>
+    <div class="person col-md-4 col-xs-12 text-center">
+        <div class="person-img-container">
+            <div class="front">
+                <img class="img-responsive img-thumbnail img-circle"
+                     src="graphics/kuba.jpg">
+            </div>
+            <div class="back">
+                <div class="three-icons text-center">
+                    <a href="https://pl-pl.facebook.com/"
+                       target="_blank">
+                        <img src="graphics/icons/facebook.png"
+                             alt="facebook iccon">
+                    </a>
 
-    <p class="person-bio col-xs-10 col-xs-offset-1">
-      Absolwent Oceanografi i Nawigacji. Klimatolog amator. Fanatyk wszystkich sportów 'wodnych'. Lubi aktywnie spędzać czas w towarzystwie swoich czworonogów. Miłośmik wszelakiej aktywności miejskiej.
-    </p>
-  </div>
+                    <a href="https://github.com/KubaTuscher"
+                       target="_blank">
+                        <img src="graphics/icons/github.png"
+                             alt="github iccon">
+                    </a>
 
-  <div class="person col-md-3 col-sm-6 col-xs-12 text-center">
-    <img class="img-responsive img-thumbnail img-circle"
-         src="graphics/karolina.jpg">
+                    <a href="https://www.linkedin.com/in/jakub-tuscher-3451882"
+                       target="_blank">
+                        <img src="graphics/icons/linkedin.png"
+                             alt="lincedin iccon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="person-about-container">
+            <h3 class="person-name">
+                Kuba Tuscher
+            </h3>
 
-    <h3 class="person-name">
-      Karolina Hetmańska
-    </h3>
-
-    <div class="three-icons text-center">
-      <a href="https://pl-pl.facebook.com/"
-         target="_blank">
-        <img src="graphics/icons/facebook.png"
-             alt="facebook iccon">
-      </a>
-
-      <a href="https://www.linkedin.com/"
-         target="_blank">
-        <img src="graphics/icons/linkedin.png"
-             alt="lincedin iccon">
-      </a>
-      <a href="https://github.com/"
-         target="_blank">
-        <img src="graphics/icons/github.png"
-             alt="github iccon">
-      </a>
+        </div>
+        <p class="person-bio col-xs-10 col-xs-offset-1">
+            Miłośnik dobrej muzyki, inspirujących filmów i kultury miejskiej. Zafascynowany dobrym designem i nowymi technologiami. W wolnych chwilach biega, gra w squasha, gotuje i gra na gitarze.
+        </p>
     </div>
-
-    <p class="person-bio col-xs-10 col-xs-offset-1">
-      Studentka anglistyki. W wolnym czasie uwielbia spacery po Gdańsku, dzięki którym odkrywa niesamowitą historię swojego miasta. A gdy nie spaceruje - lubi ugotować cos dobrego lub po prostu usiąść przy dobrej herbacie.
-    </p>
-  </div>
-
-  <div class="person col-md-3 col-sm-6 col-xs-12 text-center">
-    <img class="img-responsive img-thumbnail img-circle"
-         src="graphics/kuba.jpg">
-
-    <h3 class="person-name">
-      Jakub Tuscher
-    </h3>
-
-    <div class="three-icons text-center">
-      <a href="https://pl-pl.facebook.com/"
-         target="_blank">
-        <img src="graphics/icons/facebook.png"
-             alt="facebook iccon">
-      </a>
-
-      <a href="https://www.linkedin.com/"
-         target="_blank">
-        <img src="graphics/icons/linkedin.png"
-             alt="lincedin iccon">
-      </a>
-
-      <a href="https://github.com/"
-         target="_blank">
-        <img src="graphics/icons/github.png"
-             alt="github iccon">
-       </a>
-    </div>
-
-    <p class="person-bio col-xs-10 col-xs-offset-1">
-      Miłośnik dobrej muzyki, inspirujących filmów i kultury miejskiej. Zafascynowany dobrym designem i nowymi technologiami. W wolnych chwilach biega, gra w squasha, gotuje i gra na gitarze.
-    </p>
-  </div>
 </section>
 
 <!---------------------------Section 4 - Form ------------------------->
 <section id="four">
-  <div class="container">
-    <div id="form-field" class="col-xs-12 text-center">
-      <h1> Chcę tę aplikację</h1>
+    <div class="container">
+        <div id="form-field" class="col-xs-12 text-center">
+            <h1> Chcę tę aplikację</h1>
 
-      <form class="four-form" action="">
-        <div class="checkbox">
-          <label>
-            <input type="checkbox">
-            Wyrażam zgodę na przetwarzanie moich danych przez firmę XYZ.
+            <form class="four-form" action="">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">
+                        Wyrażam zgodę na przetwarzanie moich danych przez firmę XYZ.
 
-            <p>
-               Wyślemy do Ciebie tylko jeden email z informacją o premierze aplikacj.
-            </p>
-          </label>
+                        <p>
+                            Wyślemy do Ciebie tylko jeden email z informacją o premierze aplikacj.
+                        </p>
+                    </label>
+                </div>
+
+                <input type="email" name="email" placeholder="Podaj swoj adres e-mail">
+
+                <div class="four-submit">
+                    <input id="game-display" type="submit" value="Zapisz mnie">
+                </div>
+            </form>
         </div>
-
-        <input type="email" name="email" placeholder="Podaj swoj adres e-mail">
-
-        <div class="four-submit">
-          <input id="game-display" type="submit" value="Zapisz mnie">
+        <div id="startbutton" class="btn btn-default">
+            START
         </div>
-      </form>
-    </div>
-    <div id="startbutton" class="btn btn-default">
-      START
-    </div>
-    <div id="game">
-      <div class="player">
+        <div id="game">
+            <div class="player">
 
-      </div>
+            </div>
 
+        </div>
     </div>
-  </div>
 </section>
 <!-- ------------------Footer---------------------- -->
-<footer>
+<footer id="footer">
   <p>&copy; 2016 WMIASTO by Nieglupiepsy Team</p>
 </footer>
 <script src="bootstrap/js/bootstrap.js"></script>
 <script src="js/game.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/photos.js"></script>
 <script src="js/function-slider.js"></script>
+
 </body>
 </html>
