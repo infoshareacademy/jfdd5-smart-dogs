@@ -21,7 +21,7 @@ function times(x, action) {
   }
 }
 
-function randomCell() {
+function randomCell() {                           // generowanie randomowego pola
   var x = Math.round(Math.random() * (z - 1));
   var y = Math.round(Math.random() * (z - 1));
   // console.log(x + '-' + y);
@@ -30,7 +30,7 @@ function randomCell() {
 }
 
 
-function showBoard() {
+function showBoard() {                           // budowanie planszy gry
 // build game field
   times(z, function (y) {
     // create new row
@@ -51,6 +51,7 @@ function showBoard() {
 /**
  * Created by jtuscher on 30.11.16.
  */
+ // ||||||||||||||||||||||||Uruchamianie gry |||||||||||||||||||||||||||||||||||
 $('#game-display').click(function (event) {
   event.preventDefault();
   $('#game').toggleClass('show');
@@ -58,17 +59,17 @@ $('#game-display').click(function (event) {
   $('#startbutton').toggleClass('show');
   showBoard();
 
-  $('table').on('click', 'td', function () {
-    var click = {
+  $('table').on('click', 'td', function () {      // kontrola gracza
+    var click = {                                 // pole w ktore klika uytkownik
       x: parseInt($(this).attr('x')),
       y: parseInt($(this).attr('y'))
 
     };
 
-    var $playerCell = $('td.player');
-
+    var $playerCell = $('td.player');            // aktualna komorka gracza
     console.log($playerCell);
-    var player = {
+
+    var player = {                               // przemienia atrybuty x i y komorki tabeli na obiekt z wartosciami liczbowymi
       x: parseInt($playerCell.attr('x')),
       y: parseInt($playerCell.attr('y'))
     };
@@ -85,6 +86,7 @@ $('#game-display').click(function (event) {
 
     })
 });
+// ||||||||||||||||||||||||Generowanie gracza |||||||||||||||||||||||||||||||||||
 $('#startbutton').click(function () {
   var playerCell = randomCell();
   $('.cell').removeClass('player');

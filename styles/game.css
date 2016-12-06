@@ -5,7 +5,9 @@ table {
     width: 40px;
     height: 40px;
     background-color: white;
-    border: 1px solid #000;
+    border: 1px solid #ccced1;
+    background: url(../graphics/small_steps.png);
+}
 }
 .hide {
     display: none;
@@ -19,5 +21,8 @@ table {
 }
 
 .player {
-    background-color: red;
+    background: url(../graphics/player.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
