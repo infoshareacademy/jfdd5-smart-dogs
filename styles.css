@@ -79,11 +79,16 @@ p {
   color: white;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 768px) {
   .navbar-header img {
-    height: 20px;
-    margin-top: 15px;
+    margin-top: 5px;
   }
+}
+@media screen and (max-width: 300px) {
+    .navbar-header img {
+        height: 30px;
+        margin-top: 10px;
+    }
 }
 
 /********************************************************************/
@@ -248,7 +253,7 @@ p {
 }
 
 .function-summary-txt {
-  margin: 50px 0 0;
+  margin: 70px 0 0;
   text-align: justify;
 }
 .function-summary h3{
@@ -338,6 +343,10 @@ p {
 .person-img-container {
     position: relative;
     border-radius: 50%;
+    max-width:260px;
+    max-height:260px;
+    text-align: center;
+    margin:0 auto;
 }
 .back {
     background: url('graphics/zapisz_congruent_gr.png');
@@ -350,8 +359,10 @@ p {
     transform: rotateY(180deg);
     transition: transform 0.6s ease-in-out;
     backface-visibility: hidden;
+    /*text-align: center;*/
 }
 .front {
+    text-align: center;
     transition: transform 0.6s ease-in-out;
     backface-visibility: hidden;
 }
@@ -368,9 +379,9 @@ p {
   .person {
     margin-bottom: 5%;
   }
-    .back {
-        width:50%;
-    }
+    /*.back {*/
+        /*width:50%;*/
+    /*}*/
 }
 
 
@@ -540,12 +551,12 @@ margin: 5% auto 2%;
         transform: translateX(-2px) rotate(-1deg);
     }
     90% {
-        -webkit-transform: translateX(1px) rotate(0);
-        transform: translateX(1px) rotate(0);
+        -webkit-transform: translateX(1px) rotate(0deg);
+        transform: translateX(1px) rotate(0deg);
     }
     100% {
-        -webkit-transform: translateX(-1px) rotate(0);
-        transform: translateX(-1px) rotate(0);
+        -webkit-transform: translateX(-1px) rotate(0deg);
+        transform: translateX(-1px) rotate(0deg);
     }
 }
 .hvr-buzz-out {
