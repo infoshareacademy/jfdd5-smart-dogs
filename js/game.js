@@ -26,7 +26,7 @@ function randomCell() {                           // generowanie randomowego pol
   var y = Math.round(Math.random() * (z - 1));
   // console.log(x + '-' + y);
   // return x + '-' + y;
-  return $('[x="' + x + '"][y="' + y +'"]')
+  return $('[x="' + x + '"][y="' + y + '"]')
 }
 
 
@@ -58,46 +58,80 @@ function updateScore() {                          // dodawanie wyniku
   // $('table').empty(score);
   $('#scorebutton').text(label);
 }
- // ||||||||||||||||||||||||Uruchamianie gry |||||||||||||||||||||||||||||||||||
+// ||||||||||||||||||||||||Uruchamianie gry |||||||||||||||||||||||||||||||||||
 $('#game-display').click(function (event) {
   event.preventDefault();
   $('#game').toggleClass('show');
   $('#scorebutton').toggleClass('show');
   $('#form-field').toggleClass('hide');
   $('#startbutton').toggleClass('show');
+  $('#timer').toggleClass('show');
   showBoard();
 
-    $('table').on('click', 'td', function () {      // kontrola gracza
-      var click = {                                 // pole w ktore klika uytkownik
-        x: parseInt($(this).attr('x')),
-        y: parseInt($(this).attr('y'))
+  $('table').on('click', 'td', function () {      // kontrola gracza myszka
+    var click = {                                 // pole w ktore klika uytkownik
+      x: parseInt($(this).attr('x')),
+      y: parseInt($(this).attr('y'))
 
-      };
+    };
 
-      var $playerCell = $('td.player');            // aktualna komorka gracza
-      console.log($playerCell);
+    var $playerCell = $('td.player');            // aktualna komorka gracza
+    console.log($playerCell);
 
-      var player = {                               // przemienia atrybuty x i y komorki tabeli na obiekt z wartosciami liczbowymi
-        x: parseInt($playerCell.attr('x')),
-        y: parseInt($playerCell.attr('y'))
-      };
+    var player = {                               // przemienia atrybuty x i y komorki tabeli na obiekt z wartosciami liczbowymi
+      x: parseInt($playerCell.attr('x')),
+      y: parseInt($playerCell.attr('y'))
+    };
 
-      console.log(click, player);
+    console.log(click, player);
 
-      if (
-        Math.abs(click.x - player.x) <= 1 &&
-        Math.abs(click.y - player.y) <= 1
-      ) {
-        $playerCell.removeClass('player');
-        $(this).addClass('player');
-      }
+    if (
+      Math.abs(click.x - player.x) <= 1 &&
+      Math.abs(click.y - player.y) <= 1
+    ) {
+      $playerCell.removeClass('player');
+      $(this).addClass('player');
+    }
 
-      if ($('td.player').hasClass('event')) {      // zdarzenie dodania punktu
-        updateScore();
-        $(this).removeClass('event');
-      }
+    if ($('td.player').hasClass('event')) {      // zdarzenie dodania punktu
+      updateScore();
+      $(this).removeClass('event');
+    }
 
-    })
+  });
+
+  $('table').on('click', 'td', function () {      // kontrola gracza myszka
+    var click = {                                 // pole w ktore klika uytkownik
+      x: parseInt($(this).attr('x')),
+      y: parseInt($(this).attr('y'))
+
+    };
+
+    var $playerCell = $('td.player');            // aktualna komorka gracza
+    console.log($playerCell);
+
+    var player = {                               // przemienia atrybuty x i y komorki tabeli na obiekt z wartosciami liczbowymi
+      x: parseInt($playerCell.attr('x')),
+      y: parseInt($playerCell.attr('y'))
+    };
+
+    console.log(click, player);
+
+    if (
+      Math.abs(click.x - player.x) <= 1 &&
+      Math.abs(click.y - player.y) <= 1
+    ) {
+      $playerCell.removeClass('player');
+      $(this).addClass('player');
+    }
+
+    if ($('td.player').hasClass('event')) {      // zdarzenie dodania punktu
+      updateScore();
+      $(this).removeClass('event');
+    }
+
+  });
+
 });
 // ||||||||||||||||||||||||Generowanie gracza |||||||||||||||||||||||||||||||||||
 $('#startbutton').click(function () {
@@ -105,26 +139,45 @@ $('#startbutton').click(function () {
   $('.cell').removeClass('player');
   playerCell.addClass('player');
 
-  var eventCell = randomCell();                // dodawanie eventow w losowych miejscach
-  eventCell.addClass('event');
+  // var eventCell = randomCell();                // dodawanie eventow w losowych miejscach
+  // eventCell.addClass('event');
+  //
+  // setTimeout(function () {
+  //   eventCell.removeClass('event');
+  // }, 1000);
 
-  setTimeout(function () {
-    eventCell.removeClass('event');
-  }, 1000);
+  var iconNames = ['cinema', 'theatre'];                  // tablica ikonek
 
-  var intervalId = setInterval(function () {
+  var createEvent = function () {
     var eventCell = randomCell();              // wyswietlanie eventow co X000 milisekund
-    eventCell.addClass('event');
+    var eventIcon = iconNames[Math.round(Math.random() * (iconNames.length - 1))];
+    eventCell                                  // generowanie eventow z losowa ikonka
+      .addClass(eventIcon);
 
     setTimeout(function () {
-      eventCell.removeClass('event');
+      eventCell.removeClass(eventIcon);
     }, 1000);
-  }, 2000);
+  };
+  createEvent();
 
-  setTimeout(function(){                      //znikanie gracza po X000 milisekundach
+  var intervalId = setInterval(createEvent, 2000);
+
+  var intervalTimer = setInterval(function () {
+      timer = timer - 1;
+      $('#timer').text(showTime(timer));
+    }
+    , 1000);
+
+  setTimeout(function () {                      //znikanie gracza po X000 milisekundach
     clearInterval(intervalId);
+    clearInterval(intervalTimer);
     $('.cell').removeClass('player');
-  }, 6000);
+  }, 61000);
+
+  var timer = 60;
+  var showTime = function (timeLeft) {
+    return 'Time left: ' + timeLeft;
+  }
 
 });
 

@@ -1,10 +1,11 @@
 table {
     margin: 0 auto;
+    background-color: whitesmoke;
 }
 .cell {
     width: 40px;
     height: 40px;
-    background-color: white;
+    background: transparent;
     border: 1px solid #ccced1;
     /*background: url(../graphics/small_steps.png);*/
 }
@@ -16,12 +17,8 @@ table {
 .show {
     display: block;
 }
-#game, #startbutton,#scorebutton {
+#game, #startbutton,#scorebutton, #timer {
     display: none;
-}
-
-.event {
-    background-color: green;
 }
 
 .player {
@@ -29,4 +26,12 @@ table {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: 0px 0px 0px 40px white;
+}
+
+.cinema {
+    background-image: url(../graphics/icons/facebook.png);
+}
+.theatre {
+    background-image: url(../graphics/icons/linkedin.png);
 }
