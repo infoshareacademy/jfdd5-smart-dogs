@@ -101,19 +101,27 @@ $('#game-display').click(function (event) {
 });
 // ||||||||||||||||||||||||Generowanie gracza |||||||||||||||||||||||||||||||||||
 $('#startbutton').click(function () {
-  var playerCell = randomCell();
+  var playerCell = randomCell();               // dodawanie gracza w losowym miejscu
   $('.cell').removeClass('player');
   playerCell.addClass('player');
 
-  var eventCell = randomCell();
+  var eventCell = randomCell();                // dodawanie eventow w losowych miejscach
   eventCell.addClass('event');
 
+  setTimeout(function () {
+    eventCell.removeClass('event');
+  }, 1000);
+
   var intervalId = setInterval(function () {
-    var eventCell = randomCell();
+    var eventCell = randomCell();              // wyswietlanie eventow co X000 milisekund
     eventCell.addClass('event');
+
+    setTimeout(function () {
+      eventCell.removeClass('event');
+    }, 1000);
   }, 2000);
 
-  setTimeout(function(){
+  setTimeout(function(){                      //znikanie gracza po X000 milisekundach
     clearInterval(intervalId);
     $('.cell').removeClass('player');
   }, 6000);
