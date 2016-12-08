@@ -1,19 +1,11 @@
-var z = 10;
-
-// var activate = function () {
-//     $('.block').removeClass('inactive').addClass('active')
-// };
-// $('.block').on('click', activate);
+var z = 10;                                     // wielkosc pola
 
 // Find container
 var $container = $('#game');
-
 // Create new table (DOM node)
 var $table = $('<table>');
-
 // Append table to DOM
 $container.append($table);
-
 // do action x times
 function times(x, action) {
   for (var i = 0; i < x; i += 1) {
@@ -48,42 +40,34 @@ function showBoard() {                           // budowanie planszy gry
     });
   });
 }
-/**
- * Created by jtuscher on 30.11.16.
- */
+
 var score = 0;
 function updateScore() {                          // dodawanie wyniku
   score += 1;
-  var label = 'Score: ' + score;
-  // $('table').empty(score);
-  $('#scorebutton').text(label);
+  $('#scorebutton').text(score);
 }
 // ||||||||||||||||||||||||Uruchamianie gry |||||||||||||||||||||||||||||||||||
 $('#game-display').click(function (event) {
   event.preventDefault();
+  $('.navbar').addClass('hide');
   $('#game').toggleClass('show');
-  $('#scorebutton').toggleClass('show');
+  $('#game-right-container').toggleClass('show');
+  $('#game-left-container').toggleClass('show');
   $('#form-field').toggleClass('hide');
-  $('#startbutton').toggleClass('show');
-  $('#timer').toggleClass('show');
   showBoard();
 
   $('table').on('click', 'td', function () {      // kontrola gracza myszka
     var click = {                                 // pole w ktore klika uytkownik
       x: parseInt($(this).attr('x')),
       y: parseInt($(this).attr('y'))
-
     };
 
     var $playerCell = $('td.player');            // aktualna komorka gracza
-    console.log($playerCell);
 
     var player = {                               // przemienia atrybuty x i y komorki tabeli na obiekt z wartosciami liczbowymi
       x: parseInt($playerCell.attr('x')),
       y: parseInt($playerCell.attr('y'))
     };
-
-    console.log(click, player);
 
     if (
       Math.abs(click.x - player.x) <= 1 &&
@@ -93,7 +77,7 @@ $('#game-display').click(function (event) {
       $(this).addClass('player');
     }
 
-    if ($('td.player').hasClass('event')) {      // zdarzenie dodania punktu
+    if ($playerCell.hasClass('event')) {      // zdarzenie dodania punktu
       updateScore();
       $(this).removeClass('event');
     }
@@ -140,44 +124,45 @@ $('#startbutton').click(function () {
   playerCell.addClass('player');
 
   // var eventCell = randomCell();                // dodawanie eventow w losowych miejscach
-  // eventCell.addClass('event');
-  //
+  // eventCell.addClass(iconEvent);
+
   // setTimeout(function () {
   //   eventCell.removeClass('event');
   // }, 1000);
 
   var iconNames = ['cinema', 'theatre'];                  // tablica ikonek
-
+  var timer = 60;
+  var timerNewEvents = 3000;        // co ile sekund generujemy eventy
+  var timerRemoveEvents = 5000;     // co ile sekund usuwamy eventy
+  var timerGame = 61000;            // laczny czas gry : 61000 to minuta
   var createEvent = function () {
     var eventCell = randomCell();              // wyswietlanie eventow co X000 milisekund
     var eventIcon = iconNames[Math.round(Math.random() * (iconNames.length - 1))];
     eventCell                                  // generowanie eventow z losowa ikonka
-      .addClass(eventIcon);
+      .addClass(eventIcon)
+        .addClass('event');
 
     setTimeout(function () {
-      eventCell.removeClass(eventIcon);
-    }, 1000);
+      eventCell
+          .removeClass(eventIcon)
+          .removeClass('event');
+    }, timerRemoveEvents);
   };
   createEvent();
 
-  var intervalId = setInterval(createEvent, 2000);
+  var stopEvents = setInterval(createEvent, timerNewEvents);
 
   var intervalTimer = setInterval(function () {
       timer = timer - 1;
-      $('#timer').text(showTime(timer));
+      $('#timer').text(timer);
     }
     , 1000);
 
-  var timer = 60;
-  var showTime = function (timeLeft) {
-    return 'Time left: ' + timeLeft;
-  }
-
   setTimeout(function () {                      //koniec gry
-    clearInterval(intervalId);
+    clearInterval(stopEvents);
     clearInterval(intervalTimer);
     $('.cell').removeClass('player');
-  }, 61000);
+  }, timerGame);
 
 
 });
