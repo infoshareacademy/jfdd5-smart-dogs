@@ -1,5 +1,5 @@
 
-.carousel-inner.onebyone-carosel { margin: auto; width: 90%; }
+.carousel-inner.onebyone-carosel { margin: auto; width: 100%; }
 
 @media all and (transform-3d), (-webkit-transform-3d) {
     .carousel-inner.onebyone-carosel > .item {
@@ -73,3 +73,17 @@
     left: 33.33%;
 }
 
+@media screen and (min-width: 992px){
+    #twoMob{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px){
+    #two{
+        display: none;
+    }
+    #twoMob{
+        display: block;
+    }
+}
