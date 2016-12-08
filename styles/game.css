@@ -1,6 +1,6 @@
 table {
     margin: 0 auto;
-    background: url(../graphics/tlo2.jpg) no-repeat;
+    background: url("../graphics/mapa 1.jpg") no-repeat;
     background-size: contain;
 }
 
@@ -73,7 +73,7 @@ table {
     background-color: green;
 }
 .player {
-    background: url(../graphics/party.jpg);
+    background: url(../graphics/icons/samochodzik.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
