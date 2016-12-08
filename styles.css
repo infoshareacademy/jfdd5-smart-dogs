@@ -63,8 +63,8 @@ p {
 }
 
 .navbar-header img {
-    height: 40px;
-    margin-top: 15px;
+    height: 50px;
+    margin-top: 10px;
 }
 
 .navbar .navbar-nav>li>a {
@@ -96,7 +96,7 @@ p {
 /********************************************************************/
 
 .picture1 {
-  background: url("./graphics/go_out_gdansk.jpg") no-repeat center top;
+  background: url("./graphics/go_out_gdansk 6 s.jpg") no-repeat center top;
   background-size: cover;
   /*background-attachment: fixed;*/
 
@@ -389,7 +389,7 @@ p {
     max-height:260px;
     text-align: center;
     margin:0 auto;
-}
+  }
 .back {
     background: url('graphics/zapisz_congruent_gr.png');
     width: 100%;
@@ -522,7 +522,7 @@ margin: 5% auto 2%;
 
 #footer ul, p {
   list-style-type: none;
-  text-align: left;
+  /*text-align: left;*/
 
 }
 #footer li {
