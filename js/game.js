@@ -100,37 +100,37 @@ $('#game-display').click(function (event) {
 
   });
 
-  $('table').on('click', 'td', function () {      // kontrola gracza myszka
-    var click = {                                 // pole w ktore klika uytkownik
-      x: parseInt($(this).attr('x')),
-      y: parseInt($(this).attr('y'))
-
-    };
-
-    var $playerCell = $('td.player');            // aktualna komorka gracza
-    console.log($playerCell);
-
-    var player = {                               // przemienia atrybuty x i y komorki tabeli na obiekt z wartosciami liczbowymi
-      x: parseInt($playerCell.attr('x')),
-      y: parseInt($playerCell.attr('y'))
-    };
-
-    console.log(click, player);
-
-    if (
-      Math.abs(click.x - player.x) <= 1 &&
-      Math.abs(click.y - player.y) <= 1
-    ) {
-      $playerCell.removeClass('player');
-      $(this).addClass('player');
-    }
-
-    if ($('td.player').hasClass('event')) {      // zdarzenie dodania punktu
-      updateScore();
-      $(this).removeClass('event');
-    }
-
-  });
+  // $('table').on('click', 'td', function () {      // kontrola gracza myszka
+  //   var click = {                                 // pole w ktore klika uytkownik
+  //     x: parseInt($(this).attr('x')),
+  //     y: parseInt($(this).attr('y'))
+  //
+  //   };
+  //
+  //   var $playerCell = $('td.player');            // aktualna komorka gracza
+  //   console.log($playerCell);
+  //
+  //   var player = {                               // przemienia atrybuty x i y komorki tabeli na obiekt z wartosciami liczbowymi
+  //     x: parseInt($playerCell.attr('x')),
+  //     y: parseInt($playerCell.attr('y'))
+  //   };
+  //
+  //   console.log(click, player);
+  //
+  //   if (
+  //     Math.abs(click.x - player.x) <= 1 &&
+  //     Math.abs(click.y - player.y) <= 1
+  //   ) {
+  //     $playerCell.removeClass('player');
+  //     $(this).addClass('player');
+  //   }
+  //
+  //   if ($('td.player').hasClass('event')) {      // zdarzenie dodania punktu
+  //     updateScore();
+  //     $(this).removeClass('event');
+  //   }
+  //
+  // });
 
 });
 // ||||||||||||||||||||||||Generowanie gracza |||||||||||||||||||||||||||||||||||
@@ -168,16 +168,17 @@ $('#startbutton').click(function () {
     }
     , 1000);
 
-  setTimeout(function () {                      //znikanie gracza po X000 milisekundach
+  var timer = 60;
+  var showTime = function (timeLeft) {
+    return 'Time left: ' + timeLeft;
+  }
+
+  setTimeout(function () {                      //koniec gry
     clearInterval(intervalId);
     clearInterval(intervalTimer);
     $('.cell').removeClass('player');
   }, 61000);
 
-  var timer = 60;
-  var showTime = function (timeLeft) {
-    return 'Time left: ' + timeLeft;
-  }
 
 });
 

@@ -1,13 +1,14 @@
 table {
     margin: 0 auto;
-    background-color: whitesmoke;
+    background: url(../graphics/tlo2.jpg) no-repeat;
+  background-size: contain;
+
 }
 .cell {
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     background: transparent;
     border: 1px solid #ccced1;
-    /*background: url(../graphics/small_steps.png);*/
 }
 
 .hide {
@@ -26,12 +27,16 @@ table {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: 0px 0px 0px 40px white;
+    /*box-shadow: 0px 0px 0px 40px white;*/
 }
 
 .cinema {
-    background-image: url(../graphics/icons/facebook.png);
+
+    background-image: url(../graphics/icons/coffee.png);
+  background-size: contain;
 }
 .theatre {
-    background-image: url(../graphics/icons/linkedin.png);
+
+    background-image: url(../graphics/icons/food.jpg);
+  background-size: contain;
 }
