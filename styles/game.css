@@ -60,15 +60,47 @@ table {
     margin-top: 40px;
 }
 
-.cinema {
-    background-image: url(../graphics/icons/coffee.png);
+.cinema, .theatre,.animal,.beach,.beer,.coffee,.event-icon, .food,
+.gallery, .horse,.ice-cream,.shop{
     background-size: contain;
+}
+.cinema {
+    background-image: url(../graphics/icons/cinema.png);
+}
+.theatre {
+    background-image: url(../graphics/icons/theatre.png);
+}
+.animal{
+    background-image: url(../graphics/icons/animal.png);
+}
+.beach {
+    background-image: url(../graphics/icons/beach.png);
+}
+.beer {
+    background-image: url(../graphics/icons/beer.png);
+}
+.coffee {
+    background-image: url(../graphics/icons/coffee.png);
+}
+.event-icon {
+    background-image: url(../graphics/icons/event-icon.png);
+}
+.food {
+    background-image: url(../graphics/icons/food.png);
+}
+.gallery {
+    background-image: url(../graphics/icons/gallery.png);
+}
+.horse {
+    background-image: url(../graphics/icons/horse.png);
+}
+.ice-cream {
+    background-image: url(../graphics/icons/ice-cream.png);
+}
+.shop {
+    background-image: url(../graphics/icons/shop.png);
 }
 
-.theatre {
-    background-image: url(../graphics/icons/food.jpg);
-    background-size: contain;
-}
 .event {
     background-color: green;
 }

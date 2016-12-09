@@ -77,9 +77,21 @@ $('#game-display').click(function (event) {
       $(this).addClass('player');
     }
 
-    if ($playerCell.hasClass('event')) {      // zdarzenie dodania punktu
+    if ($(this).hasClass('event')) {      // zdarzenie dodania punktu
       updateScore();
-      $(this).removeClass('event');
+      $($(this)).removeClass('event')
+        .removeClass('cinema')
+        .removeClass('theatre')
+        .removeClass('animal')
+        .removeClass('beach')
+        .removeClass('beer')
+        .removeClass('coffee')
+        .removeClass('event-icon')
+        .removeClass('food')
+        .removeClass('gallery')
+        .removeClass('horse')
+        .removeClass('ice-cream')
+        .removeClass('shop');
     }
 
   });
@@ -125,15 +137,16 @@ $('#startbutton').click(function () {
 
   // var eventCell = randomCell();                // dodawanie eventow w losowych miejscach
   // eventCell.addClass(iconEvent);
-
+  //
   // setTimeout(function () {
   //   eventCell.removeClass('event');
   // }, 1000);
 
-  var iconNames = ['cinema', 'theatre'];                  // tablica ikonek
+  var iconNames = ['theatre','ice-cream','animal','beach','beer','coffee','event-icon', 'cinema',
+  'food','gallery','horse', 'shop'];                  // tablica ikonek
   var timer = 60;
-  var timerNewEvents = 3000;        // co ile sekund generujemy eventy
-  var timerRemoveEvents = 5000;     // co ile sekund usuwamy eventy
+  var timerNewEvents = 2000;        // co ile sekund generujemy eventy
+  var timerRemoveEvents = 8000;     // co ile sekund usuwamy eventy
   var timerGame = 61000;            // laczny czas gry : 61000 to minuta
   var createEvent = function () {
     var eventCell = randomCell();              // wyswietlanie eventow co X000 milisekund
@@ -162,6 +175,7 @@ $('#startbutton').click(function () {
     clearInterval(stopEvents);
     clearInterval(intervalTimer);
     $('.cell').removeClass('player');
+    $('.event').hide();
   }, timerGame);
 
 
