@@ -1,4 +1,6 @@
 var z = 10;                                     // wielkosc pola
+var iconNames = ['theatre','ice-cream','animal','beach','beer','coffee','event-icon', 'cinema', 'food','gallery','horse', 'shop'];                  // tablica ikonek
+
 
 // Find container
 var $container = $('#game');
@@ -77,23 +79,76 @@ $('#game-display').click(function (event) {
       $(this).addClass('player');
     }
 
-    if ($(this).hasClass('event')) {      // zdarzenie dodania punktu
+    if (
+      $(this).hasClass('player') &&
+      $(this).hasClass('event')
+
+    ) {      // zdarzenie dodania punktu
       updateScore();
-      $($(this)).removeClass('event')
-        .removeClass('cinema')
-        .removeClass('theatre')
-        .removeClass('animal')
-        .removeClass('beach')
-        .removeClass('beer')
-        .removeClass('coffee')
-        .removeClass('event-icon')
-        .removeClass('food')
-        .removeClass('gallery')
-        .removeClass('horse')
-        .removeClass('ice-cream')
-        .removeClass('shop');
+      $(this).removeClass('event')
+        .removeClass(iconNames.join(' '));
     }
 
+  });
+
+  $(document).on('keydown', function (event) {
+    var $playerCell = $('td.player');
+
+    var player = {                               // przemienia atrybuty x i y komorki tabeli na obiekt z wartosciami liczbowymi
+      x: parseInt($playerCell.attr('x')),
+      y: parseInt($playerCell.attr('y'))
+    };
+
+    function putPlayerOn(x, y) {
+      var fieldPressed = $('[x="' + x + '"][y="' + y + '"]')
+      fieldPressed.addClass('player');
+      if (
+        fieldPressed.hasClass('player') &&
+        fieldPressed.hasClass('event')
+
+      ) {      // zdarzenie dodania punktu
+        updateScore();
+        fieldPressed.removeClass('event')
+          .removeClass(iconNames.join(' '));
+      }
+    }
+    $playerCell.removeClass('player');
+    switch (event.keyCode) {
+      case 37: // left
+        //$('[x="' + (player.x - 1) + '"][y="' + player.y + '"]').addClass('player');
+        if (player.x > 0) {
+        putPlayerOn(player.x - 1, player.y);
+        console.log(player.x - 1, player.y);
+        // $('[x=10][y=5]')
+        } else {
+          putPlayerOn(player.x, player.y);
+        }
+        break;
+      case 38: // up
+        if (player.y > 0) {
+        putPlayerOn(player.x, player.y - 1);
+        } else {
+          putPlayerOn(player.x, player.y);
+        }
+        break;
+      case 39: // right
+        if (player.x < 9) {
+        putPlayerOn(player.x + 1, player.y);
+        } else {
+          putPlayerOn(player.x, player.y);
+        }
+        break;
+      case 40: // down
+        if (player.y < 9) {
+        putPlayerOn(player.x, player.y + 1);
+        } else {
+          putPlayerOn(player.x, player.y);
+        }
+        break;
+      default: return;
+    }
+
+    event.preventDefault();
   });
 
   // $('table').on('click', 'td', function () {      // kontrola gracza myszka
@@ -142,11 +197,11 @@ $('#startbutton').click(function () {
   //   eventCell.removeClass('event');
   // }, 1000);
 
-  var iconNames = ['theatre','ice-cream','animal','beach','beer','coffee','event-icon', 'cinema',
-  'food','gallery','horse', 'shop'];                  // tablica ikonek
+
   var timer = 60;
-  var timerNewEvents = 2000;        // co ile sekund generujemy eventy
-  var timerRemoveEvents = 8000;     // co ile sekund usuwamy eventy
+  var timerNewEvents = 500;        // co ile sekund generujemy eventy
+  var timerRemoveEvents = 50000;     // co ile sekund usuwamy eventy
+  var timerBlinkEvents = 1000;     // kiedy zaczyna migac event
   var timerGame = 61000;            // laczny czas gry : 61000 to minuta
   var createEvent = function () {
     var eventCell = randomCell();              // wyswietlanie eventow co X000 milisekund
@@ -154,6 +209,10 @@ $('#startbutton').click(function () {
     eventCell                                  // generowanie eventow z losowa ikonka
       .addClass(eventIcon)
         .addClass('event');
+
+    // setInterval(function () {
+    //   eventCell.toggleClass(eventIcon);
+    // }, timerBlinkEvents);
 
     setTimeout(function () {
       eventCell
