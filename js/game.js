@@ -199,9 +199,9 @@ $('#startbutton').click(function () {
 
 
   var timer = 60;
-  var timerNewEvents = 500;        // co ile sekund generujemy eventy
-  var timerRemoveEvents = 50000;     // co ile sekund usuwamy eventy
-  var timerBlinkEvents = 1000;     // kiedy zaczyna migac event
+  var timerNewEvents = 1000;        // co ile sekund generujemy eventy
+  var timerRemoveEvents = 10000;     // co ile sekund usuwamy eventy
+  // var timerBlinkEvents = 1000;     // kiedy zaczyna migac event
   var timerGame = 61000;            // laczny czas gry : 61000 to minuta
   var createEvent = function () {
     var eventCell = randomCell();              // wyswietlanie eventow co X000 milisekund
