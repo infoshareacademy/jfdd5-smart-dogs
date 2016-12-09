@@ -63,8 +63,8 @@ p {
 }
 
 .navbar-header img {
-    height: 40px;
-    margin-top: 15px;
+    height: 50px;
+    margin-top: 10px;
 }
 
 .navbar .navbar-nav>li>a {
@@ -96,7 +96,7 @@ p {
 /********************************************************************/
 
 .picture1 {
-  background: url("./graphics/go_out_gdansk.jpg") no-repeat center top;
+  background: url("graphics/go_out_gdansk_4.jpg") no-repeat center top;
   background-size: cover;
   /*background-attachment: fixed;*/
 
@@ -394,7 +394,7 @@ p {
     max-height:260px;
     text-align: center;
     margin:0 auto;
-}
+  }
 .back {
     background: url('graphics/zapisz_congruent_gr.png');
     width: 100%;
@@ -464,10 +464,11 @@ p {
 
 input[type="email"] {
   margin: 40px 2%;
-  border-style: none;
-  border-bottom: 2px solid #fd5d1d;
+  padding: 10px;
+  border: 1px solid #fd5d1d;
+  border-radius: 10px;
   background-color: rgba(255, 255, 255, 0);
-  font-size: 45px;
+  font-size: 35px;
   font-family: "Calibri Light", "DejaVu Sans", Arial, sans-serif;
   text-align: center;
 }
@@ -528,6 +529,7 @@ margin: 5% auto 2%;
 #footer ul,
 #footer p {
   list-style-type: none;
+  display: block;
   text-align: left;
 
 }
@@ -552,13 +554,9 @@ margin: 5% auto 2%;
     text-align: center;
   }
   #footer ul {
-    display: block;
-    text-align: center;
+text-align: center;
   }
-  #footer p{
-    text-align: center;
-  }
-}
+
 
 /*8888888888888888888888888888888888888888888888888888888888*/
 /*--------------wodotryski----------------------------------*/
