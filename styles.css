@@ -469,23 +469,24 @@ footer {
   color: white;
   text-align: center;
   font-size: 18px;
-  padding-top: 30px;
   font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
+  padding: 1.6em 0;
 }
 
-#footer h4 {
+#footer h3 {
   text-align: left;
-margin: 5% auto 2%;
+margin-bottom: 0.8em;
 }
 
 #footer ul, p {
-  list-style-type: none;
   text-align: left;
-
 }
+
 #footer li {
+  list-style-type: none;
   line-height: 1.6em;
   font-size: 14px;
+
 
 }
 #footer a {
@@ -496,11 +497,11 @@ margin: 5% auto 2%;
   border-bottom: 1px solid #fd5d1d;
 }
 #footer img {
-  height: 27px;
-  vertical-align: bottom;
+  height: 17px;
+  vertical-align: sub;
 }
 @media screen and (max-width: 768px) {
-  #footer h4 {
+  #footer h3 {
     text-align: center;
   }
   #footer ul {
