@@ -1,6 +1,6 @@
 var z = 10;                                     // wielkosc pola
 var iconNames = ['theatre','ice-cream','animal','beach','beer','coffee','event-icon', 'cinema', 'food','gallery','concert', 'opera', 'piano', 'guitar'];                  // tablica ikonek
-
+var score = 0;
 
 // Find container
 var $container = $('#game');
@@ -43,11 +43,15 @@ function showBoard() {                           // budowanie planszy gry
   });
 }
 
-var score = 0;
 function updateScore() {                          // dodawanie wyniku
   score += 1;
   $('#scorebutton').text(score);
 }
+function setScoreToZero (){
+    score = 0;
+    $('#scorebutton').text(score);
+}
+
 // ||||||||||||||||||||||||Uruchamianie gry |||||||||||||||||||||||||||||||||||
 $('#game-display').click(function (event) {
   event.preventDefault();
@@ -188,6 +192,8 @@ $('#game-display').click(function (event) {
 $('#startbutton').click(function () {
   var playerCell = randomCell();               // dodawanie gracza w losowym miejscu
   $('.cell').removeClass('player');
+  $('.game-over').remove();
+  setScoreToZero();
   playerCell.addClass('player');
 
   // var eventCell = randomCell();                // dodawanie eventow w losowych miejscach
@@ -198,11 +204,11 @@ $('#startbutton').click(function () {
   // }, 1000);
 
 
-  var timer = 60;
+  var timer = 30;
   var timerNewEvents = 1000;        // co ile sekund generujemy eventy
-  var timerRemoveEvents = 6000;     // co ile sekund usuwamy eventy
-  var timerBlinkEvents = 4000;     // kiedy zaczyna migac event
-  var timerGame = 61000;            // laczny czas gry : 61000 to minuta
+  var timerRemoveEvents = 5000;     // co ile sekund usuwamy eventy
+  // var timerBlinkEvents = 5000;     // kiedy zaczyna migac event
+  var timerGame = 31000;            // laczny czas gry : 61000 to minuta
   var createEvent = function () {
     var eventCell = randomCell();              // wyswietlanie eventow co X000 milisekund
     var eventIcon = iconNames[Math.round(Math.random() * (iconNames.length - 1))];
@@ -210,22 +216,21 @@ $('#startbutton').click(function () {
       .addClass(eventIcon)
         .addClass('event');
 
-    var makeBlink = function(){
-        setInterval(function(){
+    var blinkIntervalId;
+
+    var makeBlink = function() {
+        blinkIntervalId = setInterval(function(){
             eventCell.toggleClass(eventIcon)
-        }, 500);
-    }
-    setTimeout(function(){
-      setTimeout(function(){
-        makeBlink();
-      }, 4000);
-      clearInterval(makeBlink());
-    }, 5999);
+        }, 200);
+    };
+
+    setTimeout(makeBlink, timerBlinkEvents);
 
     setTimeout(function () {
         eventCell
           .removeClass(eventIcon)
           .removeClass('event');
+        clearInterval(blinkIntervalId);
     }, timerRemoveEvents);
   };
   createEvent();
@@ -243,6 +248,8 @@ $('#startbutton').click(function () {
     clearInterval(intervalTimer);
     $('.cell').removeClass('player');
     $('.event').hide();
+    $table.append("<p class='game-over'>Zdobyłeś: <br><br>"+score+" pkt"+"<br><br> Kliknij START, <br>" +
+        "by złapać jeszcze więcej eventów.</p>");
   }, timerGame);
 
 
