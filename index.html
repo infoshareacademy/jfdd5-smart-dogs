@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="styles/game.css">
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/photos.css">
-
+    <link rel="stylesheet" href="styles/slider.css">
     <title>wmiasto</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,600|Ubuntu" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
     <link rel="icon"
           type="image/png"
-          href="graphics/logo_small.png">
+          href="graphics/logo-favicon.png">
     <script
             src="https://code.jquery.com/jquery-3.1.1.js"
             integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
@@ -42,10 +42,10 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-left" href="#">
-                <img src="graphics/logo.png"/>
-            </a>
-        </div>
+      <a class="navbar-left" href="#">
+        <img src="graphics/logo.png"/>
+      </a>
+    </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse"
@@ -88,26 +88,163 @@
     </div>
 </section>
 <!-- ---------------- Section 2 - Funkcje ---------------------- -->
+<!--Function Slider -->
 <section id="two" class="container">
-    <div class="function_main row">
-        <div class="function col-xs-12 col-sm-6 col-md-3">
-            <i class="i-first material-icons">
-                place
-            </i>
+  <div class="row">
+    <div class="span12">
+      <div class="bootcon">
+        <div id="myCarousel" class="carousel fdi-Carousel slide">
+          <!-- Carousel items -->
+          <div class="carousel fdi-Carousel slide" id="eventCarousel" data-interval="0">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+              <li data-target="#myCarousel" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner onebyone-carosel function_main">
+              <div class="item active">
+                <div class="col-md-4 function">
+                  <i class="i-first material-icons">
+                    place
+                  </i>
 
-            <h3>
-                Wyszukiwarka
-            </h3>
+                  <h3>
+                    Wyszukiwarka
+                  </h3>
 
-            <p>
-                Stworzyliśmy aplikację, pozwalającą zlokalizować wydarzenia
-                odbywające się w pobliżu miejsca, w którym się znajdujesz.
-                Po uruchomieniu jej uzyskasz informacje na temat imprez X
-                km od miejsca Twojego pobytu.
-            </p>
-        </div>
+                  <p>
+                    Stworzyliśmy aplikację, pozwalającą zlokalizować wydarzenia
+                    odbywające się w pobliżu miejsca, w którym się znajdujesz.
+                    Po uruchomieniu jej uzyskasz informacje na temat imprez X
+                    km od miejsca Twojego pobytu.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-md-4 function">
+                  <i class="i-second material-icons">
+                    email
+                  </i>
 
-        <div class="function col-xs-12 col-sm-6 col-md-3">
+                  <h3>
+                    Powiadomienia
+                  </h3>
+
+                  <p>
+                    Kiedy poznasz już termin imprezy, dodaj ją do terminarza.
+                    Przed jej rozpoczęciem wyślemy Ci e-mail z przypomnieniem.
+                    Tą samą drogą powiadomimy Cię gdy impezy zostanie
+                    odwołana lub zmieni się jej termin.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-md-4 function">
+                  <i class="i-three material-icons">
+                    sms
+                  </i>
+
+                  <h3>
+                    Subskrypcje
+                  </h3>
+
+                  <p>
+                    Jeśli interesują Cię wydarzenia z konkretnych dziedzin
+                    możesz skorzystać z naszej wyszukiwarki.
+                    Otrzymasz informacje zawsze, kiedy i gdzie odbędzie
+                    się wydarzenie spełniające wskazane przez Ciebie kryteria.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-md-4 function">
+                  <i class="i-four material-icons">
+                    event_available
+                  </i>
+
+                  <h3>
+                    Terminarz
+                  </h3>
+
+                  <p>
+                    Do terminarza możesz dodawać zapowiadane przez nas wydarzenia
+                    i przeglądać je w dowolnej chwili. Za każdym razem, kiedy zmieni
+                    się termin imprezy, bądź zostanie odwołana, zostaniesz przez
+                    nas poinformowany.
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-md-4 function">
+                  <i class="i-second material-icons">
+                    dns
+                  </i>
+
+                  <h3>
+                    Precyzyjne wyszukiwanie
+                  </h3>
+
+                  <p>
+                    Możesz przeglądać wszystkie wydażenia lub ograniczyć sie do
+                    spersonalizowanych kryteriów wyszukiwania lub daty, która tobie odpowida.
+                    Możesz również wybrać wydarzenia  darmowe, biletowe lub o okreżlonej randze.
+
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-md-4 function">
+                  <i class="i-three material-icons">
+                    style
+                  </i>
+
+                  <h3>
+                    Sortowanie wydarzeń
+                  </h3>
+
+                  <p>
+                    Twoje wynki wysukiwanie zobaczysz posortowane według
+                    odległości od miejsca, w którym się znajdujesz.
+                    Dodatkowo możesz stosować własne filtry, zawężające wyszukiwane wydażenie
+                    do określonej kategori bądz teminu.
+                </div>
+              </div>
+            </div>
+
+            <a data-slide="next" href="#myCarousel" class="carousel-control rig">›</a>
+            <a data-slide="prev" href="#myCarousel" class="carousel-control lef">‹</a>
+
+          </div>
+          <!--/carousel-inner-->
+        </div><!--/myCarousel-->
+      </div>
+    </div>
+  </div>
+</section>>
+<!--Function Slider End--  ---- MOB Version -->
+<section id="twoMob" class="container">
+  <div class="row">
+    <div class="col-xs-12 function">
+        <i class="i-first material-icons">
+            place
+        </i>
+
+        <h3>
+            Wyszukiwarka
+        </h3>
+
+        <p>
+            Stworzyliśmy aplikację, pozwalającą zlokalizować wydarzenia
+            odbywające się w pobliżu miejsca, w którym się znajdujesz.
+            Po uruchomieniu jej uzyskasz informacje na temat imprez X
+            km od miejsca Twojego pobytu.
+        </p>
+    </div>
+    </div>
+    <div class="item">
+        <div class="col-xs-12 function">
             <i class="i-second material-icons">
                 email
             </i>
@@ -123,8 +260,9 @@
                 odwołana lub zmieni się jej termin.
             </p>
         </div>
-
-        <div class="function col-xs-12 col-sm-6 col-md-3">
+    </div>
+    <div class="item">
+        <div class="col-xs-12 function">
             <i class="i-three material-icons">
                 sms
             </i>
@@ -140,9 +278,10 @@
                 się wydarzenie spełniające wskazane przez Ciebie kryteria.
             </p>
         </div>
-
-        <div class="function col-xs-12 col-sm-6 col-md-3">
-            <i class="i-four hvr-buzz-out material-icons">
+    </div>
+    <div class="item">
+        <div class="col-xs-12 function">
+            <i class="i-four material-icons">
                 event_available
             </i>
 
@@ -155,35 +294,73 @@
                 i przeglądać je w dowolnej chwili. Za każdym razem, kiedy zmieni
                 się termin imprezy, bądź zostanie odwołana, zostaniesz przez
                 nas poinformowany.
-            </p>
         </div>
     </div>
+    <div class="item">
+        <div class="col-xs-12 function">
+            <i class="i-second material-icons">
+                dns
+            </i>
 
-    <div class="function-summary row">
-        <div class="function-summary-img col-sm-6">
-            <img src="graphics/crowdmini.jpg"
-                 alt="Koncert"
-                 width="740" height="332">
-        </div>
-
-        <div class="function-summary-txt col-sm-6">
             <h3>
-                Wyszukiwarka
+                Precyzyjne wyszukiwanie
             </h3>
 
             <p>
-                Precyzyjna wyszukiwarka WMIASTO przefiltruje bazę imprez
-                pod kątem wybranych przez Ciebie kryteriów wyszukiwania:
-                kategorii imprezy, organizatora,
-                słów zawartych w opisie imprezy, tagów,
-                lokalizacji lub określonej odległości od wybranego punktu.
-                Jeśli szukasz wydarzeń zawsze według tego samego klucza,
-                przydatna okaże się funkcja zapisywania ich ustawień.
-                Dzięki temu nie będziesz musiał tracić czasu
-                na ich wielokrotne uzupełnianie.
+                Możesz przeglądać wszystkie wydażenia lub ograniczyć sie do
+                spersonalizowanych kryteriów wyszukiwania lub daty, która tobie odpowida.
+                Możesz również wybrać wydarzenia  darmowe, biletowe lub o okreżlonej randze.
+
             </p>
         </div>
     </div>
+    <div class="item">
+        <div class="col-xs-12 function">
+            <i class="i-three material-icons">
+                style
+            </i>
+
+            <h3>
+                Sortowanie wydarzeń
+            </h3>
+
+            <p>
+                Twoje wynki wysukiwanie zobaczysz posortowane według
+                odległości od miejsca, w którym się znajdujesz.
+                Dodatkowo możesz stosować własne filtry, zawężające wyszukiwane wydażenie
+                do określonej kategori bądz teminu.
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- --------------MOB end-----------   -->
+<section id="function-summary" class="container">
+  <div class="function-summary row">
+    <div class="function-summary-img col-sm-6">
+      <img src="graphics/crowdmini.jpg"
+           alt="Koncert"
+           width="740px" height="332px">
+    </div>
+
+    <div class="function-summary-txt col-sm-6">
+      <h3>
+        Wyszukiwarka
+      </h3>
+
+      <p>
+        Precyzyjna wyszukiwarka WMIASTO przefiltruje bazę imprez
+        pod kątem wybranych przez Ciebie kryteriów wyszukiwania:
+        kategorii imprezy, organizatora,
+        słów zawartych w opisie imprezy, tagów,
+        lokalizacji lub określonej odległości od wybranego punktu.
+        Jeśli szukasz wydarzeń zawsze według tego samego klucza,
+        przydatna okaże się funkcja zapisywania ustawień ryteriów wyszukiwania.
+        Dzięki temu nie będziesz musiał tracić czasu
+        na ich wielokrotne uzupełnianie.
+      </p>
+    </div>
+  </div>
 </section>
 <!-- ----------------- Section 3 - About us -------------------->
 <section id="three"
@@ -334,14 +511,26 @@
                 </div>
             </form>
         </div>
-        <div id="startbutton" class="btn btn-default">
-            START
-        </div>
-        <div id="game">
-            <div class="player">
-
+ <!-- ------------------Game---------------------- -->
+        <div id="game-left-container" class="col-xs-3">
+            <div id="game-instructions">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
             </div>
-
+            <div id="startbutton">START</div>
+        </div>
+        <div id="game" class="col-xs-7">
+        </div>
+        <div id="game-right-container" class="col-xs-2">
+            <div id="timer-container">
+                <span>Time left:</span><br>
+                <span id="timer">60</span>
+            </div>
+            <div id="scorebutton-container">
+                <span>Score:</span><br>
+                <span id="scorebutton">0</span>
+            </div>
         </div>
     </div>
 </section>
@@ -351,14 +540,44 @@
         <div class="row">
             <div class="col-sm-offset-4 col-sm-2">
                 <h3>Funkcje</h3>
-                <ul>
-                    <li><a href="#two">Wyszukiwarka</a></li>
-                    <li><a href="#two">Ppowiadomienia</a></li>
-                    <li><a href="#two">Subskrypcje</a></li>
-                    <li><a href="#two">Terminarz</a></li>
-                    <li><a href="#two">Inne</a></li>
-                    <li><a href="#two">Inne</a></li>
-                </ul>
+              <footer id="footer">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-offset-4 col-sm-2">
+                      <h3>Funkcje</h3>
+                      <ul>
+                        <li><a href="#two">Precyzyjne wyszukiwanie</a></li>
+                        <li><a href="#two">Sortowanie wydarzeń</a></li>
+                        <li><a href="#two">Wyszukiwarka</a></li>
+                        <li><a href="#two">Ppowiadomienia</a></li>
+                        <li><a href="#two">Subskrypcje</a></li>
+                        <li><a href="#two">Terminarz</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-2">
+                      <h3>Wmiasto</h3>
+                      <ul>
+                        <li><a href="#">
+                          <img src="graphics/icons/contact-icon-white.png"
+                               alt="email-icon">
+                          Kontakt</a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="graphics/icons/fb-icon-white.png"
+                                 alt="fb-icon">
+                            facebook</a>
+                        </li>
+                        <li><a href="#three">Nasza drużyna</a></li>
+                        <li id="dateActualization"></li>
+                      </ul>
+
+
+                    </div>
+                    <!--<p>&copy; 2016 WMIASTO by Nieglupiepsy Team</p>-->
+                  </div>
+                </div>
+              </footer>
             </div>
             <div class="col-sm-2">
                 <h3>Wmiasto</h3>
@@ -387,6 +606,7 @@
 <script src="js/game.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/photos.js"></script>
+<script src="js/function-slider.js"></script>
 
 </body>
 </html>
