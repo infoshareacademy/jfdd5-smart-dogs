@@ -528,9 +528,8 @@ footer {
 #footer ul, p {
   text-align: left;
 }
-
 .footer-lists {
-  margin-right: 30px
+  margin-left: 18%;
 }
 
 #footer li {
