@@ -200,8 +200,8 @@ $('#startbutton').click(function () {
 
   var timer = 60;
   var timerNewEvents = 1000;        // co ile sekund generujemy eventy
-  var timerRemoveEvents = 10000;     // co ile sekund usuwamy eventy
-  // var timerBlinkEvents = 1000;     // kiedy zaczyna migac event
+  var timerRemoveEvents = 6000;     // co ile sekund usuwamy eventy
+  var timerBlinkEvents = 4000;     // kiedy zaczyna migac event
   var timerGame = 61000;            // laczny czas gry : 61000 to minuta
   var createEvent = function () {
     var eventCell = randomCell();              // wyswietlanie eventow co X000 milisekund
@@ -210,12 +210,20 @@ $('#startbutton').click(function () {
       .addClass(eventIcon)
         .addClass('event');
 
-    // setInterval(function () {
-    //   eventCell.toggleClass(eventIcon);
-    // }, timerBlinkEvents);
+    var makeBlink = function(){
+        setInterval(function(){
+            eventCell.toggleClass(eventIcon)
+        }, 500);
+    }
+    setTimeout(function(){
+      setTimeout(function(){
+        makeBlink();
+      }, 4000);
+      clearInterval(makeBlink());
+    }, 5999);
 
     setTimeout(function () {
-      eventCell
+        eventCell
           .removeClass(eventIcon)
           .removeClass('event');
     }, timerRemoveEvents);
