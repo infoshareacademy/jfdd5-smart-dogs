@@ -1,5 +1,5 @@
 var z = 10;                                     // wielkosc pola
-var iconNames = ['theatre','ice-cream','animal','beach','beer','coffee','event-icon', 'cinema', 'food','gallery','horse', 'shop'];                  // tablica ikonek
+var iconNames = ['theatre','ice-cream','animal','beach','beer','coffee','event-icon', 'cinema', 'food','gallery','concert', 'opera', 'piano', 'guitar'];                  // tablica ikonek
 
 
 // Find container

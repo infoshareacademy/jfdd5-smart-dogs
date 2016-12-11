@@ -61,7 +61,7 @@ table {
 }
 
 .cinema, .theatre,.animal,.beach,.beer,.coffee,.event-icon, .food,
-.gallery, .horse,.ice-cream,.shop{
+.gallery, .horse,.ice-cream,.shop, .guitar,.piano,.opera,.concert{
     background-size: contain;
 }
 .cinema {
@@ -91,14 +91,20 @@ table {
 .gallery {
     background-image: url(../graphics/icons/gallery.png);
 }
-.horse {
-    background-image: url(../graphics/icons/horse.png);
-}
 .ice-cream {
     background-image: url(../graphics/icons/ice-cream.png);
 }
-.shop {
-    background-image: url(../graphics/icons/shop.png);
+.guitar {
+    background-image: url(../graphics/icons/guitar.png);
+}
+.opera {
+    background-image: url(../graphics/icons/opera.png);
+}
+.concert {
+    background-image: url(../graphics/icons/concert.png);
+}
+.piano {
+    background-image: url(../graphics/icons/piano.png);
 }
 
 .event {
