@@ -292,14 +292,16 @@ p {
 }
 
 .function-summary-txt {
-  margin: 60px 0 0;
-  text-align: justify;
+  margin: 40px 0 0;
 }
 .function-summary h3{
     padding-bottom: 2%;
     /*font-weight: bold;*/
+  text-align: center;
 }
-
+.function-summary-txt p{
+text-align: justify;
+}
 
 @media screen and (max-width: 1200px) {
     .function-summary-txt {
