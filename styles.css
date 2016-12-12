@@ -513,7 +513,7 @@ footer {
   text-align: left;
 }
 .footer-lists {
-  margin-left: 18%;
+  /*margin-left: 18%;*/
 }
 
 #footer li {
@@ -547,9 +547,10 @@ footer {
   }
 
   .footer-lists {
-    padding-left: 35%;
-    padding-right: 35%;
-    margin: 0;
+    padding-left: 40%;
+    padding-right: 40%;
+    margin: auto;
+    text-align: center;
   }
 }
 
