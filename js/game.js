@@ -1,5 +1,23 @@
 var z = 10;                                     // wielkosc pola
-var iconNames = ['theatre','ice-cream','animal','beach','beer','coffee','event-icon', 'cinema', 'food','gallery','horse', 'shop'];                  // tablica ikonek
+var iconNames = ['theatre','ice-cream','animal','beach','beer','coffee','event-icon', 'cinema', 'food','gallery','concert', 'opera', 'piano', 'guitar'];                  // tablica ikonek
+var score = 0;
+
+// sounds createjs----------------------------------
+
+function loadSound () {
+    var assetPath = "./sounds/";
+    var sounds = [
+        {src:"point.ogg", id:"point"},
+        {src:"end.ogg", id:"end"},
+    ];
+
+    //createjs.Sound.registerSound("assets/overworld.ogg", soundID, 1);
+    createjs.Sound.registerSounds(sounds, assetPath);
+}
+loadSound();
+
+
+// soundsend----------------------------------
 
 
 // Find container
@@ -43,11 +61,15 @@ function showBoard() {                           // budowanie planszy gry
   });
 }
 
-var score = 0;
 function updateScore() {                          // dodawanie wyniku
   score += 1;
   $('#scorebutton').text(score);
 }
+function setScoreToZero (){
+    score = 0;
+    $('#scorebutton').text(score);
+}
+
 // ||||||||||||||||||||||||Uruchamianie gry |||||||||||||||||||||||||||||||||||
 $('#game-display').click(function (event) {
   event.preventDefault();
@@ -85,6 +107,7 @@ $('#game-display').click(function (event) {
 
     ) {      // zdarzenie dodania punktu
       updateScore();
+        createjs.Sound.play('point');
       $(this).removeClass('event')
         .removeClass(iconNames.join(' '));
     }
@@ -108,6 +131,7 @@ $('#game-display').click(function (event) {
 
       ) {      // zdarzenie dodania punktu
         updateScore();
+          createjs.Sound.play('point');
         fieldPressed.removeClass('event')
           .removeClass(iconNames.join(' '));
       }
@@ -151,73 +175,52 @@ $('#game-display').click(function (event) {
     event.preventDefault();
   });
 
-  // $('table').on('click', 'td', function () {      // kontrola gracza myszka
-  //   var click = {                                 // pole w ktore klika uytkownik
-  //     x: parseInt($(this).attr('x')),
-  //     y: parseInt($(this).attr('y'))
-  //
-  //   };
-  //
-  //   var $playerCell = $('td.player');            // aktualna komorka gracza
-  //   console.log($playerCell);
-  //
-  //   var player = {                               // przemienia atrybuty x i y komorki tabeli na obiekt z wartosciami liczbowymi
-  //     x: parseInt($playerCell.attr('x')),
-  //     y: parseInt($playerCell.attr('y'))
-  //   };
-  //
-  //   console.log(click, player);
-  //
-  //   if (
-  //     Math.abs(click.x - player.x) <= 1 &&
-  //     Math.abs(click.y - player.y) <= 1
-  //   ) {
-  //     $playerCell.removeClass('player');
-  //     $(this).addClass('player');
-  //   }
-  //
-  //   if ($('td.player').hasClass('event')) {      // zdarzenie dodania punktu
-  //     updateScore();
-  //     $(this).removeClass('event');
-  //   }
-  //
-  // });
-
 });
 // ||||||||||||||||||||||||Generowanie gracza |||||||||||||||||||||||||||||||||||
 $('#startbutton').click(function () {
   var playerCell = randomCell();               // dodawanie gracza w losowym miejscu
   $('.cell').removeClass('player');
+  $('.game-over').remove();
+  setScoreToZero();
   playerCell.addClass('player');
 
-  // var eventCell = randomCell();                // dodawanie eventow w losowych miejscach
-  // eventCell.addClass(iconEvent);
-  //
-  // setTimeout(function () {
-  //   eventCell.removeClass('event');
-  // }, 1000);
-
-
-  var timer = 60;
+  var timer = 30;
   var timerNewEvents = 1000;        // co ile sekund generujemy eventy
-  var timerRemoveEvents = 10000;     // co ile sekund usuwamy eventy
-  // var timerBlinkEvents = 1000;     // kiedy zaczyna migac event
-  var timerGame = 61000;            // laczny czas gry : 61000 to minuta
+  var timerRemoveEvents = 5000;     // co ile sekund usuwamy eventy
+  var timerBlinkEvents = 4000;     // kiedy zaczyna migac event
+  var timerGame = 31000;            // laczny czas gry : 61000 to minuta
+
+    function getRandomNonEventCell() {
+        var $cells = $('#game td').not('.event, .player');
+        return $cells.eq(Math.round(Math.random() * ($cells.length - 1)))
+    }
+
   var createEvent = function () {
-    var eventCell = randomCell();              // wyswietlanie eventow co X000 milisekund
+    var eventCell = getRandomNonEventCell();              // wyswietlanie eventow co X000 milisekund
     var eventIcon = iconNames[Math.round(Math.random() * (iconNames.length - 1))];
     eventCell                                  // generowanie eventow z losowa ikonka
       .addClass(eventIcon)
         .addClass('event');
 
-    // setInterval(function () {
-    //   eventCell.toggleClass(eventIcon);
-    // }, timerBlinkEvents);
+    var blinkIntervalId;
+
+      var makeBlink = function() {
+          blinkIntervalId = setInterval(function(){
+              if (eventCell.hasClass('event')) {
+                  eventCell.toggleClass(eventIcon)
+              } else {
+                  clearInterval(blinkIntervalId);
+              }
+          }, 200);
+      };
+
+    setTimeout(makeBlink, timerBlinkEvents);
 
     setTimeout(function () {
-      eventCell
+        eventCell
           .removeClass(eventIcon)
           .removeClass('event');
+        clearInterval(blinkIntervalId);
     }, timerRemoveEvents);
   };
   createEvent();
@@ -235,6 +238,9 @@ $('#startbutton').click(function () {
     clearInterval(intervalTimer);
     $('.cell').removeClass('player');
     $('.event').hide();
+    createjs.Sound.play('end');
+    $table.append("<p class='game-over'>Zdobyłeś: <br><br>"+score+" pkt"+"<br><br> Kliknij START, <br>" +
+        "by złapać jeszcze więcej eventów.</p>");
   }, timerGame);
 
 
