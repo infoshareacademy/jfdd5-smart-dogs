@@ -111,7 +111,7 @@ p {
   text-shadow: 0 0 15px #3A3E40;
   font-size: 8vw;
   text-align: center;
-  padding-top: 14%;
+  padding-top: 13%;
   font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
 }
 
@@ -292,14 +292,16 @@ p {
 }
 
 .function-summary-txt {
-  margin: 60px 0 0;
-  text-align: justify;
+  margin: 40px 0 0;
 }
 .function-summary h3{
     padding-bottom: 2%;
     /*font-weight: bold;*/
+  text-align: center;
 }
-
+.function-summary-txt p{
+text-align: justify;
+}
 
 @media screen and (max-width: 1200px) {
     .function-summary-txt {
@@ -505,112 +507,125 @@ input[type="submit"] {
 
 footer {
   background-color: #333333;
-    /*#f6f6f6;*/
   color: white;
   text-align: center;
   font-size: 18px;
-  padding-top: 30px;
   font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
+  padding: 1.6em 0;
 }
 
-#footer h4 {
+#footer h3 {
   text-align: left;
-margin: 5% auto 2%;
+  margin-bottom: 0.8em;
 }
 
-#footer ul,
-#footer p {
-  list-style-type: none;
-  display: block;
+#footer ul, p {
   text-align: left;
-
 }
+.footer-lists {
+  /*margin-left: 18%;*/
+}
+
 #footer li {
+  list-style-type: none;
   line-height: 1.6em;
   font-size: 14px;
 
 }
+
 #footer a {
   color: white;
   text-decoration: none;
 }
+
 #footer a:hover {
   border-bottom: 1px solid #fd5d1d;
 }
+
 #footer img {
-  height: 27px;
-  vertical-align: bottom;
+  height: 17px;
+  vertical-align: sub;
 }
+
 @media screen and (max-width: 768px) {
-    #footer h4 {
-        text-align: center;
-    }
+  footer {
+    padding-top: 0;
+  }
 
-    #footer ul {
-        text-align: center;
+  #footer h3 {
+    margin: 0.7em 0 0.4em;
+  }
+
+  .footer-lists {
+    padding-left: 40%;
+    padding-right: 40%;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+
+/*8888888888888888888888888888888888888888888888888888888888*/
+/*--------------wodotryski----------------------------------*/
+/*8888888888888888888888888888888888888888888888888888888888*/
+
+/*buzzout animation on fourth icon*/
+@keyframes hvr-buzz-out {
+    10% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+    20% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+    30% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+    40% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+    50% {
+        -webkit-transform: translateX(2px) rotate(1deg);
+        transform: translateX(2px) rotate(1deg);
+    }
+    60% {
+        -webkit-transform: translateX(-2px) rotate(-1deg);
+        transform: translateX(-2px) rotate(-1deg);
+    }
+    70% {
+        -webkit-transform: translateX(2px) rotate(1deg);
+        transform: translateX(2px) rotate(1deg);
+    }
+    80% {
+        -webkit-transform: translateX(-2px) rotate(-1deg);
+        transform: translateX(-2px) rotate(-1deg);
+    }
+    90% {
+        -webkit-transform: translateX(1px) rotate(0deg);
+        transform: translateX(1px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateX(-1px) rotate(0deg);
+        transform: translateX(-1px) rotate(0deg);
     }
 }
-    /*8888888888888888888888888888888888888888888888888888888888*/
-    /*--------------wodotryski----------------------------------*/
-    /*8888888888888888888888888888888888888888888888888888888888*/
-    /*buzzout animation on fourth icon*/
-    @keyframes hvr-buzz-out {
-        10% {
-            -webkit-transform: translateX(3px) rotate(2deg);
-            transform: translateX(3px) rotate(2deg);
-        }
-        20% {
-            -webkit-transform: translateX(-3px) rotate(-2deg);
-            transform: translateX(-3px) rotate(-2deg);
-        }
-        30% {
-            -webkit-transform: translateX(3px) rotate(2deg);
-            transform: translateX(3px) rotate(2deg);
-        }
-        40% {
-            -webkit-transform: translateX(-3px) rotate(-2deg);
-            transform: translateX(-3px) rotate(-2deg);
-        }
-        50% {
-            -webkit-transform: translateX(2px) rotate(1deg);
-            transform: translateX(2px) rotate(1deg);
-        }
-        60% {
-            -webkit-transform: translateX(-2px) rotate(-1deg);
-            transform: translateX(-2px) rotate(-1deg);
-        }
-        70% {
-            -webkit-transform: translateX(2px) rotate(1deg);
-            transform: translateX(2px) rotate(1deg);
-        }
-        80% {
-            -webkit-transform: translateX(-2px) rotate(-1deg);
-            transform: translateX(-2px) rotate(-1deg);
-        }
-        90% {
-            -webkit-transform: translateX(1px) rotate(0deg);
-            transform: translateX(1px) rotate(0deg);
-        }
-        100% {
-            -webkit-transform: translateX(-1px) rotate(0deg);
-            transform: translateX(-1px) rotate(0deg);
-        }
-    }
-    .hvr-buzz-out {
-        display: inline-block;
-        vertical-align: middle;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px transparent;
-    }
-
-    .hvr-buzz-out:hover, .hvr-buzz-out:focus, .hvr-buzz-out:active {
-        -webkit-animation-name: hvr-buzz-out;
-        animation-name: hvr-buzz-out;
-        -webkit-animation-duration: 0.75s;
-        animation-duration: 0.75s;
-        -webkit-animation-timing-function: linear;
-        animation-timing-function: linear;
-        -webkit-animation-iteration-count: 1;
-        animation-iteration-count: 1;
-    }
+.hvr-buzz-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+}
+.hvr-buzz-out:hover, .hvr-buzz-out:focus, .hvr-buzz-out:active {
+    -webkit-animation-name: hvr-buzz-out;
+    animation-name: hvr-buzz-out;
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
